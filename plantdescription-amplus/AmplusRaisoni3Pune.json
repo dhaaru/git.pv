@@ -1,0 +1,85 @@
+{
+  "plantname": "Nagpur Raisoni",
+  "mysqlplanttable": "amplus_calculation2",
+  "influxdbname": "amplus",
+  "reporting_interval": "5m",
+  "energymeters": [
+    {
+      "mysqldeviceid": 9958,
+      "f": "Activepower_Total",
+      "iid": 4034,
+      "d": "EM_CONZERV"
+    }
+  ],
+  "irradiation_sensor": {
+    "mysqldeviceid": 9957,
+    "f": "Solar_Radiation",
+    "iid": 4034,
+    "d": "WS_01"
+  },
+  "module_temp_sensor": {
+    "mysqldeviceid": 9957,
+    "f": "Module_Temperature",
+    "iid": 4034,
+    "d": "WS_01"
+  },
+  "module_area": 1.6382,
+  "module_eff": 0.1538,
+  "module_count": 84,
+  "inverters": [
+    {
+      "type": "WRHM6Y94",
+      "mysqldeviceid": 9973,
+      "iid": 4034,
+      "d": 1900721780,
+      "f_pac": "Pac",
+      "f_pac_unit": "W",
+      "f_pdc": [
+        "A.Ms.Watt",
+        "B.Ms.Watt"
+      ],
+      "f_pdc_unit": "W",
+      "f_udc": [
+        "A.Ms.Vol",
+        "B.Ms.Vol"
+      ],
+      "module_count": 84
+    },
+    {
+      "type": "WRHM6Y94",
+      "mysqldeviceid": 9971,
+      "iid": 4034,
+      "d": 1900721816,
+      "f_pac": "Pac",
+      "f_pac_unit": "W",
+      "f_pdc": [
+        "A.Ms.Watt",
+        "B.Ms.Watt"
+      ],
+      "f_pdc_unit": "W",
+      "f_udc": [
+        "A.Ms.Vol",
+        "B.Ms.Vol"
+      ],
+      "module_count": 84
+    },
+    {
+      "type": "WRHM6Y94",
+      "mysqldeviceid": 9972,
+      "iid": 4034,
+      "d": 1900721867,
+      "f_pac": "Pac",
+      "f_pdc": [
+        "A.Ms.Watt",
+        "B.Ms.Watt"
+      ],
+      "f_pac_unit": "W",
+      "f_udc": [
+        "A.Ms.Vol",
+        "B.Ms.Vol"
+      ],
+      "f_pdc_unit": "W",
+      "module_count": 84
+    }
+  ]
+}

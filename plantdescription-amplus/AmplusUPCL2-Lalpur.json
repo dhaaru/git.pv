@@ -1,0 +1,84 @@
+{
+  "plantname": "Amplus UPCL 2-Lalpur",
+  "mysqlplanttable": "ampLalpur_calculation",
+  "influxdbname": "amplus",
+  "reporting_interval": "5m",
+  "energymeters": [
+    {
+      "mysqldeviceid": 11588,
+      "f": "Activepower_Total",
+      "iid": 4039,
+      "d": "EM_CONZERV"
+    }
+  ],
+  "energymeters_pac_unit": "W",
+  "irradiation_sensor": [
+    {
+      "mysqldeviceid": 10142,
+      "f": "Solar_Radiation",
+      "iid": 4039,
+      "d": "WS_01"
+    }
+  ],
+  "module_temp_sensor": [
+    {
+      "mysqldeviceid": 10142,
+      "f": "Module_Temperature",
+      "iid": 4039,
+      "d": "WS_01"
+    }
+  ],
+  "module_area": 1.9503,
+  "module_eff": 0.155,
+  "module_count": 840,
+  "inverters": [
+    {
+      "type": "SMA_STP60",
+      "mysqldeviceid": 12669,
+      "iid": 4039,
+      "d": "STP60_1",
+      "f_pac": "PAC_Total",
+      "f_pac_unit": "W",
+      "f_pdc": "PDC_Total",
+      "f_pdc_unit": "W",
+      "f_udc": "UAC_Mittelwert",
+      "module_count": 840
+    },
+    {
+      "type": "SMA_STP60",
+      "mysqldeviceid": 12672,
+      "iid": 4039,
+      "d": "STP60_2",
+      "f_pac": "PAC_Total",
+      "f_pac_unit": "W",
+      "f_pdc": "PDC_Total",
+      "f_pdc_unit": "W",
+      "f_udc": "UAC_Mittelwert",
+      "module_count": 840
+    },
+    {
+      "type": "SMA_STP60",
+      "mysqldeviceid": 12670,
+      "iid": 4039,
+      "d": "STP60_3",
+      "f_pac": "PAC_Total",
+      "f_pac_unit": "W",
+      "f_pdc": "PDC_Total",
+      "f_pdc_unit": "W",
+      "f_udc": "UAC_Mittelwert",
+      "module_count": 840
+    },
+    {
+      "type": "SMA_STP60",
+      "mysqldeviceid": 12675,
+      "iid": 4039,
+      "d": "STP60_4",
+      "f_pac": "PAC_Total",
+      "f_pac_unit": "W",
+      "f_pdc": "PDC_Total",
+      "f_pdc_unit": "W",
+      "f_udc": "UAC_Mittelwert",
+      "module_count": 840
+    }
+  ]
+}

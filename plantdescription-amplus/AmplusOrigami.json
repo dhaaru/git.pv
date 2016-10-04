@@ -1,0 +1,137 @@
+{
+	"plantname": "Amplus Origami Bangaluru",
+	"mysqlplanttable": "origami_calculation",
+	"influxdbname": "amplus",
+	"reporting_interval": "5m",
+	"energymeters": [
+		{
+			"mysqldeviceid": 11615,
+			"f": "Activepower_Total",
+			"iid": 4042,
+			"d": "EM_CONZERV"
+		}
+	],
+	"irradiation_sensor": [
+		{
+			"mysqldeviceid": 12029,
+			"f": "Solar_Radiation_1",
+			"iid": 4042,
+			"d": "WS"
+		},
+		{
+			"mysqldeviceid": 12029,
+			"f": "Solar_Radiation",
+			"iid": 4042,
+			"d": "WS"
+		}
+	],
+	"module_temp_sensor": [
+		{
+			"mysqldeviceid": 12029,
+			"f": "Module_Temperature",
+			"iid": 4042,
+			"d": "WS"
+		}
+	],
+	"module_area": 1.9503,
+	"module_eff": 0.147,
+	"module_count": 84,
+	"inverters": [
+		{
+			"type": "WRHM6Y94",
+			"mysqldeviceid": 12027,
+			"iid": 4042,
+			"d": 1900740897,
+			"f_pac": "Pac",
+			"f_pdc": [
+				"A.Ms.Watt",
+				"B.Ms.Watt"
+			],
+			"f_udc": [
+				"A.Ms.Vol",
+				"B.Ms.Vol"
+			],
+			"module_count": 84
+		},
+		{
+			"type": "WRHM6Y94",
+			"mysqldeviceid": 12024,
+			"iid": 4042,
+			"d": 1900741251,
+			"f_pac": "Pac",
+			"f_pdc": [
+				"A.Ms.Watt",
+				"B.Ms.Watt"
+			],
+			"f_udc": [
+				"A.Ms.Vol",
+				"B.Ms.Vol"
+			],
+			"module_count": 84
+		},
+		{
+			"type": "WRHM6Y94",
+			"mysqldeviceid": 12026,
+			"iid": 4042,
+			"d": 1900741253,
+			"f_pac": "Pac",
+			"f_pdc": [
+				"A.Ms.Watt",
+				"B.Ms.Watt"
+			],
+			"f_udc": [
+				"A.Ms.Vol",
+				"B.Ms.Vol"
+			],
+			"module_count": 84
+		},
+		{
+			"type": "WRHM6Y94",
+			"mysqldeviceid": 12023,
+			"iid": 4042,
+			"d": 1900741315,
+			"f_pac": "Pac",
+			"f_pdc": [
+				"A.Ms.Watt",
+				"B.Ms.Watt"
+			],
+			"f_udc": [
+				"A.Ms.Vol",
+				"B.Ms.Vol"
+			],
+			"module_count": 84
+		},
+		{
+			"type": "WRHM6Y94",
+			"mysqldeviceid": 12021,
+			"iid": 4042,
+			"d": 1900741379,
+			"f_pac": "Pac",
+			"f_pdc": [
+				"A.Ms.Watt",
+				"B.Ms.Watt"
+			],
+			"f_udc": [
+				"A.Ms.Vol",
+				"B.Ms.Vol"
+			],
+			"module_count": 84
+		},
+		{
+			"type": "WRHM6Y94",
+			"mysqldeviceid": 12028,
+			"iid": 4042,
+			"d": 1900741419,
+			"f_pac": "Pac",
+			"f_pdc": [
+				"A.Ms.Watt",
+				"B.Ms.Watt"
+			],
+			"f_udc": [
+				"A.Ms.Vol",
+				"B.Ms.Vol"
+			],
+			"module_count": 84
+		}
+	]
+}

@@ -1,0 +1,158 @@
+{
+    "plantname": "Amplus Royal Heritage Pune",
+    "mysqlplanttable": "ampRoyal_calculation",
+	"influxdbname": "amplus",
+    "reporting_interval": "5m",
+	"energymeters": [
+		{
+		    "mysqldeviceid": 10071,
+			"f": "Activepower_Total",
+			"iid": 4037,
+			"d": "EM_CONZERV"
+		}
+	],
+	"irradiation_sensor": {
+		"mysqldeviceid": 12692,
+		"f": "Solar_Radiation",
+		"iid": 4037,
+		"d": "WS02"								
+	},
+    "module_temp_sensor": {
+		"mysqldeviceid": 11724,
+		"f": "Module_Temperature",
+		"iid": 4037,
+		"d": "SMU08"					
+	},    
+	"module_area": 1.9503,
+	"module_count": 699,
+	"module_eff": 0.154,
+	"inverters": [
+		{   "type": "WRHM6Y94",
+		    "mysqldeviceid": 11719,
+			"iid": 4037,
+			"d": 1900723352,
+			"f_pac": "Pac",
+			"f_pdc": [
+				"A.Ms.Watt",
+				"B.Ms.Watt"
+			],
+			"f_udc": [
+				"A.Ms.Vol",
+				"B.Ms.Vol"
+			],
+			"module_count": 699
+		},
+		{
+		    "type": "WRHM6Y94",
+			"mysqldeviceid": 11718,
+			"iid": 4037,
+			"d": 1900723471,
+			"f_pac": "Pac",
+			"f_pdc": [
+				"A.Ms.Watt",
+				"B.Ms.Watt"
+			],
+			"f_udc": [
+				"A.Ms.Vol",
+				"B.Ms.Vol"
+			],
+			"module_count": 699
+		},
+		{
+		    "type": "WRHM6Y94",
+			"mysqldeviceid": 11720,
+			"iid": 4037,
+			"d": 1900723486,
+			"f_pac": "Pac",
+			"f_pdc": [
+				"A.Ms.Watt",
+				"B.Ms.Watt"
+			],
+			"f_udc": [
+				"A.Ms.Vol",
+				"B.Ms.Vol"
+			],
+			"module_count": 699
+			},
+		{
+		    "type": "WRHM6Y94",
+			"mysqldeviceid": 11722,
+			"iid": 4037,
+			"d": 1900724384,
+			"f_pac": "Pac",
+			"f_pdc": [
+				"A.Ms.Watt",
+				"B.Ms.Watt"
+			],
+			"f_udc": [
+				"A.Ms.Vol",
+				"B.Ms.Vol"
+			],			
+			"module_count": 699			
+		},
+		{
+			"type": "WRHM6Y94",
+			"mysqldeviceid": 11717,
+			"iid": 4037,
+			"d": 1900724640,			
+			"f_pac": "Pac",
+			"f_pdc": [
+				"A.Ms.Watt",
+				"B.Ms.Watt"
+			],
+			"f_udc": [
+				"A.Ms.Vol",
+				"B.Ms.Vol"
+			],			
+			"module_count": 699					
+		},
+		{
+			"type": "WRHM6Y94",
+			"mysqldeviceid": 11721,
+			"iid": 4037,
+			"d": 1900724647,
+			"f_pac": "Pac",
+			"f_pdc": [
+				"A.Ms.Watt",
+				"B.Ms.Watt"
+			],
+			"f_udc": [
+				"A.Ms.Vol",
+				"B.Ms.Vol"
+			],			
+			"module_count": 699			
+		},
+		{
+			"type": "WRHM6Y94",
+			"mysqldeviceid": 11715,
+			"iid": 4037,
+			"d": 1900725115,
+			"f_pac": "Pac",
+			"f_pdc": [
+				"A.Ms.Watt",
+				"B.Ms.Watt"
+			],
+			"f_udc": [
+				"A.Ms.Vol",
+				"B.Ms.Vol"
+			],			
+			"module_count": 699					
+		},
+		{
+			"type": "WRHM6Y94",
+			"mysqldeviceid": 11716,
+			"iid": 4037,
+			"d": 1900725116,
+			"f_pac": "Pac",
+			"f_pdc": [
+				"A.Ms.Watt",
+				"B.Ms.Watt"
+			],
+			"f_udc": [
+				"A.Ms.Vol",
+				"B.Ms.Vol"
+			],			
+			"module_count": 699						
+		}
+	]		
+}

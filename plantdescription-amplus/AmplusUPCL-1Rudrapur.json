@@ -1,0 +1,115 @@
+{
+	"plantname": "Amplus UPCL 1-Rudrapur",
+	"mysqlplanttable": "amprudrapur_calculation",
+	"influxdbname": "amplus",
+	"reporting_interval": "5m",
+	"energymeters": [
+		{
+			"mysqldeviceid": 7772,
+			"f": "Activepower_Total",
+			"iid": 4040,
+			"d": "EM_CONZERV"
+		}
+	],
+	"irradiation_sensor": [
+		{
+			"mysqldeviceid": 12690,
+			"f": "Solar_Radiation",
+			"iid": 4040,
+			"d": "WS"
+		}
+	],
+	"module_temp_sensor": [
+		{
+			"mysqldeviceid": 12690,
+			"f": "Module_Temperature",
+			"iid": 4040,
+			"d": "WS"
+		}
+	],
+	"module_area": 1.9503,
+	"module_eff": 0.154,
+	"module_count": 500,
+	"inverters": [
+		{
+			"type": "WRHM6Y94",
+			"mysqldeviceid": 11617,
+			"iid": 4040,
+			"d": 1900732554,
+			"f_pac": "Pac",
+			"f_pdc": [
+				"A.Ms.Watt",
+				"B.Ms.Watt"
+			],
+			"f_udc": [
+				"A.Ms.Vol",
+				"B.Ms.Vol"
+			],
+			"module_count": 500
+		},
+		{
+			"type": "WRHM6Y94",
+			"mysqldeviceid": 11619,
+			"iid": 4040,
+			"d": 1900732572,
+			"f_pac": "Pac",
+			"f_pdc": [
+				"A.Ms.Watt",
+				"B.Ms.Watt"
+			],
+			"f_udc": [
+				"A.Ms.Vol",
+				"B.Ms.Vol"
+			],
+			"module_count": 500
+		},
+		{
+			"type": "WRHM6Y94",
+			"mysqldeviceid": 11620,
+			"iid": 4040,
+			"d": 1900732574,
+			"f_pac": "Pac",
+			"f_pdc": [
+				"A.Ms.Watt",
+				"B.Ms.Watt"
+			],
+			"f_udc": [
+				"A.Ms.Vol",
+				"B.Ms.Vol"
+			],
+			"module_count": 500
+		},
+		{
+			"type": "WRHM6Y94",
+			"mysqldeviceid": 11621,
+			"iid": 4040,
+			"d": 1900732799,
+			"f_pac": "Pac",
+			"f_pdc": [
+				"A.Ms.Watt",
+				"B.Ms.Watt"
+			],
+			"f_udc": [
+				"A.Ms.Vol",
+				"B.Ms.Vol"
+			],
+			"module_count": 500
+		},
+		{
+			"type": "WRHM6Y94",
+			"mysqldeviceid": 11618,
+			"iid": 4040,
+			"d": 1900732898,
+			"f_pac": "Pac",
+			"f_pdc": [
+				"A.Ms.Watt",
+				"B.Ms.Watt"
+			],
+			"f_udc": [
+				"A.Ms.Vol",
+				"B.Ms.Vol"
+			],
+			"module_count": 500
+		}
+	]
+}

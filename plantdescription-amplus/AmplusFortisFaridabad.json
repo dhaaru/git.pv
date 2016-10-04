@@ -1,0 +1,55 @@
+{
+	"plantname": "Amplus Fortis Faridabad",
+	"mysqlplanttable": "fortis_calculation",
+	"influxdbname": "amplus",
+	"reporting_interval": "5m",
+	"energymeters": [
+		{
+			"mysqldeviceid": 13476,
+			"f": "Activepower_Total",
+			"iid": 4054,
+			"d": "EM_CONZERV"
+		}
+	],
+	"irradiation_sensor": [
+		{
+			"mysqldeviceid": 13475,
+			"f": "Irradiance",
+			"iid": 4054,
+			"d": "Si-RS485TC-Tv"
+		}
+	],
+	"module_temp_sensor": [
+		{
+			"mysqldeviceid": 13475,
+			"f": "T_cell_1",
+			"iid": 4054,
+			"d": "Si-RS485TC-Tv"
+		}
+	],
+	"module_area": 7.7614,
+	"module_eff": 0.162,
+	"module_count": 160,
+	"inverters": [
+		{
+			"type": "INV",
+			"mysqldeviceid": 13478,
+			"iid": 4054,
+			"d": "INV01",
+			"f_pac": "PAC",
+			"f_pdc": "PDC",
+			"f_udc": "UDC",
+			"module_count": 160
+		},
+		{
+			"type": "INV",
+			"mysqldeviceid": 13479,
+			"iid": 4054,
+			"d": "INV02",
+			"f_pac": "PAC",
+			"f_pdc": "PDC",
+			"f_udc": "UDC",
+			"module_count": 160
+		}
+	]
+}

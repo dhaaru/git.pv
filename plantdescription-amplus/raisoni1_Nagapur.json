@@ -1,0 +1,60 @@
+{
+  "plantname": "Amplus Raisoni1 Nagapur",
+  "mysqlplanttable": "amplus_calculation2",
+  "influxdbname": "amplus",
+  "reporting_interval": "5m",
+  "energymeters": [
+    {
+      "mysqldeviceid": 7795,
+      "f": "Activepower_Total",
+      "iid": 4031,
+      "d": "EM_CONZERV"
+    }
+  ],
+  "irradiation_sensor": {
+    "mysqldeviceid": 7794,
+    "f": "Solar_Radiation",
+    "iid": 4031,
+    "d": "INV_Ref_03"
+  },
+  "module_temp_sensor": {
+    "mysqldeviceid": 7794,
+    "f": "Module_Temperature",
+    "iid": 4031,
+    "d": "INV_Ref_03"
+  },
+  "module_area": 1.940352,
+  "module_eff": 0.155,
+  "inverters": [
+    {
+      "type": "Refusol",
+      "mysqldeviceid": 7791,
+      "iid": 4031,
+      "d": "INV_Ref_02",
+      "f_pac": "AC_Power",
+      "f_pdc": "DC_Power",
+      "f_udc": "DC_Voltage",
+      "module_count": 84
+    },
+    {
+      "type": "Refusol",
+      "mysqldeviceid": 7794,
+      "iid": 4031,
+      "d": "INV_Ref_03",
+      "f_pac": "AC_Power",
+      "f_pdc": "DC_Power",
+      "f_udc": "DC_Voltage",
+      "module_count": 84
+    },
+    {
+      "type": "Refusol",
+      "mysqldeviceid": 7792,
+      "iid": 4031,
+      "d": "INV_Ref_01",
+      "f_pac": "AC_Power",
+      "f_pdc": "DC_Power",
+      "f_udc": "DC_Voltage",
+      "module_count": 84
+    }
+  ]
+}

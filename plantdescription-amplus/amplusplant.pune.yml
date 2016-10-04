@@ -1,0 +1,320 @@
+---
+# Pune plant contains two weather stations with each
+#     irradiation sensor + module_temperature sensor,
+#   one for each tilt angle,
+#   and three groups of inverters:
+#   inverters group 1 has modules with 10° degree tilt angle
+#   inverters group 2 has modules with 20° degree tilt angle
+#   inverters group 3 has modules mixed of both tilt angles.
+#
+# and different modules per inverter:
+#   module_area
+#   module_eff
+#   module_count
+#
+plantname: Amplus Pune  # must match mysql subpark->bezeichnung (ignoring case)
+influxdbname: amplus
+reporting_interval: 5m # optional, default: 5m  an influx time string. required if other than '5m'
+energymeters_pac_unit: kW # 'kW'(default) or 'W'
+energymeters: # or 'energymeter'
+# single meter or array of several meters.
+# if several meters, then SUM(PAC) is taken.
+  - mysqldeviceid: 8240
+    f: Activepower_Total
+    iid: 4032
+    d: EM_CONZERV
+irradiation_sensors: # or 'irradiation_sensor'
+# single sensor or array of several sensors.
+# if several sensors, then by default AVG(irrad) is taken.
+# May be overriden per inverter.
+  - mysqldeviceid: 8412 # 10° tilt angle
+    f: Solar_Radiation
+    iid: 4032
+    d: SMU02
+  - mysqldeviceid: 8414 # 20° tilt angle
+    f: Solar_Radiation
+    iid: 4032
+    d: SMU10
+module_temp_sensor: # or 'module_temp_sensor'
+# single sensor or array of several sensors.
+# if several sensors, then by default AVG(irrad) is taken.
+# May be overriden per inverter.
+  - mysqldeviceid: 8412  # 10° tilt angle
+    f: Module_Temperature
+    iid: 4032
+    d: SMU02
+  - mysqldeviceid: 8414 # 20° tilt angle
+    f: Module_Temperature
+    iid: 4032
+    d: SMU10
+# module defaults (sunpower-327):
+module_area: 1.630714 # area [square meter] of module; may be overridden
+module_eff: 0.204 # factor; may be overriden
+module_count_inv: 180 # count of modules per inverter; may be overridden
+
+inverters:
+# list order is arbitrary. 
+# 
+# if several irradiations or module_temps are present, then:
+#   per inverter,  mysqldeviceid of the corresponding 
+#   sensor device must be given,
+#   else the average is taken into account.
+#
+# if module type differs from default, then
+#   module_area, module_eff or module_count_inv 
+#   must be given at inverter
+#
+  - type: "Inverter 1 Refusol 1" # not evaluated
+    mysqldeviceid: 8379 # device identifier. Must be unique.
+    iid: 4032  
+    d: INV_Ref_01 # mysql sn; influx device identifier per igate iid
+    f_pac: AC_Power 
+    f_pdc: DC_Power
+    f_udc: DC_Voltage
+    module_area: 2.162082 # Sunpower-435wp
+    module_eff: 0.201 # Sunpower-435wp
+    module_count: 111 # Sunpower-435wp
+    irradiation_sensor_mysqldeviceid: 8414 # 20°
+    module_temp_sensor_mysqldeviceid: 8414 # 20°
+
+  - type: "Inverter 2 SMA 1" # not evaluated
+    mysqldeviceid: 8408 # device identifier. Must be unique.
+    iid: 4032  
+    d: '2007307583' # mysql sn; influx device identifier per igate iid
+    f_pac: Pac # all tags are case-sensitive !!
+    f_pac_unit: W #  'W' or 'kW'; default:  'kW'.
+    f_pdc: 
+    - Ipv 
+    - Upv-Ist 
+    f_pdc_operator: MUL # multiply  (default: 'ADD')
+    f_pdc_unit: W #  'W' or 'kW'; default:  'kW'.
+    f_udc: Upv-Ist
+    module_area: 2.162082 # Sunpower-435wp
+    module_eff: 0.201 # Sunpower-435wp
+    module_count: 111 # Sunpower-435wp
+
+
+
+  - type: "Inverter 3 SMA 2" # not evaluated
+    mysqldeviceid: 8410 # device identifier. Must be unique.
+    iid: 4032 
+    d: "2007307578" # mysql sn; influx device identifier per igate iid
+    f_pac: Pac # all tags are case-sensitive !!
+    f_pac_unit: W #  'W' or 'kW'; default:  'kW'.
+    f_pdc: 
+    - Ipv 
+    - Upv-Ist 
+    f_pdc_operator: MUL # multiply  (default: 'ADD')
+    f_pdc_unit: W #  'W' or 'kW'; default:  'kW'.
+    f_udc: Upv-Ist
+    module_area: 1.840596 # Trina-300wp
+    module_eff: 0.155 # Trina-300wp
+    module_count: 210 # Trina-300wp
+    irradiation_sensor_mysqldeviceid: 8414 # 20°
+    module_temp_sensor_mysqldeviceid: 8414 # 20°
+
+  - type: "Inverter 4 SMA 3" # not evaluated
+    mysqldeviceid: 8409 # device identifier. Must be unique.
+    iid: 4032 
+    d: "2007307494" # mysql sn; influx device identifier per igate iid
+    f_pac: Pac # all tags are case-sensitive !!
+    f_pac_unit: W #  'W' or 'kW'; default:  'kW'.
+    f_pdc: 
+    - Ipv 
+    - Upv-Ist 
+    f_pdc_operator: MUL # multiply  (default: 'ADD')
+    f_pdc_unit: W #  'W' or 'kW'; default:  'kW'.
+    f_udc: Upv-Ist
+    module_area: 1.840596 # Trina-300wp
+    module_eff: 0.155 # Trina-300wp
+    module_count: 210 # Trina-300wp
+    irradiation_sensor_mysqldeviceid: 8412 # 10°
+    module_temp_sensor_mysqldeviceid: 8412 # 10°
+
+  - type: "Inverter 5 SMA 4" # not evaluated
+    mysqldeviceid: 8458 # device identifier. Must be unique.
+    iid: 4032 
+    d: "2007310156" # mysql sn; influx device identifier per igate iid
+    f_pac: Pac # all tags are case-sensitive !!
+    f_pac_unit: W #  'W' or 'kW'; default:  'kW'.
+    f_pdc: 
+    - Ipv 
+    - Upv-Ist 
+    f_pdc_operator: MUL # multiply  (default: 'ADD')
+    f_pdc_unit: W #  'W' or 'kW'; default:  'kW'.
+    f_udc: Upv-Ist
+    module_area: 1.940352 # Renusolar-300
+    module_eff: 0.155 # Renusolar-300
+    module_count: 252 # Renusolar-300
+    irradiation_sensor_mysqldeviceid: 8412 # 10°
+    module_temp_sensor_mysqldeviceid: 8412 # 10°
+
+  - type: "Inverter 6 SMA 5" # not evaluated
+    mysqldeviceid: 8456 # device identifier. Must be unique.
+    iid: 4032 
+    d: "2007310056" # mysql sn; influx device identifier per igate iid
+    f_pac: Pac # all tags are case-sensitive !!
+    f_pac_unit: W #  'W' or 'kW'; default:  'kW'.
+    f_pdc: 
+    - Ipv 
+    - Upv-Ist 
+    f_pdc_operator: MUL # multiply  (default: 'ADD')
+    f_pdc_unit: W #  'W' or 'kW'; default:  'kW'.
+    f_udc: Upv-Ist
+    module_area: 1.940352 # Renusolar-300
+    module_eff: 0.155 # Renusolar-300
+    module_count: 252 # Renusolar-300
+    irradiation_sensor_mysqldeviceid: 8412 # 10°
+    module_temp_sensor_mysqldeviceid: 8412 # 10°
+
+  - type: "Inverter 7 Refusol 2" # not evaluated
+    mysqldeviceid: 8381 # device identifier. Must be unique.
+    iid: 4032 
+    d: "INV_Ref_02" # mysql sn; influx device identifier per igate iid
+    f_pac: AC_Power 
+    f_pdc: DC_Power
+    f_udc: DC_Voltage
+    module_area: 1.940352 # Renusolar-300
+    module_eff: 0.155 # Renusolar-300
+    module_count: 252 # Renusolar-300
+    irradiation_sensor_mysqldeviceid: 8412 # 10°
+    module_temp_sensor_mysqldeviceid: 8412 # 10°
+
+  - type: "Inverter 8 SMA 6" # not evaluated
+    mysqldeviceid: 12976 # device identifier. Must be unique.
+    iid: 4032 
+    d: "2002163722" # mysql sn; influx device identifier per igate iid
+    f_pac: Pac # all tags are case-sensitive !!
+    f_pac_unit: W #  'W' or 'kW'; default:  'kW'.
+    f_pdc: 
+    - Ipv 
+    - Upv-Ist 
+    f_pdc_operator: MUL # multiply  (default: 'ADD')
+    f_pdc_unit: W #  'W' or 'kW'; default:  'kW'.
+    f_udc: Upv-Ist
+    module_area: 2.162082 # SPR-435wp
+    module_eff: 0.201 # SPR-435wp
+    module_count: 111 # SPR-435wp
+    irradiation_sensor_mysqldeviceid: 8414 # 20°
+    module_temp_sensor_mysqldeviceid: 8414 # 20°
+
+  - type: "Inverter 9 Refusol 3" # not evaluated
+    mysqldeviceid: 8378 # device identifier. Must be unique.
+    iid: 4032 
+    d: "INV_Ref_03" # mysql sn; influx device identifier per igate iid
+    f_pac: AC_Power 
+    f_pdc: DC_Power
+    f_udc: DC_Voltage
+    module_area: 1.840596 # Trina-300wp
+    module_eff: 0.155 # Trina-300wp
+    module_count: 210 # Trina-300wp
+    irradiation_sensor_mysqldeviceid: 8412 # 10°
+    module_temp_sensor_mysqldeviceid: 8412 # 10°
+
+  - type: "Inverter 10 SMA 7" # not evaluated
+    mysqldeviceid: 8384  # device identifier. Must be unique.
+    iid: 4032 
+    d: "2007310159" # mysql sn; influx device identifier per igate iid
+    f_pac: Pac # all tags are case-sensitive !!
+    f_pac_unit: W #  'W' or 'kW'; default:  'kW'.
+    f_pdc: 
+    - Ipv 
+    - Upv-Ist 
+    f_pdc_operator: MUL # multiply  (default: 'ADD')
+    f_pdc_unit: W #  'W' or 'kW'; default:  'kW'.
+    f_udc: Upv-Ist
+    irradiation_sensor_mysqldeviceid: 8414 # 20°
+    module_temp_sensor_mysqldeviceid: 8414 # 20°
+
+  - type: "Inverter 11 SMA 8" # not evaluated
+    mysqldeviceid: 8382  # device identifier. Must be unique.
+    iid: 4032 
+    d: "2007310055" # mysql sn; influx device identifier per igate iid
+    f_pac: Pac # all tags are case-sensitive !!
+    f_pac_unit: W #  'W' or 'kW'; default:  'kW'.
+    f_pdc: 
+    - Ipv 
+    - Upv-Ist 
+    f_pdc_operator: MUL # multiply  (default: 'ADD')
+    f_pdc_unit: W #  'W' or 'kW'; default:  'kW'.
+    f_udc: Upv-Ist
+    irradiation_sensor_mysqldeviceid: 8414 # 20°
+    module_temp_sensor_mysqldeviceid: 8414 # 20°
+
+  - type: "Inverter 12 SMA 9" # not evaluated
+    mysqldeviceid: 8383  # device identifier. Must be unique.
+    iid: 4032 
+    d: "2007310115" # mysql sn; influx device identifier per igate iid
+    f_pac: Pac # all tags are case-sensitive !!
+    f_pac_unit: W #  'W' or 'kW'; default:  'kW'.
+    f_pdc: 
+    - Ipv 
+    - Upv-Ist 
+    f_pdc_operator: MUL # multiply  (default: 'ADD')
+    f_pdc_unit: W #  'W' or 'kW'; default:  'kW'.
+    f_udc: Upv-Ist
+    irradiation_sensor_mysqldeviceid: 8414 # 20°
+    module_temp_sensor_mysqldeviceid: 8414 # 20°
+
+  - type: "Inverter 13 Refusol 4" # not evaluated
+    mysqldeviceid: 8380 # device identifier. Must be unique.
+    iid: 4032 
+    d: "INV_Ref_04" # mysql sn; influx device identifier per igate iid
+    f_pac: AC_Power 
+    f_pdc: DC_Power
+    f_udc: DC_Voltage
+    module_area: 1.940352 # Renusolar-300wp
+    module_eff: 0.155 # 
+    module_count: 252 # 
+    irradiation_sensor_mysqldeviceid: 8414 # 20°
+    module_temp_sensor_mysqldeviceid: 8414 # 20°
+
+  - type: "Inverter 14 SMA 10" # not evaluated
+    mysqldeviceid: 8386  # device identifier. Must be unique.
+    iid: 4032 
+    d: "2007307718" # mysql sn; influx device identifier per igate iid
+    f_pac: Pac # all tags are case-sensitive !!
+    f_pac_unit: W #  'W' or 'kW'; default:  'kW'.
+    f_pdc: 
+    - Ipv 
+    - Upv-Ist 
+    f_pdc_operator: MUL # multiply  (default: 'ADD')
+    f_pdc_unit: W #  'W' or 'kW'; default:  'kW'.
+    f_udc: Upv-Ist
+
+  - type: "Inverter 15 SMA 11" # not evaluated
+    mysqldeviceid: 8387 # device identifier. Must be unique.
+    iid: 4032 
+    d: "2007310120" # mysql sn; influx device identifier per igate iid
+    f_pac: Pac # all tags are case-sensitive !!
+    f_pac_unit: W #  'W' or 'kW'; default:  'kW'.
+    f_pdc: 
+    - Ipv 
+    - Upv-Ist 
+    f_pdc_operator: MUL # multiply  (default: 'ADD')
+    f_pdc_unit: W #  'W' or 'kW'; default:  'kW'.
+    f_udc: Upv-Ist
+    irradiation_sensor_mysqldeviceid: 8412 # 10°
+    module_temp_sensor_mysqldeviceid: 8412 # 10°
+
+  - type: "Inverter 16 SMA 12" # not evaluated
+    mysqldeviceid: 8388 # device identifier. Must be unique.
+    iid: 4032 
+    d: "2007310116" # mysql sn; influx device identifier per igate iid
+    f_pac: Pac # all tags are case-sensitive !!
+    f_pac_unit: W #  'W' or 'kW'; default:  'kW'.
+    f_pdc: 
+    - Ipv 
+    - Upv-Ist 
+    f_pdc_operator: MUL # multiply  (default: 'ADD')
+    f_pdc_unit: W #  'W' or 'kW'; default:  'kW'.
+    f_udc: Upv-Ist
+    module_area: 1.840596 # Trina-300wp
+    module_eff: 0.155 # Trina-300wp
+    module_count: 210 # Trina-300wp
+    irradiation_sensor_mysqldeviceid: 8412 # 10°
+    module_temp_sensor_mysqldeviceid: 8412 # 10°
+
+
+
+

@@ -1,0 +1,299 @@
+{
+	"plantname": "Amplus Pune",
+	"influxdbname": "amplus",
+	"reporting_interval": "5m",
+	"energymeters_pac_unit": "kW",
+	"energymeters": [{
+		"mysqldeviceid": 8240,
+		"f": "Activepower_Total",
+		"iid": 4032,
+		"d": "EM_CONZERV"
+	}],
+	"irradiation_sensors": [{
+		"mysqldeviceid": 8412,
+		"f": "Solar_Radiation",
+		"iid": 4032,
+		"d": "SMU02"
+	}, {
+		"mysqldeviceid": 8414,
+		"f": "Solar_Radiation",
+		"iid": 4032,
+		"d": "SMU10"
+	}],
+	"module_temp_sensor": [{
+		"mysqldeviceid": 8412,
+		"f": "Module_Temperature",
+		"iid": 4032,
+		"d": "SMU02"
+	}, {
+		"mysqldeviceid": 8414,
+		"f": "Module_Temperature",
+		"iid": 4032,
+		"d": "SMU10"
+	}],
+	"module_area": 1.630714,
+	"module_eff": 0.204,
+	"module_count_inv": 180,
+	"inverters": [{
+		"type": "INV_Ref",
+		"mysqldeviceid": 8379,
+		"iid": 4032,
+		"d": "INV_Ref_01",
+		"f_pac": "AC_Power",
+		"f_pdc": "DC_Power",
+		"f_udc": "DC_Voltage",
+		"module_area": 2.162082,
+		"module_eff": 0.201,
+		"module_count": 111,
+		"irradiation_sensor_mysqldeviceid": 8414,
+		"module_temp_sensor_mysqldeviceid": 8414
+	}, {
+		"type": "WR11RP10",
+		"mysqldeviceid": 8408,
+		"iid": 4032,
+		"d": "2007307583",
+		"f_pac": "Pac",
+		"f_pac_unit": "W",
+		"f_pdc": [
+			"Ipv",
+			"Upv-Ist"
+		],
+		"f_pdc_operator": "MUL",
+		"f_pdc_unit": "W",
+		"f_udc": "Upv-Ist",
+		"module_area": 2.162082,
+		"module_eff": 0.201,
+		"module_count": 111
+	}, {
+		"type": "WR11RP10",
+		"mysqldeviceid": 8410,
+		"iid": 4032,
+		"d": "2007307578",
+		"f_pac": "Pac",
+		"f_pac_unit": "W",
+		"f_pdc": [
+			"Ipv",
+			"Upv-Ist"
+		],
+		"f_pdc_operator": "MUL",
+		"f_pdc_unit": "W",
+		"f_udc": "Upv-Ist",
+		"module_area": 1.840596,
+		"module_eff": 0.155,
+		"module_count": 210,
+		"irradiation_sensor_mysqldeviceid": 8414,
+		"module_temp_sensor_mysqldeviceid": 8414
+	}, {
+		"type": "WR11RP10",
+		"mysqldeviceid": 8409,
+		"iid": 4032,
+		"d": "2007307494",
+		"f_pac": "Pac",
+		"f_pac_unit": "W",
+		"f_pdc": [
+			"Ipv",
+			"Upv-Ist"
+		],
+		"f_pdc_operator": "MUL",
+		"f_pdc_unit": "W",
+		"f_udc": "Upv-Ist",
+		"module_area": 1.840596,
+		"module_eff": 0.155,
+		"module_count": 210,
+		"irradiation_sensor_mysqldeviceid": 8412,
+		"module_temp_sensor_mysqldeviceid": 8412
+	}, {
+		"type": "WR11RP10",
+		"mysqldeviceid": 8458,
+		"iid": 4032,
+		"d": "2007310156",
+		"f_pac": "Pac",
+		"f_pac_unit": "W",
+		"f_pdc": [
+			"Ipv",
+			"Upv-Ist"
+		],
+		"f_pdc_operator": "MUL",
+		"f_pdc_unit": "W",
+		"f_udc": "Upv-Ist",
+		"module_area": 1.940352,
+		"module_eff": 0.155,
+		"module_count": 252,
+		"irradiation_sensor_mysqldeviceid": 8412,
+		"module_temp_sensor_mysqldeviceid": 8412
+	}, {
+		"type": "WR11RP10",
+		"mysqldeviceid": 8456,
+		"iid": 4032,
+		"d": "2007310056",
+		"f_pac": "Pac",
+		"f_pac_unit": "W",
+		"f_pdc": [
+			"Ipv",
+			"Upv-Ist"
+		],
+		"f_pdc_operator": "MUL",
+		"f_pdc_unit": "W",
+		"f_udc": "Upv-Ist",
+		"module_area": 1.940352,
+		"module_eff": 0.155,
+		"module_count": 252,
+		"irradiation_sensor_mysqldeviceid": 8412,
+		"module_temp_sensor_mysqldeviceid": 8412
+	}, {
+		"type": "INV_Ref",
+		"mysqldeviceid": 8381,
+		"iid": 4032,
+		"d": "INV_Ref_02",
+		"f_pac": "AC_Power",
+		"f_pdc": "DC_Power",
+		"f_udc": "DC_Voltage",
+		"module_area": 1.940352,
+		"module_eff": 0.155,
+		"module_count": 252,
+		"irradiation_sensor_mysqldeviceid": 8412,
+		"module_temp_sensor_mysqldeviceid": 8412
+	}, {
+		"type": "WR11RP10",
+		"mysqldeviceid": 12976,
+		"iid": 4032,
+		"d": "2002163722",
+		"f_pac": "Pac",
+		"f_pac_unit": "W",
+		"f_pdc": [
+			"Ipv",
+			"Upv-Ist"
+		],
+		"f_pdc_operator": "MUL",
+		"f_pdc_unit": "W",
+		"f_udc": "Upv-Ist",
+		"module_area": 2.162082,
+		"module_eff": 0.201,
+		"module_count": 111,
+		"irradiation_sensor_mysqldeviceid": 8414,
+		"module_temp_sensor_mysqldeviceid": 8414
+	}, {
+		"type": "INV_Ref",
+		"mysqldeviceid": 8378,
+		"iid": 4032,
+		"d": "INV_Ref_03",
+		"f_pac": "AC_Power",
+		"f_pdc": "DC_Power",
+		"f_udc": "DC_Voltage",
+		"module_area": 1.840596,
+		"module_eff": 0.155,
+		"module_count": 210,
+		"irradiation_sensor_mysqldeviceid": 8412,
+		"module_temp_sensor_mysqldeviceid": 8412
+	}, {
+		"type": "WR11RP10",
+		"mysqldeviceid": 8384,
+		"iid": 4032,
+		"d": "2007310159",
+		"f_pac": "Pac",
+		"f_pac_unit": "W",
+		"f_pdc": [
+			"Ipv",
+			"Upv-Ist"
+		],
+		"f_pdc_operator": "MUL",
+		"f_pdc_unit": "W",
+		"f_udc": "Upv-Ist",
+		"irradiation_sensor_mysqldeviceid": 8414,
+		"module_temp_sensor_mysqldeviceid": 8414
+	}, {
+		"type": "WR11RP10",
+		"mysqldeviceid": 8382,
+		"iid": 4032,
+		"d": "2007310055",
+		"f_pac": "Pac",
+		"f_pac_unit": "W",
+		"f_pdc": [
+			"Ipv",
+			"Upv-Ist"
+		],
+		"f_pdc_operator": "MUL",
+		"f_pdc_unit": "W",
+		"f_udc": "Upv-Ist",
+		"irradiation_sensor_mysqldeviceid": 8414,
+		"module_temp_sensor_mysqldeviceid": 8414
+	}, {
+		"type": "WR11RP10",
+		"mysqldeviceid": 8383,
+		"iid": 4032,
+		"d": "2007310115",
+		"f_pac": "Pac",
+		"f_pac_unit": "W",
+		"f_pdc": [
+			"Ipv",
+			"Upv-Ist"
+		],
+		"f_pdc_operator": "MUL",
+		"f_pdc_unit": "W",
+		"f_udc": "Upv-Ist",
+		"irradiation_sensor_mysqldeviceid": 8414,
+		"module_temp_sensor_mysqldeviceid": 8414
+	}, {
+		"type": "INV_Ref",
+		"mysqldeviceid": 8380,
+		"iid": 4032,
+		"d": "INV_Ref_04",
+		"f_pac": "AC_Power",
+		"f_pdc": "DC_Power",
+		"f_udc": "DC_Voltage",
+		"module_area": 1.940352,
+		"module_eff": 0.155,
+		"module_count": 252,
+		"irradiation_sensor_mysqldeviceid": 8414,
+		"module_temp_sensor_mysqldeviceid": 8414
+	}, {
+		"type": "WR11RP10",
+		"mysqldeviceid": 8386,
+		"iid": 4032,
+		"d": "2007307718",
+		"f_pac": "Pac",
+		"f_pac_unit": "W",
+		"f_pdc": [
+			"Ipv",
+			"Upv-Ist"
+		],
+		"f_pdc_operator": "MUL",
+		"f_pdc_unit": "W",
+		"f_udc": "Upv-Ist"
+	}, {
+		"type": "WR11RP10",
+		"mysqldeviceid": 8387,
+		"iid": 4032,
+		"d": "2007310120",
+		"f_pac": "Pac",
+		"f_pac_unit": "W",
+		"f_pdc": [
+			"Ipv",
+			"Upv-Ist"
+		],
+		"f_pdc_operator": "MUL",
+		"f_pdc_unit": "W",
+		"f_udc": "Upv-Ist",
+		"irradiation_sensor_mysqldeviceid": 8412,
+		"module_temp_sensor_mysqldeviceid": 8412
+	}, {
+		"type": "WR11RP10",
+		"mysqldeviceid": 8388,
+		"iid": 4032,
+		"d": "2007310116",
+		"f_pac": "Pac",
+		"f_pac_unit": "W",
+		"f_pdc": [
+			"Ipv",
+			"Upv-Ist"
+		],
+		"f_pdc_operator": "MUL",
+		"f_pdc_unit": "W",
+		"f_udc": "Upv-Ist",
+		"module_area": 1.840596,
+		"module_eff": 0.155,
+		"module_count": 210,
+		"irradiation_sensor_mysqldeviceid": 8412,
+		"module_temp_sensor_mysqldeviceid": 8412
+	}]
+}

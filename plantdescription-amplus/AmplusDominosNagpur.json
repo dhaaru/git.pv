@@ -1,0 +1,111 @@
+{
+	"energymeters": [
+		{
+			"d": "EM_CONZERV",
+			"f": "Activepower_Total",
+			"iid": 4036,
+			"mysqldeviceid": 10070
+		}
+	],
+	"influxdbname": "amplus",
+	"inverters": [
+		{
+			"d": 1900723427,
+			"f_pac": "Pac",
+			"f_pdc": [
+				"A.Ms.Watt",
+				"B.Ms.Watt"
+			],
+			"f_udc": [
+				"A.Ms.Vol",
+				"B.Ms.Vol"
+			],
+			"iid": 4036,
+			"module_count": 420,
+			"mysqldeviceid": 11626,
+			"type": "WRHM6Y94"
+		},
+		{
+			"d": 1900723458,
+			"f_pac": "Pac",
+			"f_pdc": [
+				"A.Ms.Watt",
+				"B.Ms.Watt"
+			],
+			"f_udc": [
+				"A.Ms.Vol",
+				"B.Ms.Vol"
+			],
+			"iid": 4036,
+			"module_count": 420,
+			"mysqldeviceid": 11627,
+			"type": "WRHM6Y94"
+		},
+		{
+			"d": 1900723466,
+			"f_pac": "Pac",
+			"f_pdc": [
+				"A.Ms.Watt",
+				"B.Ms.Watt"
+			],
+			"f_udc": [
+				"A.Ms.Vol",
+				"B.Ms.Vol"
+			],
+			"iid": 4036,
+			"module_count": 420,
+			"mysqldeviceid": 11625,
+			"type": "WRHM6Y94"
+		},
+		{
+			"d": 1900723491,
+			"f_pac": "Pac",
+			"f_pdc": [
+				"A.Ms.Watt",
+				"B.Ms.Watt"
+			],
+			"f_udc": [
+				"A.Ms.Vol",
+				"B.Ms.Vol"
+			],
+			"iid": 4036,
+			"module_count": 420,
+			"mysqldeviceid": 11624,
+			"type": "WRHM6Y94"
+		},
+		{
+			"d": 1900724435,
+			"f_pac": "Pac",
+			"f_pdc": [
+				"A.Ms.Watt",
+				"B.Ms.Watt"
+			],
+			"f_udc": [
+				"A.Ms.Vol",
+				"B.Ms.Vol"
+			],
+			"iid": 4036,
+			"module_count": 420,
+			"mysqldeviceid": 11628,
+			"type": "WRHM6Y94"
+		}
+	],
+	"irradiation_sensor": {
+		"d": "SMU11",
+		"f": "Solar_Radiation",
+		"iid": 4036,
+		"mysqldeviceid": 11623
+	},
+	"module_area": 1.9503,
+	"module_count": 420,
+	"module_eff": 0.154,
+	"module_temp_sensor": {
+		"d": "SMU11",
+		"f": "Module_Temperature",
+		"iid": 4036,
+		"mysqldeviceid": 11623
+	},
+	"mysqlplanttable": "amplus_calculation2",
+	"plantname": "Amplus Dominos Nagpur",
+	"reporting_interval": "5m"
+}

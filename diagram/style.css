@@ -1,0 +1,484 @@
+body {
+	margin: 0px;
+	background-color: #ffffff;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000 scrollbar-base-color :     #000000;
+	scrollbar-track-color: #EFEFF0;
+	scrollbar-face-color: #ffffff;
+	scrollbar-highlight-color: #000000;
+	scrollbar-3d-light-color: #000000;
+	scrollbar-darkshadow-color: #EFEFF0;
+	scrollbar-shadow-color: #000000;
+	scrollbar-arrow-color: #000000;
+}
+
+#inhalt { /* position: absolute;*/
+	width: 100%;
+	height: auto;
+	z-index: 1;
+	/* border:  solid 1px red; */
+	padding: 15px;
+	/*background-color: #ffffff;*/
+}
+
+.grundtext {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000
+	
+}
+
+
+.grundtext_dist {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: #000000
+}
+
+.grundtext_gross {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #000000
+}
+
+.button {
+	font-family: Verdana;
+	font-size: 8pt;
+	color: #000000;
+	letter-spacing: 0;
+	cursor: pointer;
+	cursor: hand;
+	background-image: url('../imgs/button_bg.gif');
+	background-color: #ffffff
+}
+
+.button_farbe {
+	font-family: Verdana;
+	font-size: 8pt;
+	color: #000000;
+	letter-spacing: 0;
+	cursor: pointer;
+	cursor: hand;
+	//background-image: url('../imgs/button_bg.gif');
+	background-color: #FFFEDC
+}
+
+.button_tab {
+	width: 70 px;
+	font-family: Verdana;
+	font-size: 8pt;
+	color: #000000;
+	letter-spacing: 0;
+	cursor: pointer;
+	cursor: hand;
+	background-image: url('../imgs/button_bg.gif');
+	background-color: #ffffff
+}
+
+
+.buttontext {
+	width: 210px;
+	font-family: Verdana;
+	margin-top: 10px;
+	margin-left: 4px;
+	margin-right: 25px;
+	padding-right: 60px;
+	font-size: 8pt;
+	font-weight: bold;
+	letter-spacing: 0;
+	cursor: pointer;
+	cursor: hand;
+	background: transparent;
+	border-top: 0px solid #ffffff;
+	border-left: 0px solid #ffffff;
+	border-bottom: 0px solid gray;
+	border-right: 0px solid gray;
+}
+
+
+
+.buttonfolderopen {
+	font-family: Verdana;
+	font-size: 10pt;
+	letter-spacing: 0;
+	cursor: pointer;
+	cursor: hand;
+	background-image: url('../imgs/folder_open.gif');
+	background-repeat: no-repeat;
+	background-color: white
+}
+
+.button2 {
+	width: 150 px;
+	height: 20 px;
+	float: left;
+	text-align: left;
+	font-family: Verdana;
+	font-size: 8 pt;
+	/* font-weight: bold; */
+	color: #706C6C;
+	letter-spacing: 0;
+	text-decoration: none;
+	cursor: hand;
+	cursor: hand;
+	border-top: 0px solid #ffffff;
+	border-left: 1px solid #ffffff;
+	border-bottom: 1px solid gray;
+	border-right: 1px solid gray;
+	background-color: #cccccc;
+}
+
+.button_r {
+	margin-top: 53 px;
+	margin-right: 0 px;
+	margin-left: 0 px;
+}
+
+.textfeld {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	line-height: 13px;
+	font-weight: normal;
+	font-variant: normal;
+	color: #000000;
+	text-decoration: none;
+	border: 1px solid #000000;
+}
+
+.textfeld_f {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	line-height: 13px;
+	font-weight: bold;
+	font-variant: normal;
+	color: #000000;
+	text-decoration: none;
+	border: 1px solid #000000;
+}
+
+.textfeld_gr {
+	padding-left: 3px;
+	font-family: Tahoma, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	line-height: 13px;
+	font-weight: normal;
+	font-variant: normal;
+	color: #000000;
+	text-decoration: none;
+	border: 1px solid gray;
+}
+
+a {
+	color: #514E4E;
+}
+
+a:hover {
+	color: #C92643;
+}
+
+/* Reihe ################################### */
+.row {
+	padding-left: 5px;
+	border-bottom: dashed 1px black;
+	margin-bottom: 5px;
+}
+
+.row_det {
+	padding-left: 12px;
+	margin-bottom: 0px;
+	/*border: solid 1px black;*/
+}
+
+.row_det_max {
+	padding-left: 90px;
+	margin-bottom: 0px;
+	/*border: solid 1px black;*/
+}
+
+.row_det_mid {
+	padding-left: 60px;
+	margin-bottom: 0px;
+	/*border: solid 1px black;*/
+}
+
+.row_det_min {
+	padding-left: 5px;
+	margin-bottom: 0px;
+	/*border: solid 1px black;*/
+}
+
+/* Reihe ################################### */
+.anlg {
+	width: 580px;
+	float: left;
+	/*border: solid 1px red;*/
+}
+
+.anlg_det_left {
+	text-align: right;
+	width: 150px;
+	float: left;
+	/*border: solid 1px red;*/
+}
+
+.anlg_det_left_max {
+	text-align: right;
+	width: 200px;
+	float: left;
+	/*border: solid 1px red;*/
+}
+
+.anlg_det_left_supermax {
+	text-align: right;
+	width: 300px;
+	float: left;
+	/*border: solid 1px red;*/
+}
+
+.anlg_det_left_min {
+	text-align: right;
+	width: 50px;
+	float: left;
+	/*border: solid 1px red;*/
+}
+
+.tools {
+	text-align: right;
+	/*border: solid 1px blue;*/
+	width: 140px;
+	float: right;
+}
+
+.anlg_det_right { /*border: solid 1px blue;*/
+	border-left: dashed 1px black;
+	border-bottom: dashed 1px black;
+	padding-left: 5px;
+	padding-bottom: 2px;
+	width: 540px;
+	float: left;
+	margin-left: 10px;
+}
+
+}
+.anlg_det_right_ob {
+	padding-left: 0px;
+	padding-bottom: 2px;
+	width: 540px;
+	float: right;
+}
+
+.anlg_det_right_cal {
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 540px;
+	float: left;
+	margin-left: 0px;
+}
+
+.ttl {
+	padding-left: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.f_red {
+	font-size: 10px;
+	color: #C92643;
+}
+
+.f_red_l {
+	font-size: 15px;
+	color: #C92643;
+}
+
+.f_red2 {
+	color: #C92643;
+}
+
+.f_red_bold {
+	color: #C92643;
+	font-weight: bold;
+}
+
+.clb { /*border: solid 1px green;*/
+	clear: both;
+}
+
+/*************************************************************/
+.bord_b_r {
+	padding: 2px;
+	border-right: solid 1px black;
+	border-bottom: solid 1px black;
+}
+
+.bord_b {
+	padding: 2px;
+	border-bottom: solid 1px black;
+}
+
+.months {
+	text-align: center;
+	background-color: #E8E7E7;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.months1 {
+	text-align: left;
+	background-color: #E8E7E7;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+/********
+.mon_titel {
+	font-family: Verdana;
+	font-size: 10pt;
+	height: 25px;
+	color: #000000;
+	letter-spacing: 1;
+	line-height: 50px;
+	text-align: center;
+	background-image: url('../imgs/button_bg_blue2.gif');
+	border-bottom:  1px black;
+} ***/
+
+
+.linie {
+	padding-left: 15px;
+	background-color: #E8E7E7;
+}
+
+.u_schrift_dgrm {
+	font-weight: bold;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+*****************************************************/
+	/****Links***************/
+.links {
+	color: black;
+	text-decoration: none;
+	border: solid 1px #E8E7E7;
+	padding-left: 3px;
+	padding-right: 3px;
+	margin-right: 3px;
+}
+
+.links:hover {
+	color: black;
+	border: solid 1px black
+}
+
+.linkstab {
+	color: black;
+	text-decoration: underline;
+	/**	border: solid 1px #E8E7E7;**/
+	padding-left: 3px;
+	padding-right: 3px;
+	margin-right: 3px;
+}
+
+.linksfett {
+	margin-right: 3px;
+	padding-left: 3px;
+	padding-right: 3px;
+	color: black;
+	border: solid 1px #C92643;
+	text-decoration: none;
+}
+
+.marker {
+	background-color: #ffffff;
+	padding: 3px;
+	margin: 2px;
+	color: black;
+	border: solid 1px #C92643;
+	text-decoration: none;
+}
+
+.marker_gr {
+	padding: 3px;
+	background-color: #FFFFDD; /*** ehemals   #cccccc ***/
+	margin: 2px;
+	color: black;
+	border: solid 1px #cccccc;
+	text-decoration: none;
+}
+
+.u_schrift_oben {
+	width: 100%;
+	height: 26px;
+	line-height: 25px;
+	background-image: url('../imgs/title_bg.gif');
+}
+
+.u_schrift_oben_breit {
+	padding-top: 2 px;
+	width: 100%;
+	height: 32px;
+	line-height: 25px;
+	background-image: url('../imgs/title_breit.gif');
+}
+
+.u_schrift_mitte_breit {
+	margin-top:0px;
+	padding-top: 2px;
+	padding-left: 400;
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	background-color:#FFFFDD;
+	border: solid 1px gray;
+	/*background-image: url('../imgs/title_breit.gif');*/
+}
+
+.ueberschriftbraun2 {
+	padding-top: 4px;
+	padding-left: 20px;
+	padding-bottom: 5px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13pt;
+	color: #B72738;
+	font-weight: normal;
+}
+
+.tabelle {
+	border: solid 1px gray;
+	
+}
+
+.days{
+background-color: white ;
+padding-left: 15px;
+padding-top: 0px;
+padding-bottom: 3px;
+text-align: center;
+/*  #E8E7E7 */
+}
+
+.months{
+background-color: white ;
+padding-left: 0px;
+padding-top: 4px;
+padding-bottom: 3px;
+text-align: center;
+/*  #E8E7E7 */
+}
+
+.mon_titel{
+color: white ;
+font-weight: bold;
+padding: 4px;
+text-align: left;
+background-color: #483D8B;
+}

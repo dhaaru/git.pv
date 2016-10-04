@@ -1,0 +1,93 @@
+{
+	"plantname": "Amplus Indus Nagpur",
+	"mysqlplanttable": "ampIndus_calculation",
+	"influxdbname": "amplus",
+	"reporting_interval": "5m",
+	"energymeters": [
+		{
+			"mysqldeviceid": 13397,
+			"f": "Activepower_Total",
+			"iid": 4038,
+			"d": "EM_CONZERV02"
+		},
+		{
+			"mysqldeviceid": 10151,
+			"f": "Activepower_Total",
+			"iid": 4038,
+			"d": "EM_CONZERV"
+		},
+		{
+			"mysqldeviceid": 13005,
+			"f": "Activepower_Total",
+			"iid": 4038,
+			"d": "EM_CONZERV01"
+		},
+		{
+			"mysqldeviceid": 13006,
+			"f": "Activepower_Total",
+			"iid": 4038,
+			"d": "EM_CONZERV04"
+		}
+	],
+	"irradiation_sensor": [
+		{
+			"mysqldeviceid": 10452,
+			"f": "Solar_Radiation",
+			"iid": 4038,
+			"d": "WS_01"
+		}
+	],
+	"module_temp_sensor": [
+		{
+			"mysqldeviceid": 10452,
+			"f": "Module_Temperature",
+			"iid": 4038,
+			"d": "WS_01"
+		}
+	],
+	"module_area": 1.9503,
+	"module_eff": 0.154,
+	"module_count": 699,
+	"inverters": [
+		{
+			"type": "SMA_STP60",
+			"mysqldeviceid": 12667,
+			"iid": 4038,
+			"d": "STP60_1",
+			"f_pac": "PAC_Total",
+			"f_pdc": "PDC_Total",
+			"f_udc": "UAC_Mittelwert",
+			"module_count": 420
+		},
+		{
+			"type": "SMA_STP60",
+			"mysqldeviceid": 12668,
+			"iid": 4038,
+			"d": "STP60_2",
+			"f_pac": "PAC_Total",
+			"f_pdc": "PDC_Total",
+			"f_udc": "UAC_Mittelwert",
+			"module_count": 420
+		},
+		{
+			"type": "SMA_STP60",
+			"mysqldeviceid": 13004,
+			"iid": 4038,
+			"d": "STP60_3",
+			"f_pac": "PAC_Total",
+			"f_pdc": "PDC_Total",
+			"f_udc": "UAC_Mittelwert",
+			"module_count": 420		
+		},
+		{
+			"type": "SMA_Inverter_Manager",
+			"mysqldeviceid": 12665,
+			"iid": 4038,
+			"d": "SMA_Inverter_Manager",
+			"f_pac": "PAC_Total",
+			"f_pdc": "PDC_Total",
+			"f_udc": "UAC_Mittelwert",
+			"module_count": 420
+		}
+	]
+}

@@ -1,0 +1,75 @@
+{
+	"plantname": "Amplus Polymers",
+	"mysqlplanttable": "polymers_calculation",
+	"influxdbname": "amplus",
+	"reporting_interval": "5m",
+	"energymeters": [
+		{
+			"mysqldeviceid": 12037,
+			"f": "Activepower_Total",
+			"iid": 4045,
+			"d": "EM_CONZERV"
+		}
+	],
+	"irradiation_sensor": [
+		{
+			"mysqldeviceid": 12417,
+			"f": "Solar_Radiation",
+			"iid": 4045,
+			"d": "WS"
+		}
+	],
+	"module_temp_sensor": [
+		{
+			"mysqldeviceid": 12417,
+			"f": "Module_Temperature",
+			"iid": 4045,
+			"d": "WS"
+		}
+	],
+	"module_area": 1.8721,
+	"module_eff": 0.155,
+	"module_count": 220,
+	"inverters": [
+		{
+			"type": "SMA_STP60",
+			"mysqldeviceid": 12660,
+			"iid": 4045,
+			"d": "STP60_1",
+			"f_pac": "PAC_Total",
+			"f_pdc": "PDC_Total",
+			"f_udc": "UAC_Mittelwert",
+			"module_count": 220
+		},
+		{
+			"type": "SMA_STP60",
+			"mysqldeviceid": 12659,
+			"iid": 4045,
+			"d": "STP60_2",
+			"f_pac": "PAC_Total",
+			"f_pdc": "PDC_Total",
+			"f_udc": "UAC_Mittelwert",
+			"module_count": 220
+		},
+		{
+			"type": "SMA_STP60",
+			"mysqldeviceid": 12658,
+			"iid": 4045,
+			"d": "STP60_3",
+			"f_pac": "PAC_Total",
+			"f_pdc": "PDC_Total",
+			"f_udc": "UAC_Mittelwert",
+			"module_count": 220
+		},
+		{
+			"type": "SMA_Inverter_Manager",
+			"mysqldeviceid": 12657,
+			"iid": 4045,
+			"d": "SMA_Inverter_Manager",
+			"f_pac": "PAC_Total",
+			"f_pdc": "PDC_Total",
+			"f_udc": "UAC_Mittelwert",
+			"module_count": 220
+		}
+	]
+}

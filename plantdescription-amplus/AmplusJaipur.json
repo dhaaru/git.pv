@@ -1,0 +1,115 @@
+{
+	"plantname": "Amplus Dominos Mumbai",
+	"mysqlplanttable": "amplus_calculation2",
+	"influxdbname": "amplus",
+	"reporting_interval": "5m",
+	"energymeters": [
+		{
+			"d": "EM_CONZERV",
+			"f": "Activepower_Total",
+			"iid": 4033,
+			"mysqldeviceid": 9317
+		}
+	],
+	"inverters": [
+		{
+			"d": 1900704340,
+			"f_pac": "Pac",
+			"f_pdc": "A.Ms.Watt-B.Ms.Watt",
+			"f_udc": "A.Ms.Vol-B.Ms.Vol",
+			"iid": 4033,
+			"module_count": 84,
+			"mysqldeviceid": 9324,
+			"type": "WRHM6Y92"
+		},
+		{
+			"d": 1900705201,
+			"f_pac": "Pac",
+			"f_pdc": "A.Ms.Watt-B.Ms.Watt",
+			"f_udc": "A.Ms.Vol-B.Ms.Vol",
+			"iid": 4033,
+			"module_count": 84,
+			"mysqldeviceid": 9322,
+			"type": "WRHM6Y92"
+		},
+		{
+			"d": 1900705766,
+			"f_pac": "Pac",
+			"f_pdc": "A.Ms.Watt-B.Ms.WattSS",
+			"f_udc": "A.Ms.Vol-B.Ms.Vol",
+			"iid": 4033,
+			"module_count": 84,
+			"mysqldeviceid": 9325,
+			"type": "WRHM6Y92"
+		},
+		{
+			"d": 1900705823,
+			"f_pac": "Pac",
+			"f_pdc": "A.Ms.Watt-B.Ms.Watt",
+			"f_udc": "A.Ms.Vol-B.Ms.Vol",
+			"iid": 4033,
+			"module_count": 84,
+			"mysqldeviceid": 9326,
+			"type": "WRHM6Y92"
+		},
+		{
+			"d": 1900705878,
+			"f_pac": "Pac",
+			"f_pdc": "A.Ms.Watt-B.Ms.Watt",
+			"f_udc": "A.Ms.Vol-B.Ms.Vol",
+			"iid": 4033,
+			"module_count": 84,
+			"mysqldeviceid": 9329,
+			"type": "WRHM6Y92"
+		},
+		{
+			"d": 1900705882,
+			"f_pac": "Pac",
+			"f_pdc": "A.Ms.Watt-B.Ms.Watt",
+			"f_udc": "A.Ms.Vol-B.Ms.Vol",
+			"iid": 4033,
+			"module_count": 84,
+			"mysqldeviceid": 9328,
+			"type": "WRHM6Y92"
+		},
+		{
+			"d": 1900705898,
+			"f_pac": "Pac",
+			"f_pdc": "A.Ms.Watt-B.Ms.Watt",
+			"f_udc": "A.Ms.Vol-B.Ms.Vol",
+			"iid": 4033,
+			"module_count": 84,
+			"mysqldeviceid": 9323,
+			"type": "WRHM6Y92"
+		},
+		{
+			"d": 1900705913,
+			"f_pac": "Pac",
+			"f_pdc": "A.Ms.Watt-B.Ms.Watt",
+			"f_udc": "A.Ms.Vol-B.Ms.Vol",
+			"iid": 4033,
+			"module_count": 84,
+			"mysqldeviceid": 9327,
+			"type": "WRHM6Y92"
+		}
+	],
+	"irradiation_sensor": [
+		{
+			"d": "WS_01",
+			"f": "Solar_Radiation",
+			"iid": 4035,
+			"mysqldeviceid": 9974
+		}
+	],
+	"module_area": 2.244,
+	"module_count": 84,
+	"module_eff": 0.151,
+	"module_temp_sensor": [
+		{
+			"d": "SMU03",
+			"f": "Module_Temperature",
+			"iid": 4033,
+			"mysqldeviceid": 9316
+		}
+	]
+}

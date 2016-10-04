@@ -646,7 +646,7 @@ else if($park_no == 21){ // MAS Solar
    if ($phase=="tag"){
 
     $diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/argdiagram5.php?park_no=72&phase=Forttag&defaults=0,1&args=0,1,0,13476,Activepower_Total,Active Power,15,kW,4;0,1,0,13475,Irradiance,Irradiation,15,W/m&sup2;,\'Gold\';&sums=0,1,0,13476_0,Activepower_Total,null,5,Current%20Generation,red,2,%20kW,10,0,Arial&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-1" border="0"></iframe></td></tr>';
-    $diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/energydiagram.php?park_no=72&phase=Fortenergyg2&defaults=0,1,2,3&args=0,1,0,13476,System_PR,System PR,15,%,1;0,1,0,13475,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,13475,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-2" border="0"></iframe></td></tr>';
+    $diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/energydiagram.php?park_no=72&phase=Fortenergyg2&defaults=0,1,2,3&args=0,1,0,13476,System_PR,System PR,15,%,1;0,1,0,13479,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,13479,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-2" border="0"></iframe></td></tr>';
     $count = 2;
 
   }

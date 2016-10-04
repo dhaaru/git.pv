@@ -1,0 +1,53 @@
+---
+plantname: Amplus Yamaha Faridabad  # must match mysql subpark->bezeichnung (ignoring case)
+# until now, every plant has only 1 igate
+# one plant has 5 blocks, all other ones are a single block
+#mysqlplanttable: mysql table name for inverter PR values 
+mysqlplanttable: amplus_calculation # obsolete
+influxdbname: amplus
+reporting_interval: 5m # optional, default: 5m  an influx time string
+energymeters:
+  - mysqldeviceid: 12895
+    f: Activepower_Total
+    iid: 4043
+    d: xxxxxxx
+  - mysqldeviceid: 12899
+    f: Activepower_Total
+    iid: 4043
+    d: xxxxxxx
+irradiation_sensor:
+  mysqldeviceid: 3333
+  f: xxxxxx
+  iid: 4043
+  d: xxxxxxx
+module_temp_sensor:
+  mysqldeviceid: 3333
+  f: xxxx
+  iid: 4043
+  d: xxxxxxx
+module_area: 1.940352
+module_eff: 0.162
+inverters:
+# order of inverters must be according to mysql _device:sn 
+  - type: "SMA_STP60"
+    mysqldeviceid: 333
+    iid: 4043
+    d: xxxxxxx
+    f_pac: PAC
+    f_pdc: 
+    - A.Ms.Watt
+    - B.Ms.Watt
+    f_udc:
+    - A.Ms.Vol
+    - B.Ms.Vol
+    module_count: 220
+  - type: "SMA_IM"
+    mysqldeviceid: 3333
+    iid: 4043
+    d: xxxxxxx
+    f_pac: PAC_Total
+    f_pdc: 
+    - PDC_Total
+    f_udc:
+    - nicht.bekannt!!!!!
+    module_count: 220
