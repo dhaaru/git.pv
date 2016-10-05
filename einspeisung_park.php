@@ -566,7 +566,7 @@ elseif ($park_no == 45) { // Goa
       if ($phase=="tag"){
 
             $diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/argdiagram5.php?park_no=53&phase=Roytag&defaults=0,1&args=0,1,0,10071,Activepower_Total,Active Power,15,kW,4;0,1,0,12692,Solar_Radiation,Irradiation,15,W/m&sup2;,\'Gold\';&sums=0,1,0,10071_0,Activepower_Total,null,5,Current%20Generation,red,2,%20kW,10,0,Arial&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-1" border="0"></iframe></td></tr>';
-            $diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/energydiagram.php?park_no=53&phase=energyg2&defaults=0,1,2,3&args=0,1,0,10071,System_PR,System PR,15,%,1;0,1,0,11722,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-2" border="0"></iframe></td></tr>';
+            $diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/energydiagram.php?park_no=53&phase=energyg2&defaults=0,1,2,3&args=0,1,0,10071,System_PR,System PR,15,%,1;0,1,0,11722,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11722,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-2" border="0"></iframe></td></tr>';
             $count = 2;
 
         }

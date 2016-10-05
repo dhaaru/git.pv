@@ -1768,15 +1768,15 @@ else if($park_no == 53){ // Amplus Royal Heritage Pune
 			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="99%" SRC="diagram/argdiagram5.php?park_no=53&phase=RYINV1G3&args=0,1,0,11721,GridMs.PhV.phsA,INV1%20AC%20Voltage-%20L1,15,V,8;0,1,0,11721,GridMs.PhV.phsB,INV1%20AC%20Voltage-%20L2,15,V,9;0,1,0,11721,GridMs.PhV.phsC,INV1%20AC%20Voltage-%20L3,15,V,5;0,1,0,11721,GridMs.Hz,Frequency,15,Hz,7;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 3" border="0"></iframe></td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/energydiagram.php?park_no=53&phase=INV1PR&defaults=0,1,2,3,4&args=0,1,0,11722,Inv_PR,Inv%20PR,15,%,4;0,1,0,11722,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-4" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/energydiagram.php?park_no=53&phase=INV1PR&defaults=0,1,2,3,4&args=0,1,0,11721,Inv_PR,Inv%20PR,15,%,4;0,1,0,11721,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11721,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-4" border="0"></iframe></td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
 			
 			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="99%" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV1EFF&args=0,1,0,11721,Inv_Eff,Inverter1,15,%,8;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 5" border="0"></iframe></td></tr>';
 			
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV1ACPR&defaults=0,1,2,3,4&args=0,1,0,11721,Inv_AC_PR,Inverter%20PR,15,%,4;0,1,0,12692,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-6" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV1ACPR&defaults=0,1,2,3,4&args=0,1,0,11721,Inv_AC_PR,Inverter%20PR,15,%,4;0,1,0,11721,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11721,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-6" border="0"></iframe></td></tr>';
 			
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV1DCPR&defaults=0,1,2,3,4&args=0,1,0,11721,DC_Vol_Coeff,Inv(DC_Voltage),15,V,4;0,1,0,12692,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-7" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV1DCPR&defaults=0,1,2,3,4&args=0,1,0,11721,DC_Vol_Coeff,Inv(DC_Voltage),15,V,4;0,1,0,11721,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11721,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-7" border="0"></iframe></td></tr>';
 			
 			$count = 7;
 		}
@@ -1793,7 +1793,7 @@ else if($park_no == 53){ // Amplus Royal Heritage Pune
 		  if ($phase=="tag"){
 
 			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/argdiagram5.php?park_no=53&phase=Roytag&defaults=0,1&args=0,1,0,10071,Activepower_Total,Active Power,15,kW,4;0,1,0,12692,Solar_Radiation,Irradiation,15,W/m&sup2;,\'Gold\';&sums=0,1,0,10071_0,Activepower_Total,null,5,Current%20Generation,red,2,%20kW,10,0,Arial&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-1" border="0"></iframe></td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/energydiagram.php?park_no=53&phase=energyg2&defaults=0,1,2,3&args=0,1,0,10071,System_PR,System PR,15,%,1;0,1,0,12692,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-2" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/energydiagram.php?park_no=53&phase=energyg2&defaults=0,1,2,3&args=0,1,0,10071,System_PR,System PR,15,%,1;0,1,0,11722,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11722,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-2" border="0"></iframe></td></tr>';
 			$count = 2;
 
 			}
@@ -1955,7 +1955,7 @@ if($subpark_id==425){ // Block A
 		if ($phase=="tag"){
 
 			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/argdiagram5.php?park_no=59&phase=YamahaBlkA&defaults=0,1&args=0,1,0,12895,Activepower_Total,AC Power,15,kW,4;0,1,0,12209,Solar_Radiation,Irradiation,15,W/m&sup2;,\'Gold\';&sums=0,1,0,12895_0,Activepower_Total,null,5,Current%20Generation,red,2,%20kW,10,0,Arial&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-1" border="0"></iframe></td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/energydiagram.php?park_no=59&phase=YamahaEnBlkA&defaults=0,1,2,3&args=0,1,0,12210,System_PR,System PR,15,%,1;0,1,0,12903,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12903,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-2" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/energydiagram.php?park_no=59&phase=YamahaEnBlkA&defaults=0,1,2,3&args=0,1,0,12895,System_PR,System PR,15,%,1;0,1,0,12903,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12903,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-2" border="0"></iframe></td></tr>';
 			$count = 2;
 
 		}
@@ -1969,7 +1969,7 @@ if($subpark_id==425){ // Block A
 		if ($phase=="tag"){
 
 			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/argdiagram5.php?park_no=59&phase=YamahaBlkB&defaults=0,1&args=0,1,0,12899,Activepower_Total,AC Power,15,kW,4;0,1,0,12209,Solar_Radiation,Irradiation,15,W/m&sup2;,\'Gold\';&sums=0,1,0,12899_0,Activepower_Total,null,5,Current%20Generation,red,2,%20kW,10,0,Arial&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-1" border="0"></iframe></td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/energydiagram.php?park_no=59&phase=YamahaEnBlkB&defaults=0,1,2,3&args=0,1,0,12899,System_PR,System PR,15,%,1;0,1,0,12209,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-2" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/energydiagram.php?park_no=59&phase=YamahaEnBlkB&defaults=0,1,2,3&args=0,1,0,12899,System_PR,System PR,15,%,1;0,1,0,12903,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12903,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-2" border="0"></iframe></td></tr>';
 			$count = 2;
 
 		}
@@ -1983,7 +1983,7 @@ if($subpark_id==425){ // Block A
 		if ($phase=="tag"){
 
 			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/argdiagram5.php?park_no=59&phase=YamahaBlkC&defaults=0,1&args=0,1,0,12897,Activepower_Total,AC Power,15,kW,4;0,1,0,12209,Solar_Radiation,Irradiation,15,W/m&sup2;,\'Gold\';&sums=0,1,0,12897_0,Activepower_Total,null,5,Current%20Generation,red,2,%20kW,10,0,Arial&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-1" border="0"></iframe></td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/energydiagram.php?park_no=59&phase=YamahaEnBlkC&defaults=0,1,2,3&args=0,1,0,12897,System_PR,System PR,15,%,1;0,1,0,12209,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-2" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/energydiagram.php?park_no=59&phase=YamahaEnBlkC&defaults=0,1,2,3&args=0,1,0,12897,System_PR,System PR,15,%,1;0,1,0,12900,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12900,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-2" border="0"></iframe></td></tr>';
 			$count = 2;
 
 		}
@@ -1997,7 +1997,7 @@ if($subpark_id==425){ // Block A
 		if ($phase=="tag"){
 
 			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/argdiagram5.php?park_no=59&phase=YamahaBlkD&defaults=0,1&args=0,1,0,12898,Activepower_Total,AC Power,15,kW,4;0,1,0,12209,Solar_Radiation,Irradiation,15,W/m&sup2;,\'Gold\';&sums=0,1,0,12898_0,Activepower_Total,null,5,Current%20Generation,red,2,%20kW,10,0,Arial&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-1" border="0"></iframe></td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/energydiagram.php?park_no=59&phase=YamahaEnBlkD&defaults=0,1,2,3&args=0,1,0,12898,System_PR,System PR,15,%,1;0,1,0,12209,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-2" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/energydiagram.php?park_no=59&phase=YamahaEnBlkD&defaults=0,1,2,3&args=0,1,0,12898,System_PR,System PR,15,%,1;0,1,0,12900,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12900,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-2" border="0"></iframe></td></tr>';
 			$count = 2;
 
 		}
@@ -2012,7 +2012,7 @@ if($subpark_id==425){ // Block A
 		if ($phase=="tag"){
 
 			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/argdiagram5.php?park_no=59&phase=YamahaBlkE&defaults=0,1&args=0,1,0,12896,Activepower_Total,AC Power,15,kW,4;0,1,0,12209,Solar_Radiation,Irradiation,15,W/m&sup2;,\'Gold\';&sums=0,1,0,12896_0,Activepower_Total,null,5,Current%20Generation,red,2,%20kW,10,0,Arial&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-1" border="0"></iframe></td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/energydiagram.php?park_no=59&phase=YamahaEnBlkE&defaults=0,1,2,3&args=0,1,0,12896,System_PR,System PR,15,%,1;0,1,0,12209,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-2" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/energydiagram.php?park_no=59&phase=YamahaEnBlkE&defaults=0,1,2,3&args=0,1,0,12896,System_PR,System PR,15,%,1;0,1,0,12900,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12900,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-2" border="0"></iframe></td></tr>';
 			$count = 2;
 
 		}

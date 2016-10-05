@@ -1,0 +1,205 @@
+{
+	"plantname": "Amplus Yamaha Faridabad",
+	"mysqlplanttable": "yamaha_calculation",
+	"influxdbname": "amplus",
+	"reporting_interval": "5m",
+	"energymeters": [
+		{
+			"mysqldeviceid": 12210,
+			"f": "Activepower_Total",
+			"iid": 4043,
+			"d": "EM_CONZERV"
+		},		
+		{
+			"mysqldeviceid": 12895,
+			"f": "Activepower_Total",
+			"iid": 4043,
+			"d": "EM_CONZERV_21"
+		},
+		{
+			"mysqldeviceid": 12899,
+			"f": "Activepower_Total",
+			"iid": 4043,
+			"d": "EM_CONZERV_22"
+		},
+		{
+			"mysqldeviceid": 12897,
+			"f": "Activepower_Total",
+			"iid": 4043,
+			"d": "EM_CONZERV_23"
+		},
+		{
+			"mysqldeviceid": 12898,
+			"f": "Activepower_Total",
+			"iid": 4043,
+			"d": "EM_CONZERV_24"
+		},
+		{
+			"mysqldeviceid": 12896,
+			"f": "Activepower_Total",
+			"iid": 4043,
+			"d": "EM_CONZERV_25"
+		}
+	],
+	"irradiation_sensor": [
+		{
+			"mysqldeviceid": 12209,
+			"f": "Solar_Radiation",
+			"iid": 4043,
+			"d": "WS"
+		}
+	],
+	"module_temp_sensor": [
+		{
+			"mysqldeviceid": 12209,
+			"f": "Module_Temperature",
+			"iid": 4043,
+			"d": "WS"
+		}
+	],
+	"module_area": 1.94,
+	"module_eff": 0.162,
+	"module_count": 1513,
+	"inverters": [
+		{
+			"type": "WRHM6Y94",
+			"mysqldeviceid": 12900,
+			"iid": 4043,
+			"d": 1900739941,
+			"f_pac": "Pac",
+			"f_pdc": [
+				"A.Ms.Watt",
+				"B.Ms.Watt"
+			],
+			"f_udc": [
+				"A.Ms.Vol",
+				"B.Ms.Vol"
+			],
+			"module_count": 1513
+		},
+		{
+			"type": "WRHM6Y94",
+			"mysqldeviceid": 12902,
+			"iid": 4043,
+			"d": 1900739975,
+			"f_pac": "Pac",
+			"f_pdc": [
+				"A.Ms.Watt",
+				"B.Ms.Watt"
+			],
+			"f_udc": [
+				"A.Ms.Vol",
+				"B.Ms.Vol"
+			],
+			"module_count": 1513
+		},
+		{
+			"type": "WRHM6Y94",
+			"mysqldeviceid": 12903,
+			"iid": 4043,
+			"d": 1900740421,
+			"f_pac": "Pac",
+			"f_pdc": [
+				"A.Ms.Watt",
+				"B.Ms.Watt"
+			],
+			"f_udc": [
+				"A.Ms.Vol",
+				"B.Ms.Vol"
+			],
+			"module_count": 1513
+		},
+		{
+			"type": "WRHM6Y94",
+			"mysqldeviceid": 12901,
+			"iid": 4043,
+			"d": 1900740859,
+			"f_pac": "Pac",
+			"f_pdc": [
+				"A.Ms.Watt",
+				"B.Ms.Watt"
+			],
+			"f_udc": [
+				"A.Ms.Vol",
+				"B.Ms.Vol"
+			],
+			"module_count": 1513
+		},
+		{
+			"type": "WRHM6Y94",
+			"mysqldeviceid": 15375,
+			"iid": 4043,
+			"d": 1900763884,
+			"f_pac": "Pac",
+			"f_pdc": [
+				"A.Ms.Watt",
+				"B.Ms.Watt"
+			],
+			"f_udc": [
+				"A.Ms.Vol",
+				"B.Ms.Vol"
+			],
+			"module_count": 1513
+		},
+		{
+			"type": "SMA_STP60",
+			"mysqldeviceid": 12740,
+			"iid": 4043,
+			"d": "STP60_05",
+			"f_pac": "PAC_Total",
+			"f_pdc": "PDC_Total",
+			"f_udc": "UAC_Mittelwert",
+			"module_count": 1513
+		},
+		{
+			"type": "SMA_STP60",
+			"mysqldeviceid": 12739,
+			"iid": 4043,
+			"d": "STP60_06",
+			"f_pac": "PAC_Total",
+			"f_pdc": "PDC_Total",
+			"f_udc": "UAC_Mittelwert",
+			"module_count": 1513
+		},
+		{
+			"type": "SMA_STP60",
+			"mysqldeviceid": 12741,
+			"iid": 4043,
+			"d": "STP60_07",
+			"f_pac": "PAC_Total",
+			"f_pdc": "PDC_Total",
+			"f_udc": "UAC_Mittelwert",
+			"module_count": 1513
+		},
+		{
+			"type": "SMA_STP60",
+			"mysqldeviceid": 12737,
+			"iid": 4043,
+			"d": "STP60_08",
+			"f_pac": "PAC_Total",
+			"f_pdc": "PDC_Total",
+			"f_udc": "UAC_Mittelwert",
+			"module_count": 1513
+		},
+		{
+			"type": "SMA_STP60",
+			"mysqldeviceid": 12738,
+			"iid": 4043,
+			"d": "STP60_09",
+			"f_pac": "PAC_Total",
+			"f_pdc": "PDC_Total",
+			"f_udc": "UAC_Mittelwert",
+			"module_count": 1513
+		},
+		{
+			"type": "SMA_STP60",
+			"mysqldeviceid": 12736,
+			"iid": 4043,
+			"d": "STP60_10",
+			"f_pac": "PAC_Total",
+			"f_pdc": "PDC_Total",
+			"f_udc": "UAC_Mittelwert",
+			"module_count": 1513
+		}
+	]
+}

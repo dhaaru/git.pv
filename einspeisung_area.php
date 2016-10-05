@@ -4440,15 +4440,15 @@ else if ($park_no == 53) {  // Amplus Royal Heritage Pune
 			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagram5.php?park_no=53&phase=RYINV1G3&args=0,1,0,11721,GridMs.PhV.phsA,INV1%20AC%20Voltage-%20L1,15,V,8;0,1,0,11721,GridMs.PhV.phsB,INV1%20AC%20Voltage-%20L2,15,V,9;0,1,0,11721,GridMs.PhV.phsC,INV1%20AC%20Voltage-%20L3,15,V,5;0,1,0,11721,GridMs.Hz,Frequency,15,Hz,7;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 3" border="0"></iframe></td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/energydiagram.php?park_no=53&phase=INV1PR&defaults=0,1,2,3,4&args=0,1,0,11721,Inv_PR,Inv%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-4" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/energydiagram.php?park_no=53&phase=INV1PR&defaults=0,1,2,3,4&args=0,1,0,11721,Inv_PR,Inv%20PR,15,%,4;0,1,0,11721,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11721,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-4" border="0"></iframe></td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
 			
-			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV1EFF&args=0,1,0,11721,Inv1_Eff,Inverter1,15,%,8;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 5" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV1EFF&args=0,1,0,11721,Inv_Eff,Inverter1,15,%,8;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 5" border="0"></iframe></td></tr>';
 			
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV1ACPR&defaults=0,1,2,3,4&args=0,1,0,11721,Inv_AC_PR,Inverter%20PR,15,%,4;0,1,0,12692,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-6" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV1ACPR&defaults=0,1,2,3,4&args=0,1,0,11721,Inv_AC_PR_600,Inverter%20PR,15,%,4;0,1,0,11721,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11721,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-6" border="0"></iframe></td></tr>';
 			
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV1DCPR&defaults=0,1,2,3,4&args=0,1,0,11721,DC_Vol_Coeff,Inv(DC_Voltage),15,V,4;0,1,0,12692,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-7" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV1DCPR&defaults=0,1,2,3,4&args=0,1,0,11721,Inv_DC_Vol_Coeff,Inv(DC_Voltage),15,V,4;0,1,0,11721,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11721,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-7" border="0"></iframe></td></tr>';
 			
 			$count = 7;
 		}
@@ -4462,15 +4462,15 @@ else if ($park_no == 53) {  // Amplus Royal Heritage Pune
 			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagram5.php?park_no=53&phase=RYINV2G3&args=0,1,0,11718,GridMs.PhV.phsA,INV2%20AC%20Voltage-%20L1,15,V,8;0,1,0,11718,GridMs.PhV.phsB,INV1%20AC%20Voltage-%20L2,15,V,9;0,1,0,11718,GridMs.PhV.phsC,INV1%20AC%20Voltage-%20L3,15,V,5;0,1,0,11718,GridMs.Hz,Frequency,15,Hz,7;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 3" border="0"></iframe></td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/energydiagram.php?park_no=53&phase=INV2PR&defaults=0,1,2,3,4&args=0,1,0,11718,Inv_PR,Inv%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-4" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/energydiagram.php?park_no=53&phase=INV2PR&defaults=0,1,2,3,4&args=0,1,0,11718,Inv_PR,Inv%20PR,15,%,4;0,1,0,11718,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11718,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-4" border="0"></iframe></td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
 			
-			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV2EFF&args=0,1,0,11718,Inv2_Eff,Inverter2,15,%,8;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 5" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV2EFF&args=0,1,0,11718,Inv_Eff,Inverter2,15,%,8;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 5" border="0"></iframe></td></tr>';
 			
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV2ACPR&defaults=0,1,2,3,4&args=0,1,0,11718,Inv_AC_PR,Inverter%20PR,15,%,4;0,1,0,12692,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-6" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV2ACPR&defaults=0,1,2,3,4&args=0,1,0,11718,Inv_AC_PR_600,Inverter%20PR,15,%,4;0,1,0,11718,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11718,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-6" border="0"></iframe></td></tr>';
 			
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV2DCPR&defaults=0,1,2,3,4&args=0,1,0,11718,DC_Vol_Coeff,Inv(DC_Voltage),15,V,4;0,1,0,12692,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-7" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV2DCPR&defaults=0,1,2,3,4&args=0,1,0,11718,Inv_DC_Vol_Coeff,Inv(DC_Voltage),15,V,4;0,1,0,11718,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11718,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-7" border="0"></iframe></td></tr>';
 			
 			$count = 7;
 		}
@@ -4484,15 +4484,15 @@ else if ($park_no == 53) {  // Amplus Royal Heritage Pune
 			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagram5.php?park_no=53&phase=RYINV3G3&args=0,1,0,11719,GridMs.PhV.phsA,INV1%20AC%20Voltage-%20L1,15,V,8;0,1,0,11719,GridMs.PhV.phsB,INV1%20AC%20Voltage-%20L2,15,V,9;0,1,0,11719,GridMs.PhV.phsC,INV1%20AC%20Voltage-%20L3,15,V,5;0,1,0,11719,GridMs.Hz,Frequency,15,Hz,7;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 3" border="0"></iframe></td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/energydiagram.php?park_no=53&phase=INV3PR&defaults=0,1,2,3,4&args=0,1,0,11719,Inv_PR,Inv%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-4" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/energydiagram.php?park_no=53&phase=INV3PR&defaults=0,1,2,3,4&args=0,1,0,11719,Inv_PR,Inv%20PR,15,%,4;0,1,0,11719,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11719,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-4" border="0"></iframe></td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
 			
-			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV3EFF&args=0,1,0,11719,Inv3_Eff,Inverter1,15,%,8;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 5" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV3EFF&args=0,1,0,11719,Inv_Eff,Inverter1,15,%,8;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 5" border="0"></iframe></td></tr>';
 			
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV3ACPR&defaults=0,1,2,3,4&args=0,1,0,11719,Inv_AC_PR,Inverter%20PR,15,%,4;0,1,0,12692,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-6" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV3ACPR&defaults=0,1,2,3,4&args=0,1,0,11719,Inv_AC_PR_600,Inverter%20PR,15,%,4;0,1,0,11719,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11719,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-6" border="0"></iframe></td></tr>';
 			
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV3DCPR&defaults=0,1,2,3,4&args=0,1,0,11719,DC_Vol_Coeff,Inv(DC_Voltage),15,V,4;0,1,0,12692,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-7" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV3DCPR&defaults=0,1,2,3,4&args=0,1,0,11719,Inv_DC_Vol_Coeff,Inv(DC_Voltage),15,V,4;0,1,0,12692,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-7" border="0"></iframe></td></tr>';
 			
 			$count = 7;
 		}
@@ -4506,15 +4506,15 @@ else if ($park_no == 53) {  // Amplus Royal Heritage Pune
 			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagram5.php?park_no=53&phase=RYINV4G3&args=0,1,0,11715,GridMs.PhV.phsA,INV1%20AC%20Voltage-%20L1,15,V,8;0,1,0,11715,GridMs.PhV.phsB,INV1%20AC%20Voltage-%20L2,15,V,9;0,1,0,11715,GridMs.PhV.phsC,INV1%20AC%20Voltage-%20L3,15,V,5;0,1,0,11715,GridMs.Hz,Frequency,15,Hz,7;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 3" border="0"></iframe></td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/energydiagram.php?park_no=53&phase=INV4PR&defaults=0,1,2,3,4&args=0,1,0,11715,Inv_PR,Inv%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-4" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/energydiagram.php?park_no=53&phase=INV4PR&defaults=0,1,2,3,4&args=0,1,0,11715,Inv_PR,Inv%20PR,15,%,4;0,1,0,11715,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11715,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-4" border="0"></iframe></td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
 			
-			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV4EFF&args=0,1,0,11715,Inv4_Eff,Inverter1,15,%,8;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 5" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV4EFF&args=0,1,0,11715,Inv_Eff,Inverter1,15,%,8;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 5" border="0"></iframe></td></tr>';
 			
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV4ACPR&defaults=0,1,2,3,4&args=0,1,0,11715,Inv_AC_PR,Inverter%20PR,15,%,4;0,1,0,12692,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-6" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV4ACPR&defaults=0,1,2,3,4&args=0,1,0,11715,Inv_AC_PR_600,Inverter%20PR,15,%,4;0,1,0,11715,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11715,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-6" border="0"></iframe></td></tr>';
 			
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV4DCPR&defaults=0,1,2,3,4&args=0,1,0,11715,DC_Vol_Coeff,Inv(DC_Voltage),15,V,4;0,1,0,12692,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-7" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV4DCPR&defaults=0,1,2,3,4&args=0,1,0,11715,Inv_DC_Vol_Coeff,Inv(DC_Voltage),15,V,4;0,1,0,11715,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11715,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-7" border="0"></iframe></td></tr>';
 			
 			$count = 7;
 		}
@@ -4528,15 +4528,15 @@ else if ($park_no == 53) {  // Amplus Royal Heritage Pune
 			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagram5.php?park_no=53&phase=RYINV5G3&args=0,1,0,11720,GridMs.PhV.phsA,INV1%20AC%20Voltage-%20L1,15,V,8;0,1,0,11720,GridMs.PhV.phsB,INV1%20AC%20Voltage-%20L2,15,V,9;0,1,0,11720,GridMs.PhV.phsC,INV1%20AC%20Voltage-%20L3,15,V,5;0,1,0,11720,GridMs.Hz,Frequency,15,Hz,7;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 3" border="0"></iframe></td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/energydiagram.php?park_no=53&phase=INV5PR&defaults=0,1,2,3,4&args=0,1,0,11720,Inv_PR,Inv%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-4" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/energydiagram.php?park_no=53&phase=INV5PR&defaults=0,1,2,3,4&args=0,1,0,11720,Inv_PR,Inv%20PR,15,%,4;0,1,0,11720,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11720,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-4" border="0"></iframe></td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
 			
-			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV5EFF&args=0,1,0,11720,Inv5_Eff,Inverter1,15,%,8;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 5" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV5EFF&args=0,1,0,11720,Inv_Eff,Inverter1,15,%,8;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 5" border="0"></iframe></td></tr>';
 			
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV5ACPR&defaults=0,1,2,3,4&args=0,1,0,11720,Inv_AC_PR,Inverter%20PR,15,%,4;0,1,0,12692,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-6" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV5ACPR&defaults=0,1,2,3,4&args=0,1,0,11720,Inv_AC_PR_600,Inverter%20PR,15,%,4;0,1,0,11720,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11720,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-6" border="0"></iframe></td></tr>';
 			
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV5DCPR&defaults=0,1,2,3,4&args=0,1,0,11720,DC_Vol_Coeff,Inv(DC_Voltage),15,V,4;0,1,0,12692,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-7" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV5DCPR&defaults=0,1,2,3,4&args=0,1,0,11720,Inv_DC_Vol_Coeff,Inv(DC_Voltage),15,V,4;0,1,0,11720,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11720,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-7" border="0"></iframe></td></tr>';
 			
 			$count = 7;
 		}
@@ -4550,15 +4550,15 @@ else if ($park_no == 53) {  // Amplus Royal Heritage Pune
 			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagram5.php?park_no=53&phase=RYINV6G3&args=0,1,0,11716,GridMs.PhV.phsA,INV1%20AC%20Voltage-%20L1,15,V,8;0,1,0,11716,GridMs.PhV.phsB,INV1%20AC%20Voltage-%20L2,15,V,9;0,1,0,11716,GridMs.PhV.phsC,INV1%20AC%20Voltage-%20L3,15,V,5;0,1,0,11716,GridMs.Hz,Frequency,15,Hz,7;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 3" border="0"></iframe></td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/energydiagram.php?park_no=53&phase=INV6PR&defaults=0,1,2,3,4&args=0,1,0,11716,Inv_PR,Inv%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-4" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/energydiagram.php?park_no=53&phase=INV6PR&defaults=0,1,2,3,4&args=0,1,0,11716,Inv_PR,Inv%20PR,15,%,4;0,1,0,11716,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11716,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-4" border="0"></iframe></td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
 			
-			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV6EFF&args=0,1,0,11716,Inv6_Eff,Inverter1,15,%,8;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 5" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV6EFF&args=0,1,0,11716,Inv_Eff,Inverter1,15,%,8;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 5" border="0"></iframe></td></tr>';
 			
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV6ACPR&defaults=0,1,2,3,4&args=0,1,0,11716,Inv_AC_PR,Inverter%20PR,15,%,4;0,1,0,12692,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-6" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV6ACPR&defaults=0,1,2,3,4&args=0,1,0,11716,Inv_AC_PR_600,Inverter%20PR,15,%,4;0,1,0,11716,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11716,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-6" border="0"></iframe></td></tr>';
 			
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV6DCPR&defaults=0,1,2,3,4&args=0,1,0,11716,DC_Vol_Coeff,Inv(DC_Voltage),15,V,4;0,1,0,12692,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-7" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV6DCPR&defaults=0,1,2,3,4&args=0,1,0,11716,Inv_DC_Vol_Coeff,Inv(DC_Voltage),15,V,4;0,1,0,11716,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11716,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-7" border="0"></iframe></td></tr>';
 			
 			$count = 7;
 		}
@@ -4571,15 +4571,15 @@ else if ($park_no == 53) {  // Amplus Royal Heritage Pune
 			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagram5.php?park_no=53&phase=RYINV7G3&args=0,1,0,11717,GridMs.PhV.phsA,INV1%20AC%20Voltage-%20L1,15,V,8;0,1,0,11717,GridMs.PhV.phsB,INV1%20AC%20Voltage-%20L2,15,V,9;0,1,0,11717,GridMs.PhV.phsC,INV1%20AC%20Voltage-%20L3,15,V,5;0,1,0,11717,GridMs.Hz,Frequency,15,Hz,7;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 3" border="0"></iframe></td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/energydiagram.php?park_no=53&phase=INV7PR&defaults=0,1,2,3,4&args=0,1,0,11717,Inv_PR,Inv%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-4" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/energydiagram.php?park_no=53&phase=INV7PR&defaults=0,1,2,3,4&args=0,1,0,11717,Inv_PR,Inv%20PR,15,%,4;0,1,0,11717,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11717,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-4" border="0"></iframe></td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
 			
-			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV7EFF&args=0,1,0,11717,Inv7_Eff,Inverter1,15,%,8;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 5" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV7EFF&args=0,1,0,11717,Inv_Eff,Inverter1,15,%,8;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 5" border="0"></iframe></td></tr>';
 			
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV7ACPR&defaults=0,1,2,3,4&args=0,1,0,11717,Inv_AC_PR,Inverter%20PR,15,%,4;0,1,0,12692,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-6" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV7ACPR&defaults=0,1,2,3,4&args=0,1,0,11717,Inv_AC_PR_600,Inverter%20PR,15,%,4;0,1,0,11717,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11717,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-6" border="0"></iframe></td></tr>';
 			
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV7DCPR&defaults=0,1,2,3,4&args=0,1,0,11717,DC_Vol_Coeff,Inv(DC_Voltage),15,V,4;0,1,0,12692,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-7" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV7DCPR&defaults=0,1,2,3,4&args=0,1,0,11717,Inv_DC_Vol_Coeff,Inv(DC_Voltage),15,V,4;0,1,0,11717,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11717,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-7" border="0"></iframe></td></tr>';
 			
 			$count = 7;
 		}
@@ -4592,15 +4592,15 @@ else if ($park_no == 53) {  // Amplus Royal Heritage Pune
 			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagram5.php?park_no=53&phase=RYINV8G3&args=0,1,0,11722,GridMs.PhV.phsA,INV1%20AC%20Voltage-%20L1,15,V,8;0,1,0,11722,GridMs.PhV.phsB,INV1%20AC%20Voltage-%20L2,15,V,9;0,1,0,11722,GridMs.PhV.phsC,INV1%20AC%20Voltage-%20L3,15,V,5;0,1,0,11722,GridMs.Hz,Frequency,15,Hz,7;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 3" border="0"></iframe></td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/energydiagram.php?park_no=53&phase=INV8PR&defaults=0,1,2,3,4&args=0,1,0,11722,Inv_PR,Inv%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-4" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/energydiagram.php?park_no=53&phase=INV8PR&defaults=0,1,2,3,4&args=0,1,0,11722,Inv_PR,Inv%20PR,15,%,4;0,1,0,11722,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11722,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-4" border="0"></iframe></td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
 			
-			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV8EFF&args=0,1,0,11722,Inv8_Eff,Inverter1,15,%,8;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 5" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV8EFF&args=0,1,0,11722,Inv_Eff,Inverter1,15,%,8;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 5" border="0"></iframe></td></tr>';
 			
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV8ACPR&defaults=0,1,2,3,4&args=0,1,0,11722,Inv_AC_PR,Inverter%20PR,15,%,4;0,1,0,12692,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-6" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV8ACPR&defaults=0,1,2,3,4&args=0,1,0,11722,Inv_AC_PR_600,Inverter%20PR,15,%,4;0,1,0,11722,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11722,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-6" border="0"></iframe></td></tr>';
 			
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV8DCPR&defaults=0,1,2,3,4&args=0,1,0,11722,DC_Vol_Coeff,Inv(DC_Voltage),15,V,4;0,1,0,12692,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11724,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-7" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramroy.php?park_no=53&phase=RINV8DCPR&defaults=0,1,2,3,4&args=0,1,0,11722,Inv_DC_Vol_Coeff,Inv(DC_Voltage),15,V,4;0,1,0,11722,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11722,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-7" border="0"></iframe></td></tr>';
 			
 			$count = 7;
 		}
@@ -5123,9 +5123,9 @@ elseif($park_no==59){// Amplus Yamaha
 				$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramYama.php?park_no=59&phase=YamaINV1EFF&args=0,1,0,12903,Inv_Eff,Inverter1,15,%,8;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 5" border="0"></iframe></td></tr>';
 				
 				$diagrammCode .='<tr><td>&nbsp;</td></tr>';
-				$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramYama.php?park_no=59&phase=YamaINV1ACPR&defaults=0,1,2,3,4&args=0,1,0,12903,Inv_AC_PR_600,Inv1%20AC%20PR,15,%,4;0,1,0,12209,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10142,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-6" border="0"></iframe></td></tr>';
+				$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramYama.php?park_no=59&phase=YamaINV1ACPR&defaults=0,1,2,3,4&args=0,1,0,12903,Inv_AC_PR_600,Inv1%20AC%20PR,15,%,4;0,1,0,12903,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12903,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-6" border="0"></iframe></td></tr>';
 				
-				$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramYama.php?park_no=59&phase=YamaINV1DCPR&defaults=0,1,2,3,4&args=0,1,0,12903,DC_Vol_Coeff,Inv1(DC_Voltage),15,V,4;0,1,0,12900,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12900,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-7" border="0"></iframe></td></tr>';
+				$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramYama.php?park_no=59&phase=YamaINV1DCPR&defaults=0,1,2,3,4&args=0,1,0,12903,Inv_DC_Vol_Coeff,Inv1(DC_Voltage),15,V,4;0,1,0,12903,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12903,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-7" border="0"></iframe></td></tr>';
 				
 				$count = 7;
 	}
@@ -5146,12 +5146,12 @@ elseif($park_no==59){// Amplus Yamaha
 			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/energydiagram.php?park_no=59&phase=YamaINV4PR&defaults=0,1,2,3,4&args=0,1,0,12900,Inv_PR,Inv4%20PR,15,%,4;0,1,0,12900,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12900,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-4" border="0"></iframe></td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
 			
-			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramYama.php?park_no=59&phase=YamaINV4EFF&args=0,1,0,12900,Inv4_Eff,Inverter1,15,%,8;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 5" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramYama.php?park_no=59&phase=YamaINV4EFF&args=0,1,0,12900,Inv_Eff,Inverter1,15,%,8;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 5" border="0"></iframe></td></tr>';
 			
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramYama.php?park_no=59&phase=YamaINV4ACPR&defaults=0,1,2,3,4&args=0,1,0,12900,Inv_AC_PR,Inv4%20AC%20PR,15,%,4;0,1,0,12209,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10142,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-6" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramYama.php?park_no=59&phase=YamaINV4ACPR&defaults=0,1,2,3,4&args=0,1,0,12900,Inv_AC_PR_600,Inv4%20AC%20PR,15,%,4;0,1,0,12900,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12900,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-6" border="0"></iframe></td></tr>';
 			
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramYama.php?park_no=59&phase=YamaINV4DCPR&defaults=0,1,2,3,4&args=0,1,0,12900,DC_Vol_Coeff,Inv4(DC_Voltage),15,V,4;0,1,0,12209,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10142,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-7" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramYama.php?park_no=59&phase=YamaINV4DCPR&defaults=0,1,2,3,4&args=0,1,0,12900,Inv_DC_Vol_Coeff,Inv4(DC_Voltage),15,V,4;0,1,0,12900,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12900,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-7" border="0"></iframe></td></tr>';
 			
 			$count = 7;
 	}
@@ -5174,12 +5174,12 @@ elseif($park_no==59){// Amplus Yamaha
 			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/energydiagram.php?park_no=59&phase=YamaINV6PR&defaults=0,1,2,3,4&args=0,1,0,12739,Inv_PR,Inv6%20PR,15,%,4;0,1,0,12739,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12739,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-4" border="0"></iframe></td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
 			
-			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramYama.php?park_no=59&phase=YamaINV6EFF&args=0,1,0,12739,Inv6_Eff,Inverter1,15,%,8;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 5" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramYama.php?park_no=59&phase=YamaINV6EFF&args=0,1,0,12739,Inv_Eff,Inverter1,15,%,8;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 5" border="0"></iframe></td></tr>';
 			
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramYama.php?park_no=59&phase=YamaINV6ACPR&defaults=0,1,2,3,4&args=0,1,0,12739,Inv_AC_PR,Inv6%20AC%20PR,15,%,4;0,1,0,12209,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10142,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-6" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramYama.php?park_no=59&phase=YamaINV6ACPR&defaults=0,1,2,3,4&args=0,1,0,12739,Inv_AC_PR_600,Inv6%20AC%20PR,15,%,4;0,1,0,12739,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12739,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-6" border="0"></iframe></td></tr>';
 			
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramYama.php?park_no=59&phase=YamaINV6DCPR&defaults=0,1,2,3,4&args=0,1,0,12739,DC_Vol_Coeff,Inv6(DC_Voltage),15,V,4;0,1,0,12209,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10142,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-7" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramYama.php?park_no=59&phase=YamaINV6DCPR&defaults=0,1,2,3,4&args=0,1,0,12739,Inv_DC_Vol_Coeff,Inv6(DC_Voltage),15,V,4;0,1,0,12739,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12739,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-7" border="0"></iframe></td></tr>';
 			
 			$count = 7;
 	}
@@ -5201,12 +5201,12 @@ elseif($park_no==59){// Amplus Yamaha
 			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/energydiagram.php?park_no=59&phase=YamaINV7PR&defaults=0,1,2,3,4&args=0,1,0,12741,Inv_PR,Inv7%20PR,15,%,4;0,1,0,12741,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12741,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-4" border="0"></iframe></td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
 			
-			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramYama.php?park_no=59&phase=YamaINV7EFF&args=0,1,0,12741,Inv7_Eff,Inverter1,15,%,8;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 5" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramYama.php?park_no=59&phase=YamaINV7EFF&args=0,1,0,12741,Inv_Eff,Inverter1,15,%,8;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 5" border="0"></iframe></td></tr>';
 			
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramYama.php?park_no=59&phase=YamaINV7ACPR&defaults=0,1,2,3,4&args=0,1,0,12741,Inv_AC_PR,Inv7%20AC%20PR,15,%,4;0,1,0,12209,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10142,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-6" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramYama.php?park_no=59&phase=YamaINV7ACPR&defaults=0,1,2,3,4&args=0,1,0,12741,Inv_AC_PR_600,Inv7%20AC%20PR,15,%,4;0,1,0,12741,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12741,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-6" border="0"></iframe></td></tr>';
 			
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramYama.php?park_no=59&phase=YamaINV7DCPR&defaults=0,1,2,3,4&args=0,1,0,12741,DC_Vol_Coeff,Inv7(DC_Voltage),15,V,4;0,1,0,12209,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10142,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-7" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramYama.php?park_no=59&phase=YamaINV7DCPR&defaults=0,1,2,3,4&args=0,1,0,12741,Inv_DC_Vol_Coeff,Inv7(DC_Voltage),15,V,4;0,1,0,12741,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12741,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-7" border="0"></iframe></td></tr>';
 			
 			$count = 7;
 	}
@@ -5227,12 +5227,12 @@ elseif($park_no==59){// Amplus Yamaha
 			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/energydiagram.php?park_no=59&phase=YamaINV8PR&defaults=0,1,2,3,4&args=0,1,0,12737,Inv_PR,Inv8%20PR,15,%,4;0,1,0,12737,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12737,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-4" border="0"></iframe></td></tr>';
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
 			
-			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramYama.php?park_no=59&phase=YamaINV8EFF&args=0,1,0,12737,Inv8_Eff,Inverter1,15,%,8;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 5" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td align="left" valign="top"><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramYama.php?park_no=59&phase=YamaINV8EFF&args=0,1,0,12737,Inv_Eff,Inverter1,15,%,8;&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph- 5" border="0"></iframe></td></tr>';
 			
 			$diagrammCode .='<tr><td>&nbsp;</td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramYama.php?park_no=59&phase=YamaINV8ACPR&defaults=0,1,2,3,4&args=0,1,0,12737,Inv_AC_PR,Inv1%20AC%20PR,15,%,4;0,1,0,12209,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10142,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-6" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramYama.php?park_no=59&phase=YamaINV8ACPR&defaults=0,1,2,3,4&args=0,1,0,12737,Inv_AC_PR_600,Inv1%20AC%20PR,15,%,4;0,1,0,12737,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12737,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-6" border="0"></iframe></td></tr>';
 			
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramYama.php?park_no=59&phase=YamaINV8DCPR&defaults=0,1,2,3,4&args=0,1,0,12737,DC_Vol_Coeff,Inv1(DC_Voltage),15,V,4;0,1,0,12209,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10142,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-7" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="550" SRC="diagram/argdiagramYama.php?park_no=59&phase=YamaINV8DCPR&defaults=0,1,2,3,4&args=0,1,0,12737,Inv_DC_Vol_Coeff,Inv1(DC_Voltage),15,V,4;0,1,0,12737,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12737,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-7" border="0"></iframe></td></tr>';
 			
 			$count = 7;
 	}	
@@ -5261,7 +5261,7 @@ elseif($park_no==59){// Amplus Yamaha
 		if ($phase=="tag"){
 
 			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/argdiagram5.php?park_no=59&phase=YamahaBlkB&defaults=0,1&args=0,1,0,12899,Activepower_Total,AC Power,15,kW,4;0,1,0,12209,Solar_Radiation,Irradiation,15,W/m&sup2;,\'Gold\';&sums=0,1,0,12899_0,Activepower_Total,null,5,Current%20Generation,red,2,%20kW,10,0,Arial&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-1" border="0"></iframe></td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/energydiagram.php?park_no=59&phase=YamahaEnBlkB&defaults=0,1,2,3&args=0,1,0,12895,System_PR,System PR,15,%,1;0,1,0,12900,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12900,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-2" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/energydiagram.php?park_no=59&phase=YamahaEnBlkB&defaults=0,1,2,3&args=0,1,0,12899,System_PR,System PR,15,%,1;0,1,0,12900,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12900,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-2" border="0"></iframe></td></tr>';
 			$count = 2;
 
 		}
@@ -5275,7 +5275,7 @@ elseif($park_no==59){// Amplus Yamaha
 		if ($phase=="tag"){
 
 			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/argdiagram5.php?park_no=59&phase=YamahaBlkC&defaults=0,1&args=0,1,0,12897,Activepower_Total,AC Power,15,kW,4;0,1,0,12209,Solar_Radiation,Irradiation,15,W/m&sup2;,\'Gold\';&sums=0,1,0,12897_0,Activepower_Total,null,5,Current%20Generation,red,2,%20kW,10,0,Arial&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-1" border="0"></iframe></td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/energydiagram.php?park_no=59&phase=YamahaEnBlkC&defaults=0,1,2,3&args=0,1,0,12897,System_PR,System PR,15,%,1;0,1,0,12209,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-2" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/energydiagram.php?park_no=59&phase=YamahaEnBlkC&defaults=0,1,2,3&args=0,1,0,12897,System_PR,System PR,15,%,1;0,1,0,12901,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12901,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-2" border="0"></iframe></td></tr>';
 			$count = 2;
 
 		}
@@ -5289,7 +5289,7 @@ elseif($park_no==59){// Amplus Yamaha
 		if ($phase=="tag"){
 
 			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/argdiagram5.php?park_no=59&phase=YamahaBlkD&defaults=0,1&args=0,1,0,12898,Activepower_Total,AC Power,15,kW,4;0,1,0,12209,Solar_Radiation,Irradiation,15,W/m&sup2;,\'Gold\';&sums=0,1,0,12898_0,Activepower_Total,null,5,Current%20Generation,red,2,%20kW,10,0,Arial&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-1" border="0"></iframe></td></tr>';
-			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/energydiagram.php?park_no=59&phase=YamahaEnBlkD&defaults=0,1,2,3&args=0,1,0,12898,System_PR,System PR,15,%,1;0,1,0,12209,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-2" border="0"></iframe></td></tr>';
+			$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/energydiagram.php?park_no=59&phase=YamahaEnBlkD&defaults=0,1,2,3&args=0,1,0,12898,System_PR,System PR,15,%,1;0,1,0,12901,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12901,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-2" border="0"></iframe></td></tr>';
 			$count = 2;
 
 		}
@@ -5303,7 +5303,7 @@ elseif($park_no==59){// Amplus Yamaha
 				if ($phase=="tag"){
 
 					$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/argdiagram5.php?park_no=59&phase=YamahaBlkE&defaults=0,1&args=0,1,0,12896,Activepower_Total,AC Power,15,kW,4;0,1,0,12209,Solar_Radiation,Irradiation,15,W/m&sup2;,\'Gold\';&sums=0,1,0,12896_0,Activepower_Total,null,5,Current%20Generation,red,2,%20kW,10,0,Arial&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-1" border="0"></iframe></td></tr>';
-					$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/energydiagram.php?park_no=59&phase=YamahaEnBlkE&defaults=0,1,2,3&args=0,1,0,12896,System_PR,System PR,15,%,1;0,1,0,12209,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-2" border="0"></iframe></td></tr>';
+					$diagrammCode .= '<tr><td><iframe id="frame1" width="99%" height="99%" SRC="diagram/energydiagram.php?park_no=59&phase=YamahaEnBlkE&defaults=0,1,2,3&args=0,1,0,12896,System_PR,System PR,15,%,1;0,1,0,12903,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12903,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'&hideClear=1&hideDelta=1&stamp=' . $stamp . '&endstamp=' . $endstamp . '&title=Graph-2" border="0"></iframe></td></tr>';
 					$count = 2;
 
 				}
