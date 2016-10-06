@@ -5,17 +5,17 @@
 	"reporting_interval": "5m",
 	"energymeters": [
 		{
-			"mysqldeviceid": 13397,
-			"f": "Activepower_Total",
-			"iid": 4038,
-			"d": "EM_CONZERV02"
-		},
-		{
 			"mysqldeviceid": 10151,
 			"f": "Activepower_Total",
 			"iid": 4038,
 			"d": "EM_CONZERV"
-		},
+		},	
+		{
+			"mysqldeviceid": 13397,
+			"f": "Activepower_Total",
+			"iid": 4038,
+			"d": "EM_CONZERV02"
+		},		
 		{
 			"mysqldeviceid": 13005,
 			"f": "Activepower_Total",

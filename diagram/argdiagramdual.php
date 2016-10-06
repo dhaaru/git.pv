@@ -134,16 +134,27 @@ $devices = array();
 $digitals = 0;
 
 
-$results = getDiagramValues($args, &$values, $showQueries, &$axis, $stamp, $endstamp, $verbindung, $databasename);
-//print_r($results);
-$tmpseries = $results->getSeries();
+$tmpseries = getDiagramValues($args, &$values, $showQueries, &$axis, $stamp, $endstamp, $verbindung, $databasename);
 //print_r($tmpseries);
+//$tmpseries = $results->getSeries();
+
+//print_r(json_encode($resultsss[0][0]['values']));
+
+
+
+
+
+
+      
+      
+
 
 $series = array();
 
 
 $id = 0;
-foreach ($tmpseries as $serie){
+for($dualDpAry=0;$dualDpAry<sizeof($args);$dualDpAry++){
+foreach ($tmpseries[$dualDpAry] as $serie){
 
   $found=false;
   
@@ -162,7 +173,7 @@ foreach ($tmpseries as $serie){
     $tmp["name"]=$serie["name"];
     $tmp["tags"]["d"] = $serie["tags"]["d"];
     $tmp["tags"]["iid"] = $serie["tags"]["iid"];
-    $tmp["tags"]["f"] = $serie["tags"]["f"];
+    $tmp["tags"]["f"] = $serie["columns"][1];
     $tmp["columns"][] = "time";
     $tmp["columns"][] = "mean";
     foreach ( $serie["values"] as $value ){
@@ -174,6 +185,8 @@ foreach ($tmpseries as $serie){
 
   }
 }
+}
+
 
 $factors = getFactors($args, $verbindung, $showQueries);
 
@@ -185,6 +198,7 @@ for ($i1 = 0; $i1<sizeof($series); $i1++){
   foreach ($factors as $gatekey => $gate){
     foreach ($gate as $dkey => $device){
       foreach ($device as $fkey => $field){
+
 
         if ($series[$i1]["tags"]["iid"] == $gatekey && $series[$i1]["tags"]["d"]==$dkey &&$series[$i1]["tags"]["f"]==$fkey ){
           $preOffset = $field["preoffset"];
@@ -223,6 +237,8 @@ $results=array();
 foreach($values as $value){
   $noHit=1;
   if ($value[0]["queryType"]==0){//single value
+
+    //print_r($value);
     foreach($series as $serie){
       if($value[0]['deviceName'] == $serie['tags']['d'] && $value[0]["field"]==$serie['tags']['f'] &&$value[0]["igate"]==$serie['tags']['iid']){
         $noHit=0;
@@ -621,11 +637,18 @@ function plotWithOptions(){
 
 
   $.plot($("#placeholder"), [
-    <?php
+
+
+
+      <?php
 
 
     $index=0;
     foreach ($results as $value){
+
+
+
+
       if ($index){
         echo ",";
       }
@@ -636,12 +659,19 @@ function plotWithOptions(){
 
 
 
-  ],options);
+   ],options);
 
 }
 
 window.onresize = plotWithOptions;
 </script>
+
+
+
+
+
+
+
 </div>
 </body>
 </html>

@@ -492,44 +492,44 @@ if(($phase == 'LAPINV1EFF' && $park_no == 55) || ($phase == 'LAPINV2EFF' && $par
 							}							
 							
 							 if($phase == "LAPINV1ACPR" && $park_no=="55"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12669,Inv_AC_PR,Inv1%20AC%20PR,15,%,4;0,1,0,10142,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10142,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12669,Inv_AC_PR,Inv1%20AC%20PR,15,%,4;0,1,0,12669,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12669,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}  
 							if($phase == "LAPINV2ACPR" && $park_no=="55"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12672,Inv_AC_PR,Inv2%20AC%20PR,15,%,4;0,1,0,10142,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10142,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12672,Inv_AC_PR,Inv2%20AC%20PR,15,%,4;0,1,0,12672,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12672,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							} 
 							if($phase == "LAPINV3ACPR" && $park_no=="55"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12670,Inv_AC_PR,Inv3%20AC%20PR,15,%,4;0,1,0,10142,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10142,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12670,Inv_AC_PR,Inv3%20AC%20PR,15,%,4;0,1,0,12670,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12670,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							} 
 							
 							if($phase == "LAPINV4ACPR" && $park_no=="55"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12675,Inv_AC_PR,Inv4%20AC%20PR,15,%,4;0,1,0,10142,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10142,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12675,Inv_AC_PR,Inv4%20AC%20PR,15,%,4;0,1,0,12675,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12675,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							} 
 							
 							if($phase == "LAPINV1DCPR" && $park_no=="55"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12669,DC_Vol_Coeff,Inv 1(DC_Voltage),15,V,4;0,1,0,10142,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10142,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12669,DC_Vol_Coeff,Inv 1(DC_Voltage),15,V,4;0,1,0,12669,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12669,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							if($phase == "LAPINV2DCPR" && $park_no=="55"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12672,DC_Vol_Coeff,Inv 2(DC_Voltage),15,V,4;0,1,0,10142,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10142,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12672,DC_Vol_Coeff,Inv 2(DC_Voltage),15,V,4;0,1,0,12672,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12672,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							if($phase == "LAPINV3DCPR" && $park_no=="55"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12670,DC_Vol_Coeff,Inv 3(DC_Voltage),15,V,4;0,1,0,10142,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10142,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12670,DC_Vol_Coeff,Inv 3(DC_Voltage),15,V,4;0,1,0,12670,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12670,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							if($phase == "LAPINV4DCPR" && $park_no=="55"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12675,DC_Vol_Coeff,Inv4(DC_Voltage),15,V,4;0,1,0,10142,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10142,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12675,DC_Vol_Coeff,Inv4(DC_Voltage),15,V,4;0,1,0,12675,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12675,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}

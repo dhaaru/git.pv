@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require_once('../connections/queriesMysql2.php');
 require_once('../connections/queriesInflux2.php');
 
@@ -425,6 +425,7 @@ if(($phase == 'SMA1M7' && $park_no == 39) || ($phase == 'SMA2M7' && $park_no == 
 		$inver6Eff =getdeviceData($startTime,$endTime,9326,'Inv_Eff');
 		$inver7Eff =getdeviceData($startTime,$endTime,9325,'Inv_Eff');
 		$inver8Eff =getdeviceData($startTime,$endTime,9327,'Inv_Eff');
+
 
 	if ($inver1Eff) {
     # inver1Eff is such an array in 5 min interval:

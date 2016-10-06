@@ -65,6 +65,164 @@ if (is_null($hideDelta)) {
   $hideDelta = 0;
 }
 
+
+# round down $number to the nearest number dividable by $divisor
+function alignInt($number,$divisor){
+	return $number - fmod($number,$divisor);
+}
+
+#########################################################
+# function alignTimestamps($inver1Eff)
+#########################################################
+# aligns timestamps to fix intervals of (default) 5 minutes
+#        notice: 
+#        - given timestamps are aligned _down_ to fix intervals 
+#                this should be fine for 99% of all cases
+#        -  in case several values are to be resembled
+#           into the same interval,
+#           the last value is taken.
+#  
+# param1: required
+#         [arr] a series of [ts]=>[val] 
+#                 example:
+#                    Array
+#                    (
+#                        [1468024210] => 85
+#                        [1468024509] => 91.67
+#                        [1468068905] => 66.67
+#                        [1468069205] => 60
+#                    )
+#
+# param2: optional 
+#         [int]  interval in seconds. 
+#
+# returns: [arr] aligned series of [ts]=>[val]
+#                 example:
+#                    Array
+#                    (
+#                        [1468024200] => 85
+#                        [1468024500] => 91.67
+#                        [1468068900] => 66.67
+#                        [1468069200] => 60
+#                    )
+#######################################################
+function alignTimestamps($inverEff, $interval=300){
+  $alignedSeries = array();
+  foreach($inverEff as $ts => $val){
+    $alignedSeries[alignInt($ts,$interval)] = $val; 
+  }
+  return $alignedSeries;
+}
+
+###################################################################
+# Influx Example query, does Averaging!
+######################################################
+#  SELECT MEAN(value) as groupval 
+#  FROM v
+#  WHERE 
+#	   time>=1452396600s AND time<1452397600s 
+#  AND (
+#       iid='4032' AND d='SMU02' and f='Solar_Radiation'
+#    OR iid='4032' AND d='SMU10' and f='Solar_Radiation'
+#     ) 
+#  GROUP BY time(300s)
+###################################################################
+# Influx Example result $series
+#####################################################
+#  Array ( 
+#    [0] => Array ( 
+#        [name] => v 
+#        [tags] => Array ( 
+#            [d] => SMU02 
+#            [f] => Solar_Radiation 
+#            [iid] => 4032 ) 
+#        [columns] => Array ( 
+#            [0] => time 
+#            [1] => groupval ) 
+#        [values] => Array ( 
+#            [0] => Array ( 
+#                [0] => 1452396600 
+#                [1] => 295.89 ) 
+#            [1] => Array ( 
+#                [0] => 1452396900 
+#                [1] => 289.43 ) 
+#            [2] => Array ( 
+#                [0] => 1452397200 
+#                [1] => 299.64 ) 
+#            [3] => Array ( 
+#                [0] => 1452397500 
+#                [1] => 311.31 ) 
+#            ) 
+#        ) 
+##################################################
+
+###################################################################
+# function combineIrradWithEff
+#     add irradiation values to inverter efficiency values
+####################################################################
+# param1: required  inverterEff
+#                   [array] (ts => eff,  ...  )
+#                    
+# param2: required  device Id 
+#                   [int,str]     
+#                   [array] (deviceId1,  ...  )  if array,
+#                           then the AVERAGE of devices is calculated
+#
+# param3: required  field name  
+#                   [str]  
+#
+# param4: optional  reporting interval of values in seconds
+#                   [int]
+#                   default: 300 [seconds] = 5 min
+#
+# returns:          InverterEff
+#                   [array] (irrad => eff,  ...  )
+###################################################################
+function combineIrradWithInverterEff($inverterEff, $deviceids, $fieldname,$interval=300){
+  if (!is_array($deviceids)){
+    $deviceids = array($deviceids);
+  }
+  $influxTagSets = array();
+  $iid   = array();
+  $d     = array();
+  foreach ($deviceids as $deviceid){
+    $influxTagSet    = resolve_deviceIds($deviceid);
+    $influxTagSets[] = $influxTagSet;
+    $iid[] = $influxTagSet[$deviceid]['iid'];
+    $d[]   = $influxTagSet[$deviceid]['d'];
+  }
+  $timestamps = array_keys($inverterEff);  
+  $min_ts = alignInt(min($timestamps),$interval);
+  $max_ts = alignInt(max($timestamps),$interval) + $interval;
+  $timestamps = "time >= ".$min_ts."s AND time < ".$max_ts."s";
+  
+  $i = 0;
+  $whereDevices = array();
+  foreach ($deviceids as $deviceid) {
+    $whereDevices[] = "iid='".$iid[$i]."' AND d='".$d[$i]."' AND f='".$fieldname."'";
+    $i++;
+  }
+  $whereDevices = "(" . implode(" OR ",$whereDevices) . ")";
+  
+  $query      = "SELECT MEAN(value) as groupval 
+    FROM v 
+    WHERE ".$timestamps."
+    AND ". $whereDevices . "
+    GROUP BY time(300s);";
+  //print("<br>Influx query: $query<br>"); ////////////////////////////////////// DEBUG
+  $series = influx_query_execute($query, $influxDBName='amplus');
+  foreach($series[0]['values'] as $tsval) {
+    if (isset($tsval[1]) and $tsval[1] >= 0){
+      $result1[] = '[' . $tsval[1] . ',' . $inverterEff[ $tsval[0] ] . ']';
+    }
+  }
+  $inverEff1 = str_replace('"', "", json_encode($result1));
+  return $inverEff1;
+}
+
+
+
+
 function getdeviceData($startTime, $endTime, $deviceId, $field)
 {
   $query = "SELECT ts,value 
@@ -84,11 +242,13 @@ function getdeviceData($startTime, $endTime, $deviceId, $field)
   }
   return array_combine($tsdata, $valuedata);
 }
+	
+
 
 if(($phase == 'RINV1ACPR' && $park_no == 53) || ($phase == 'RINV2ACPR' && $park_no == 53) || ($phase == 'RINV3ACPR' && $park_no == 53)
 	|| ($phase == 'RINV4ACPR' && $park_no == 53) || ($phase == 'RINV5ACPR' && $park_no == 53) || ($phase == 'RINV6ACPR' && $park_no == 53) || ($phase == 'RINV7ACPR' && $park_no == 53) || ($phase == 'RINV8ACPR' && $park_no == 53)	)
 	{ 
-		$Module_temp_600=getdeviceData($startTime,$endTime,12692,'AC_Module_Temp_600');
+		$Module_temp_600=getdeviceData($startTime,$endTime,11715,'AC_Module_Temp_600');
 
 		foreach($Module_temp_600 as $moduleindex1=>$modulevalue){
 		$ts= $moduleindex1;
@@ -179,7 +339,7 @@ if(($phase == 'RINV1ACPR' && $park_no == 53) || ($phase == 'RINV2ACPR' && $park_
 || ($phase == 'RINV4DCPR' && $park_no == 53)	|| ($phase == 'RINV5DCPR' && $park_no == 53) || ($phase == 'RINV6DCPR' && $park_no == 53) || ($phase == 'RINV7DCPR' && $park_no == 53) || ($phase == 'RINV8DCPR' && $park_no == 53))
 	{
 		
-		$Module_temp_600=getdeviceData($startTime,$endTime,12692,'AC_Module_Temp_600');
+		$Module_temp_600=getdeviceData($startTime,$endTime,11715,'AC_Module_Temp_600');
 
 		foreach($Module_temp_600 as $moduleindex1=>$modulevalue){
 		$ts= $moduleindex1;
@@ -262,11 +422,19 @@ if(($phase == 'RINV1ACPR' && $park_no == 53) || ($phase == 'RINV2ACPR' && $park_
 		$inverDCPR8=str_replace('"',"",json_encode($dcresult8));
 		
 	}
-	if(($phase == 'RINV1EFF' && $park_no == 53) || ($phase == 'RINV2EFF' && $park_no == 53) || ($phase == 'RINV3EFF' && $park_no == 53) ||
- ($phase == 'RINV4EFF' && $park_no == 53) || ($phase == 'RINV5EFF' && $park_no == 53) || ($phase == 'RINV6EFF' && $park_no == 53)|| ($phase == 'RINV7EFF' && $park_no == 53) || ($phase == 'RINV8EFF' && $park_no == 53))
-	{
+
+	
+	
+	
+	if(($phase == 'RINV1EFF' && $park_no == 53) || 
+	   ($phase == 'RINV2EFF' && $park_no == 53) || 
+	   ($phase == 'RINV3EFF' && $park_no == 53) ||
+       ($phase == 'RINV4EFF' && $park_no == 53) || 
+	   ($phase == 'RINV5EFF' && $park_no == 53) || 
+	   ($phase == 'RINV6EFF' && $park_no == 53) || 
+	   ($phase == 'RINV7EFF' && $park_no == 53) || 
+	   ($phase == 'RINV8EFF' && $park_no == 53)){
 		$inver1Eff =getdeviceData($startTime,$endTime,11721,'Inv_Eff');
-		
 		$inver2Eff =getdeviceData($startTime,$endTime,11718,'Inv_Eff');
 		$inver3Eff =getdeviceData($startTime,$endTime,11719,'Inv_Eff');
 		$inver4Eff =getdeviceData($startTime,$endTime,11715,'Inv_Eff');
@@ -274,51 +442,34 @@ if(($phase == 'RINV1ACPR' && $park_no == 53) || ($phase == 'RINV2ACPR' && $park_
 		$inver6Eff =getdeviceData($startTime,$endTime,11716,'Inv_Eff');
 		$inver7Eff =getdeviceData($startTime,$endTime,11717,'Inv_Eff');
 		$inver8Eff =getdeviceData($startTime,$endTime,11722,'Inv_Eff');
+		//print_r($inver8Eff);
 
-	if ($inver1Eff) {
-    # inver1Eff is such an array in 5 min interval:
-    #    Array
-    #    (
-    #        [1468023301] => 0
-    #        [1468023607] => 0
-    #        [1468023901] => 88.89
-    #        [1468024210] => 85
-    #        [1468024509] => 91.67
-    #       ...
-    #        [1468068905] => 66.67
-    #        [1468069205] => 60
-    #        [1468069507] => 0
-    #        [1468069807] => 0
-    #        [1468070108] => 0
-    #    )
+	
+    if ($inver1Eff) {
     $inver1Eff = alignTimestamps($inver1Eff);
-    $inverEff1 = combineIrradWithInverterEff($inver1Eff,12692,'Solar_Radiation');
-	print_r($inverEff1);
+    $inverEff1 = combineIrradWithInverterEff($inver1Eff,12692,'Solar_Radiation'); 
   }
-  if ($inver2Eff) {
+    if ($inver2Eff) {
     $inver2Eff = alignTimestamps($inver2Eff);
-    $inverEff2 = combineIrradWithInverterEff($inver2Eff,12692,'Solar_Radiation');
-
+    $inverEff2 = combineIrradWithInverterEff($inver2Eff,12692,'Solar_Radiation'); 
   }
-  if ($inver3Eff) {
+    if ($inver3Eff) {
     $inver3Eff = alignTimestamps($inver3Eff);
     $inverEff3 = combineIrradWithInverterEff($inver3Eff,12692,'Solar_Radiation'); 
-  }
+  }	
   if ($inver4Eff) {
     $inver4Eff = alignTimestamps($inver4Eff);
-    $inverEff4 = combineIrradWithInverterEff($inver4Eff,12692,'Solar_Radiation');
-
+    $inverEff4 = combineIrradWithInverterEff($inver4Eff,12692,'Solar_Radiation'); 
   }
-  if ($inver5Eff) {
+    if ($inver5Eff) {
     $inver5Eff = alignTimestamps($inver5Eff);
     $inverEff5 = combineIrradWithInverterEff($inver5Eff,12692,'Solar_Radiation'); 
   }
-  if ($inver6Eff) {
+    if ($inver6Eff) {
     $inver6Eff = alignTimestamps($inver6Eff);
-    $inverEff6 = combineIrradWithInverterEff($inver6Eff,12692,'Solar_Radiation');
-
+    $inverEff6 = combineIrradWithInverterEff($inver6Eff,12692,'Solar_Radiation'); 
   }
-  if ($inver7Eff) {
+    if ($inver7Eff) {
     $inver7Eff = alignTimestamps($inver7Eff);
     $inverEff7 = combineIrradWithInverterEff($inver7Eff,12692,'Solar_Radiation'); 
   }
@@ -326,11 +477,16 @@ if(($phase == 'RINV1ACPR' && $park_no == 53) || ($phase == 'RINV2ACPR' && $park_
     $inver8Eff = alignTimestamps($inver8Eff);
     $inverEff8 = combineIrradWithInverterEff($inver8Eff,12692,'Solar_Radiation'); 
   }
+  
 
 }
 
-?>		
 
+
+
+
+
+?>	
 
 <html>
 	<head>
@@ -672,39 +828,63 @@ if(($phase == 'RINV1ACPR' && $park_no == 53) || ($phase == 'RINV2ACPR' && $park_
 			<script type="text/javascript">
 <?php  if(($phase == 'RINV1EFF' && $park_no == 53) || ($phase == 'RINV2EFF' && $park_no == 53)|| ($phase == 'RINV3EFF' && $park_no == 53) ||
  ($phase == 'RINV4EFF' && $park_no == 53) || ($phase == 'RINV5EFF' && $park_no == 53) || ($phase == 'RINV6EFF' && $park_no == 53) || ($phase == 'RINV7EFF' && $park_no == 53) 
- || ($phase == 'RINV8EFF' && $park_no == 53)){?>
+ || ($phase == 'RINV8EFF' && $park_no == 53)){  ?>
+
+
+
 	$(function() {
 
 			var datasets = {
-			"Inv Efficency": {
-				
-				<?php if($phase == 'RINV1EFF'){?>
+
+			<?php if($phase =="RINV1EFF"){ ?>	
+			"Inv 1 Efficency": {
 				label: "Inv1 Efficency", points: { symbol: "circle" },
-				data: <?php echo $inverEff1; ?>
-				<?php } else if($phase == 'RINV2EFF'){?>
+				data: <?php if($inverEff1){print_r($inverEff1);}else{echo "[[]]";}; ?>
+			},
+
+			<?php }elseif($phase =="RINV2EFF"){ ?>
+
+			"Inv 2 Efficency": {
 				label: "Inv2 Efficency", points: { symbol: "circle" },
-				data: <?php echo $inverEff2; ?>
-				<?php } else if($phase == 'RINV3EFF'){?>
+				data: <?php if($inverEff2){print_r($inverEff2);}else{echo "[[]]";}; ?>
+			},
+			<?php }elseif($phase =="RINV3EFF"){ ?>
+			"Inv 3 Efficency": {
 				label: "Inv3 Efficency", points: { symbol: "circle" },
-				data: <?php echo $inverEff3; ?>
-				<?php } else if($phase == 'RINV4EFF'){?>
+				data: <?php if($inverEff3){print_r($inverEff3);}else{echo "[[]]";}; ?>
+			},
+            <?php }elseif($phase =="RINV4EFF"){ ?>
+			"Inv 4 Efficency": {
 				label: "Inv4 Efficency", points: { symbol: "circle" },
-				data: <?php echo $inverEff4; ?>
-				<?php } else if($phase == 'RINV5EFF'){?>
+				data: <?php if($inverEff4){print_r($inverEff4);}else{echo "[[]]";}; ?>
+			},
+            <?php }elseif($phase =="RINV5EFF"){ ?>
+			"Inv 5 Efficency": {
 				label: "Inv5 Efficency", points: { symbol: "circle" },
-				data: <?php echo $inverEff5; ?>
-				<?php } else if($phase == 'RINV6EFF'){?>
+				data: <?php if($inverEff5){print_r($inverEff5);}else{echo "[[]]";}; ?>
+			},
+			<?php }elseif($phase =="RINV6EFF"){ ?>
+			"Inv 6 Efficency": {
 				label: "Inv6 Efficency", points: { symbol: "circle" },
-				data: <?php echo $inverEff6; ?>
-				<?php } else if($phase == 'RINV7EFF'){?>
+				data: <?php if($inverEff6){print_r($inverEff6);}else{echo "[[]]";}; ?>
+			},
+			<?php }elseif($phase =="RINV7EFF"){ ?>
+			"Inv 7 Efficency": {
 				label: "Inv7 Efficency", points: { symbol: "circle" },
-				data: <?php echo $inverEff7; ?>
-				<?php } else if($phase == 'RINV8EFF'){?>
+				data: <?php if($inverEff7){print_r($inverEff7);}else{echo "[[]]";}; ?>
+			},
+			<?php }elseif($phase =="RINV8EFF"){ ?>
+			"Inv 8 Efficency": {
 				label: "Inv8 Efficency", points: { symbol: "circle" },
-				data: <?php echo $inverEff8; ?>
-				<?php }?>
-			}
+				data: <?php if($inverEff8){print_r($inverEff8);}else{echo "[[]]";}; ?>
+			},
+		    <?php }?>
+
+
 		};
+
+
+		//console.log(datasets);
 							
 				
 		// hard-code color indices to prevent them from shifting as
@@ -981,5 +1161,10 @@ if(($phase == 'RINV1ACPR' && $park_no == 53) || ($phase == 'RINV2ACPR' && $park_
         </div>
     </body>
 </html>
+
+
+
+
+
 
 

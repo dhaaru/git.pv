@@ -622,6 +622,57 @@ if ($speed != 0) {
 								echo '</a>';
 							}
 							//Amplus Royal Pune End
+							
+							
+							// Amplus Fortis Faridabad  -------------------------------------------
+							else if($phase == "Fortenergyg2" && $park_no=="72"){
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,13476,System_PR,System PR,15,%,1;0,1,0,13479,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,13479,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
+								echo '</a>';
+							}
+							else if($phase == "INV1PR" && $park_no=="72"){
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11721,Inv_PR,Inv1%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
+								echo '</a>';
+							}
+							else if($phase == "INV2PR" && $park_no=="72"){
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11718,Inv_PR,Inv2%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
+								echo '</a>';
+							}
+							else if($phase == "INV3PR" && $park_no=="72"){
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11719,Inv_PR,Inv3%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
+								echo '</a>';
+							}
+							else if($phase == "INV4PR" && $park_no=="72"){
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11715,Inv_PR,Inv4%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
+								echo '</a>';
+							}
+							else if($phase == "INV5PR" && $park_no=="72"){
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11720,Inv_PR,Inv5%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
+								echo '</a>';
+							}
+							else if($phase == "INV6PR" && $park_no=="72"){
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11716,Inv_PR,Inv6%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
+								echo '</a>';
+							}
+							else if($phase == "INV7PR" && $park_no=="72"){
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11717,Inv_PR,Inv7%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
+								echo '</a>';
+							}
+							else if($phase == "INV8PR" && $park_no=="72"){
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11722,Inv_PR,Inv8%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
+								echo '</a>';
+							}
+							//Amplus Fortis Faridabad  End -------------------------------------------							
+							
+							
 							// Amplus Raisoni3 Nagpur start
 							else if($phase == "energyg1Indus" && $park_no=="54"){
 								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,10151,System_PR,System PR,15,%,1;0,1,0,12668,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12668,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
@@ -669,27 +720,27 @@ if ($speed != 0) {
 								echo '</a>';
 							}
 							else if($phase == "Lalenergyg" && $park_no=="55"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11588,System_PR,System PR,15,%,1;0,1,0,10142,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10142,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11588,System_PR,System PR,15,%,1;0,1,0,12672,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12672,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "LAPINV1PR" && $park_no=="55"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12669,Inv_PR,Inv1%20PR,15,%,4;0,1,0,10142,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10142,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12669,Inv_PR,Inv1%20PR,15,%,4;0,1,0,12669,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12669,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "LAPINV2PR" && $park_no=="55"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12672,Inv_PR,Inv1%20PR,15,%,4;0,1,0,10142,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10142,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12672,Inv_PR,Inv2%20PR,15,%,4;0,1,0,12672,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12672,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "LAPINV3PR" && $park_no=="55"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12670,Inv_PR,Inv1%20PR,15,%,4;0,1,0,10142,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10142,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12670,Inv_PR,Inv3%20PR,15,%,4;0,1,0,12670,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12670,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "LAPINV4PR" && $park_no=="55"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12675,Inv_PR,Inv1%20PR,15,%,4;0,1,0,10142,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10142,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12675,Inv_PR,Inv4%20PR,15,%,4;0,1,0,12675,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12675,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}

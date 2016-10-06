@@ -929,7 +929,8 @@ $header2 = "\r\nDD/MM/YY HH:mm";
 
 $offset = 19800;
 
-if($park_no == 43)
+$sourcetable = "amplus_all_calculations";
+/*if($park_no == 43)
 {
 $sourcetable = "pune_calculation";
 
@@ -983,7 +984,7 @@ $sourcetable = "polymers_calculation";
 if($park_no == 59)
 {
 $sourcetable = "yamaha_calculation";
-}
+}*/
 $headerData = array();
 
 $args = split(";", $args);

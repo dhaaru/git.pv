@@ -646,7 +646,8 @@ if ($handle = opendir($plantdesc_path)) {
                               Null,
                               $showQueries,
                               $plantdesc->influxdbname,
-                              0);
+                              0,
+                              'a');
         $tsdata =  toTs_Array($series[0]['values'],"Inv".$inv_no."_udc",$tsdata);
       }
         

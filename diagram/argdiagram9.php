@@ -478,7 +478,7 @@ if (($phase == 'INV1G6' && $park_no == 43) ||
     ($phase == 'INV15G6' && $park_no == 43) || 
     ($phase == 'INV16G6' && $park_no == 43)) {
   if ($phase == 'INV1G6') {
-    $Module_temp_600 = getSensorData($startTime, $endTime, '8458', 'AC_Module_Temp_600', $park_no);
+    $Module_temp_600 = getSensorData($startTime, $endTime, '8414', 'AC_Module_Temp_600', $park_no);
 	
   }
   else if ($phase == 'INV7G6') {

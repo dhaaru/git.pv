@@ -18,10 +18,10 @@
 		"d": "WS02"								
 	},
     "module_temp_sensor": {
-		"mysqldeviceid": 11724,
+		"mysqldeviceid": 12692,
 		"f": "Module_Temperature",
 		"iid": 4037,
-		"d": "SMU08"					
+		"d": "WS02"					
 	},    
 	"module_area": 1.9503,
 	"module_count": 699,
