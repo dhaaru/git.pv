@@ -1,0 +1,37 @@
+{
+	"plantname": "Amplus Sanden Vikas",
+	"mysqlplanttable": "amplus_all_calculations",
+	"influxdbname": "amplus",
+	"reporting_interval": "5m",
+	"irradiation_sensor": [
+		{
+			"mysqldeviceid": 15371,
+			"f": "RADIATION",
+			"iid": 4050,
+			"d": "WS"
+		}
+	],
+	"module_temp_sensor": [
+		{
+			"mysqldeviceid": 15371,
+			"f": "MODULE_TEMP",
+			"iid": 4050,
+			"d": "WS"
+		}
+	],
+	"module_area": 1.65,
+	"module_eff": 0.161,
+	"module_count": 40,
+	"inverters": [
+		{
+			"type": "INV",
+			"mysqldeviceid": 15369,
+			"iid": 4050,
+			"d": "INV01",
+			"f_pac": "PAC",
+			"f_pdc": "PDC",
+			"f_udc": "UDC",
+			"module_count": 1513
+		}
+		]
+}

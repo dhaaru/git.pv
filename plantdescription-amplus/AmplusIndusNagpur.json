@@ -15,18 +15,6 @@
 			"f": "Activepower_Total",
 			"iid": 4038,
 			"d": "EM_CONZERV02"
-		},		
-		{
-			"mysqldeviceid": 13005,
-			"f": "Activepower_Total",
-			"iid": 4038,
-			"d": "EM_CONZERV01"
-		},
-		{
-			"mysqldeviceid": 13006,
-			"f": "Activepower_Total",
-			"iid": 4038,
-			"d": "EM_CONZERV04"
 		}
 	],
 	"irradiation_sensor": [
@@ -47,7 +35,7 @@
 	],
 	"module_area": 1.9503,
 	"module_eff": 0.154,
-	"module_count": 699,
+	"module_count": 420,
 	"inverters": [
 		{
 			"type": "SMA_STP60",
@@ -57,7 +45,7 @@
 			"f_pac": "PAC_Total",
 			"f_pdc": "PDC_Total",
 			"f_udc": "UAC_Mittelwert",
-			"module_count": 420
+			"module_count": 105
 		},
 		{
 			"type": "SMA_STP60",
@@ -67,7 +55,7 @@
 			"f_pac": "PAC_Total",
 			"f_pdc": "PDC_Total",
 			"f_udc": "UAC_Mittelwert",
-			"module_count": 420
+			"module_count": 105
 		},
 		{
 			"type": "SMA_STP60",
@@ -77,7 +65,7 @@
 			"f_pac": "PAC_Total",
 			"f_pdc": "PDC_Total",
 			"f_udc": "UAC_Mittelwert",
-			"module_count": 420		
+			"module_count": 105		
 		},
 		{
 			"type": "SMA_Inverter_Manager",
@@ -87,7 +75,7 @@
 			"f_pac": "PAC_Total",
 			"f_pdc": "PDC_Total",
 			"f_udc": "UAC_Mittelwert",
-			"module_count": 420
+			"module_count": 105
 		}
 	]
 }

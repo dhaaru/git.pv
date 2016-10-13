@@ -5,7 +5,7 @@ if ($endstamp-$stamp>40*24*3600){
 }else if($endstamp-$stamp>20*24*3600){
   header('Content-Disposition: attachment; filename="Export-'.date("Y-m", $stamp) . '.xls"');
 }else {
-  header('Content-Disposition: attachment; filename="Export-'.date("Y-m-d", $stamp) . '.xls"');
+  header('Content-Disposition: attachment; filename="Energy Meter-'.date("Y-m-d", $stamp) . '.xls"');
 }
 
 

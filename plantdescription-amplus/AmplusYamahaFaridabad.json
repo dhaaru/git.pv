@@ -146,9 +146,9 @@
 			"mysqldeviceid": 12740,
 			"iid": 4043,
 			"d": "STP60_05",
-			"f_pac": "PAC_Total",
-			"f_pdc": "PDC_Total",
-			"f_udc": "UAC_Mittelwert",
+			"f_pac": "PAC",
+			"f_pdc": "PDC",
+			"f_udc": "UAC",
 			"module_count": 1513
 		},
 		{
@@ -156,9 +156,9 @@
 			"mysqldeviceid": 12739,
 			"iid": 4043,
 			"d": "STP60_06",
-			"f_pac": "PAC_Total",
-			"f_pdc": "PDC_Total",
-			"f_udc": "UAC_Mittelwert",
+			"f_pac": "PAC",
+			"f_pdc": "PDC",
+			"f_udc": "UAC",
 			"module_count": 1513
 		},
 		{
@@ -166,9 +166,9 @@
 			"mysqldeviceid": 12741,
 			"iid": 4043,
 			"d": "STP60_07",
-			"f_pac": "PAC_Total",
-			"f_pdc": "PDC_Total",
-			"f_udc": "UAC_Mittelwert",
+			"f_pac": "PAC",
+			"f_pdc": "PDC",
+			"f_udc": "UAC",
 			"module_count": 1513
 		},
 		{
@@ -176,9 +176,9 @@
 			"mysqldeviceid": 12737,
 			"iid": 4043,
 			"d": "STP60_08",
-			"f_pac": "PAC_Total",
-			"f_pdc": "PDC_Total",
-			"f_udc": "UAC_Mittelwert",
+			"f_pac": "PAC",
+			"f_pdc": "PDC",
+			"f_udc": "UAC",
 			"module_count": 1513
 		},
 		{
@@ -186,8 +186,18 @@
 			"mysqldeviceid": 12738,
 			"iid": 4043,
 			"d": "STP60_09",
-			"f_pac": "PAC_Total",
-			"f_pdc": "PDC_Total",
+			"f_pac": "PAC",
+			"f_pdc": "PDC",
+			"f_udc": "UAC",
+			"module_count": 1513
+		},
+		{
+			"type": "SMA_IM",
+			"mysqldeviceid": 12735,
+			"iid": 4043,
+			"d": "SMA_IM",
+			"f_pac": "PAC",
+			"f_pdc": "PDC",
 			"f_udc": "UAC_Mittelwert",
 			"module_count": 1513
 		},
@@ -196,9 +206,9 @@
 			"mysqldeviceid": 12736,
 			"iid": 4043,
 			"d": "STP60_10",
-			"f_pac": "PAC_Total",
-			"f_pdc": "PDC_Total",
-			"f_udc": "UAC_Mittelwert",
+			"f_pac": "PAC",
+			"f_pdc": "PDC",
+			"f_udc": "UAC",
 			"module_count": 1513
 		}
 	]

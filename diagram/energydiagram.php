@@ -422,59 +422,59 @@ if ($speed != 0) {
 
 							//Pune energy diagram
 							else if($phase == "INV1G4" && $park_no=="43"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,8379,Inv_PR,Inv1(REFSU1)%20PR,15,%,4;0,1,0,8414,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8414,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,8379,Inv_PR,Inv1(REFSU1)%20PR,15,%,4;0,1,0,8379,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8379,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "INV2G4" && $park_no=="43"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,8408,Inv2_PR,Inv2(SMA1)%20PR,15,%,4;0,1,0,8414.8412,Inv2_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8414.8412,Inv2_AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,8408,Inv_PR,Inv2(SMA1)%20PR,15,%,4;0,1,0,8408,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8408,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "INV3G4" && $park_no=="43"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,8410,Inv3_PR,Inv3(SMA2)%20PR,15,%,4;0,1,0,8414,Inv3_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8414,Inv3_AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,8410,Inv_PR,Inv3(SMA2)%20PR,15,%,4;0,1,0,8410,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8410,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}else if($phase == "INV4G4" && $park_no=="43"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,8409,Inv4_PR,Inv4(SMA3)%20PR,15,%,4;0,1,0,8412,Inv4_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8412,Inv4_AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,8409,Inv_PR,Inv4(SMA3)%20PR,15,%,4;0,1,0,8409,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8409,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}else if($phase == "INV5G4" && $park_no=="43"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,8458,Inv5_PR,Inv5(SMA4)%20PR,15,%,5;0,1,0,8456,Inv6_PR,Inv6(SMA5)%20PR,15,%,4;0,1,0,8412,Inv5_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8412,Inv5_AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,8458,Inv_PR,Inv5(SMA4)%20PR,15,%,5;0,1,0,8456,Inv_PR,Inv6(SMA5)%20PR,15,%,4;0,1,0,8458,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8458,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "INV7G4" && $park_no=="43"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,8381,Inv7_PR,Inv7(REFSU2)%20PR,15,%,4;0,1,0,8414.8412,Inv7_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8414.8412,Inv7_AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,8381,Inv_PR,Inv7(REFSU2)%20PR,15,%,4;0,1,0,8381,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8381,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}else if($phase == "INV8G4" && $park_no=="43"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12976,Inv8_PR,Inv8(SM6)%20PR,15,%,4;0,1,0,8414,Inv8_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8414,Inv8_AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12976,Inv_PR,Inv8(SM6)%20PR,15,%,4;0,1,0,12976,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12976,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "INV9G4" && $park_no=="43"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,8378,Inv9_PR,Inv9(REFSU3)%20PR,15,%,4;0,1,0,8412,Inv9_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8412,Inv9_AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,8378,Inv_PR,Inv9(REFSU3)%20PR,15,%,4;0,1,0,8378,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8378,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}else if($phase == "INV10G4" && $park_no=="43"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,8384,Inv10_PR,Inv10(SMA7)%20PR,15,%,4;0,1,0,8382,Inv11_PR,Inv11(SMA8)%20PR,15,%,5;0,1,0,8383,Inv12_PR,Inv12(SMA9)%20PR,15,%,8;0,1,0,8414,Inv10_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8414,Inv8_AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,8384,Inv_PR,Inv10(SMA7)%20PR,15,%,4;0,1,0,8382,Inv_PR,Inv11(SMA8)%20PR,15,%,5;0,1,0,8383,Inv_PR,Inv12(SMA9)%20PR,15,%,8;0,1,0,8383,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8383,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}else if($phase == "INV13G4" && $park_no=="43"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,8380,Inv13_PR,Inv13(REFSU4)%20PR,15,%,4;0,1,0,8414,Inv13_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8414,Inv13_AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,8380,Inv_PR,Inv13(REFSU4)%20PR,15,%,4;0,1,0,8380,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8380,Inv_AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}else if($phase == "INV14G4" && $park_no=="43"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,8386,Inv14_PR,Inv14(SMA10)%20PR,15,%,4;0,1,0,8414.8412,Inv14_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8414.8412,Inv14_AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,8386,Inv_PR,Inv14(SMA10)%20PR,15,%,4;0,1,0,8386,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8386,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}else if($phase == "INV15G4" && $park_no=="43"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,8387,Inv15_PR,Inv15(SMA11)%20PR,15,%,4;0,1,0,8412,Inv15_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8412,Inv15_AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,8387,Inv_PR,Inv15(SMA11)%20PR,15,%,4;0,1,0,8387,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8387,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}else if($phase == "INV16G4" && $park_no=="43"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,8388,Inv16_PR,Inv16(SMA11)%20PR,15,%,4;0,1,0,8412,Inv16_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8412,Inv16_AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,8388,Inv_PR,Inv16(SMA11)%20PR,15,%,4;0,1,0,8388,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8388,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
@@ -482,47 +482,47 @@ if ($speed != 0) {
 
 
 							else if($phase == "energyg2" && $park_no=="39"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,9317,System_PR,System PR,15,%,1;0,1,0,9316,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,9316,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,9317,System_PR,System PR,15,%,1;0,1,0,9323,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,9323,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "SMA1M4" && $park_no=="39"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,9323,Inv_PR,Inv1%20PR,15,%,4;0,1,0,9316,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,9316,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,9323,Inv_PR,Inv1%20PR,15,%,4;0,1,0,9323,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,9323,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "SMA2M4" && $park_no=="39"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,9328,Inv_PR,Inv2%20PR,15,%,4;0,1,0,9316,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,9316,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,9328,Inv_PR,Inv2%20PR,15,%,4;0,1,0,9328,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,9328,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "SMA3M4" && $park_no=="39"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,9329,Inv_PR,Inv3%20PR,15,%,4;0,1,0,9316,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,9316,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,9329,Inv_PR,Inv3%20PR,15,%,4;0,1,0,9329,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,9329,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "SMA4M4" && $park_no=="39"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,9322,Inv_PR,Inv4%20PR,15,%,4;0,1,0,9316,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,9316,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,9322,Inv_PR,Inv4%20PR,15,%,4;0,1,0,9322,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,9322,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "SMA5M4" && $park_no=="39"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,9324,Inv_PR,Inv5%20PR,15,%,4;0,1,0,9316,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,9316,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,9324,Inv_PR,Inv5%20PR,15,%,4;0,1,0,9324,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,9324,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "SMA6M4" && $park_no=="39"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,9326,Inv_PR,Inv6%20PR,15,%,4;0,1,0,9316,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,9316,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,9326,Inv_PR,Inv6%20PR,15,%,4;0,1,0,9326,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,9326,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "SMA7M4" && $park_no=="39"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,9325,Inv7_PR,Inverter7%20PR,15,%,4;0,1,0,9316,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,9316,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,9325,Inv_PR,Inverter7%20PR,15,%,4;0,1,0,9325,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,9325,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "SMA8M4" && $park_no=="39"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,9327,Inv_PR,Inv8%20PR,15,%,4;0,1,0,9316,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,9316,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,9327,Inv_PR,Inv8%20PR,15,%,4;0,1,0,9327,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,9327,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
@@ -531,12 +531,12 @@ if ($speed != 0) {
 
 							// Amplus Raisoni3 Nagpur start
 							else if($phase == "energyg2" && $park_no=="46"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,9958,System_PR,System PR,15,%,1;0,1,0,9957,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,9957,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,9958,System_PR,System PR,15,%,1;0,1,0,9973,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,9973,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "INVPR" && $park_no=="46"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,9971,Inv_PR,Inv1%20PR,15,%,4;0,1,0,9972,Inv_PR,Inv2%20PR,15,%,11;0,1,0,9973,Inv_PR,Inv3%20PR,15,%,8;0,1,0,9957,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,9957,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,9971,Inv_PR,Inv1%20PR,15,%,4;0,1,0,9972,Inv_PR,Inv2%20PR,15,%,11;0,1,0,9973,Inv_PR,Inv3%20PR,15,%,8;0,1,0,9973,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,9973,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
@@ -544,32 +544,32 @@ if ($speed != 0) {
 
 							// Amplus Dominos Nagpur start
 							else if($phase == "energyg2" && $park_no=="52"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,10070,System_PR,System PR,15,%,1;0,1,0,11623,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11623,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,10070,System_PR,System PR,15,%,1;0,1,0,11624,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11624,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "INV1PR" && $park_no=="52"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11624,Inv_PR,Inv1%20PR,15,%,4;0,1,0,11623,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11623,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11624,Inv_PR,Inv1%20PR,15,%,4;0,1,0,11624,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11624,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "INV2PR" && $park_no=="52"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11627,Inv_PR,Inv2%20PR,15,%,4;0,1,0,11623,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11623,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11627,Inv_PR,Inv2%20PR,15,%,4;0,1,0,11627,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11627,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "INV3PR" && $park_no=="52"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11625,Inv_PR,Inv3%20PR,15,%,4;0,1,0,11623,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11623,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11625,Inv_PR,Inv3%20PR,15,%,4;0,1,0,11625,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11625,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "INV4PR" && $park_no=="52"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11626,Inv_PR,Inv4%20PR,15,%,4;0,1,0,11623,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11623,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11626,Inv_PR,Inv4%20PR,15,%,4;0,1,0,11626,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11626,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "INV5PR" && $park_no=="52"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11628,Inv_PR,Inv5%20PR,15,%,4;0,1,0,11623,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11623,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11628,Inv_PR,Inv5%20PR,15,%,4;0,1,0,11628,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11628,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
@@ -577,32 +577,32 @@ if ($speed != 0) {
 
 							// Amplus Royal  Pune start
 							else if($phase == "energyg2" && $park_no=="53"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,10071,System_PR,System PR,15,%,1;0,1,0,12692,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,10071,System_PR,System PR,15,%,1;0,1,0,11722,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11722,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "INV1PR" && $park_no=="53"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11721,Inv_PR,Inv1%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11721,Inv_PR,Inv1%20PR,15,%,4;0,1,0,11721,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11721,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "INV2PR" && $park_no=="53"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11718,Inv_PR,Inv2%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11718,Inv_PR,Inv2%20PR,15,%,4;0,1,0,11718,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11718,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "INV3PR" && $park_no=="53"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11719,Inv_PR,Inv3%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11719,Inv_PR,Inv3%20PR,15,%,4;0,1,0,11719,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11719,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "INV4PR" && $park_no=="53"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11715,Inv_PR,Inv4%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11715,Inv_PR,Inv4%20PR,15,%,4;0,1,0,11715,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11715,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "INV5PR" && $park_no=="53"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11720,Inv_PR,Inv5%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11720,Inv_PR,Inv5%20PR,15,%,4;0,1,0,11720,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11720,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
@@ -612,12 +612,12 @@ if ($speed != 0) {
 								echo '</a>';
 							}
 							else if($phase == "INV7PR" && $park_no=="53"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11717,Inv_PR,Inv7%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11717,Inv_PR,Inv7%20PR,15,%,4;0,1,0,11717,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11717,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "INV8PR" && $park_no=="53"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11722,Inv_PR,Inv8%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11722,Inv_PR,Inv8%20PR,15,%,4;0,1,0,11722,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11722,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
@@ -626,47 +626,47 @@ if ($speed != 0) {
 							
 							// Amplus Fortis Faridabad  -------------------------------------------
 							else if($phase == "Fortenergyg2" && $park_no=="72"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,13476,System_PR,System PR,15,%,1;0,1,0,13479,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,13479,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,13476,System_PR,System PR,15,%,1;0,1,0,11721,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11721,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "INV1PR" && $park_no=="72"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11721,Inv_PR,Inv1%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11721,Inv_PR,Inv1%20PR,15,%,4;0,1,0,11721,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11721,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "INV2PR" && $park_no=="72"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11718,Inv_PR,Inv2%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11718,Inv_PR,Inv2%20PR,15,%,4;0,1,0,11718,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11718,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "INV3PR" && $park_no=="72"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11719,Inv_PR,Inv3%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11719,Inv_PR,Inv3%20PR,15,%,4;0,1,0,11719,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11719,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "INV4PR" && $park_no=="72"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11715,Inv_PR,Inv4%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11715,Inv_PR,Inv4%20PR,15,%,4;0,1,0,11715,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11715,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "INV5PR" && $park_no=="72"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11720,Inv_PR,Inv5%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11720,Inv_PR,Inv5%20PR,15,%,4;0,1,0,11720,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11720,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "INV6PR" && $park_no=="72"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11716,Inv_PR,Inv6%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11716,Inv_PR,Inv6%20PR,15,%,4;0,1,0,11716,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11716,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "INV7PR" && $park_no=="72"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11717,Inv_PR,Inv7%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11717,Inv_PR,Inv7%20PR,15,%,4;0,1,0,11717,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11717,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "INV8PR" && $park_no=="72"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11722,Inv_PR,Inv8%20PR,15,%,4;0,1,0,12692,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12692,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11722,Inv_PR,Inv8%20PR,15,%,4;0,1,0,11722,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11722,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
@@ -675,52 +675,52 @@ if ($speed != 0) {
 							
 							// Amplus Raisoni3 Nagpur start
 							else if($phase == "energyg1Indus" && $park_no=="54"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,10151,System_PR,System PR,15,%,1;0,1,0,12668,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12668,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,10151,System_PR,System PR,15,%,1;0,1,0,9972,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,9972,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "INVPR" && $park_no=="54"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,9971,Inv_PR,Inv1%20PR,15,%,4;0,1,0,9972,Inv_PR,Inv2%20PR,15,%,11;0,1,0,9973,Inv_PR,Inv3%20PR,15,%,8;0,1,0,9957,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,9957,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,9971,Inv_PR,Inv1%20PR,15,%,4;0,1,0,9972,Inv_PR,Inv2%20PR,15,%,11;0,1,0,9973,Inv_PR,Inv3%20PR,15,%,8;0,1,0,9972,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,9972,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "Orgenergyg2" && $park_no=="57"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,11615,System_PR,System PR,15,%,1;0,1,0,12029,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12029,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,11615,System_PR,System PR,15,%,1;0,1,0,12028,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12028,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "ORGINV1PR" && $park_no=="57"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12028,Inv_PR,Inv1%20PR,15,%,4;0,1,0,12029,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12029,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12028,Inv_PR,Inv1%20PR,15,%,4;0,1,0,12028,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12028,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "ORGINV2PR" && $park_no=="57"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12024,Inv_PR,Inv2%20PR,15,%,4;0,1,0,12029,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12029,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12024,Inv_PR,Inv2%20PR,15,%,4;0,1,0,12024,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12024,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "ORGINV3PR" && $park_no=="57"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12021,Inv_PR,Inv3%20PR,15,%,4;0,1,0,12029,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12029,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12021,Inv_PR,Inv3%20PR,15,%,4;0,1,0,12021,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12021,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "ORGINV4PR" && $park_no=="57"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12023,Inv_PR,Inv4%20PR,15,%,4;0,1,0,12029,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12029,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12023,Inv_PR,Inv4%20PR,15,%,4;0,1,0,12023,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12023,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "ORGINV5PR" && $park_no=="57"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12027,Inv_PR,Inv5%20PR,15,%,4;0,1,0,12029,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12029,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12027,Inv_PR,Inv5%20PR,15,%,4;0,1,0,12027,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12027,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "ORGINV6PR" && $park_no=="57"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12026,Inv_PR,Inv6%20PR,15,%,4;0,1,0,12029,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12029,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12026,Inv_PR,Inv6%20PR,15,%,4;0,1,0,12026,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12026,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "Lalenergyg" && $park_no=="55"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11588,System_PR,System PR,15,%,1;0,1,0,12672,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12672,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11588,System_PR,System PR,15,%,1;0,1,0,12669,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12669,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
@@ -746,58 +746,58 @@ if ($speed != 0) {
 							}
 
 							else if($phase == "Polyenergyg2" && $park_no=="58"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12037,System_PR,System PR,15,%,1;0,1,0,12417,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12417,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12037,System_PR,System PR,15,%,1;0,1,0,12660,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12660,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "PolyINV1PR" && $park_no=="58"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12660,Inv_PR,Inv1%20PR,15,%,4;0,1,0,12417,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12417,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12660,Inv_PR,Inv1%20PR,15,%,4;0,1,0,12660,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12660,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "PolyINV2PR" && $park_no=="58"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12659,Inv_PR,Inv1%20PR,15,%,4;0,1,0,12417,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12417,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12659,Inv_PR,Inv1%20PR,15,%,4;0,1,0,12659,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12659,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "PolyINV3PR" && $park_no=="58"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12658,Inv_PR,Inv1%20PR,15,%,4;0,1,0,12417,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12417,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12658,Inv_PR,Inv1%20PR,15,%,4;0,1,0,12658,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12658,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "IndINV1PR" && $park_no=="54"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12667,Inv_PR,Inv%20PR,15,%,4;0,1,0,10452,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10452,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12667,Inv_PR,Inv%20PR,15,%,4;0,1,0,12667,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12667,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "IndINV2PR" && $park_no=="54"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12668,Inv_PR,Inv%20PR,15,%,4;0,1,0,10452,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10452,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12668,Inv_PR,Inv%20PR,15,%,4;0,1,0,12668,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12668,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "Yamahaenergyg2" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12895,System_PR,Block A PR,15,%,1;0,1,0,12899,System_PR,Block B PR,15,%,2;0,1,0,12897,System_PR,Block C PR,15,%,3;0,1,0,12898,System_PR,Block D PR,15,%,5;0,1,0,12896,System_PR,Block E PR,15,%,4;0,1,0,12209,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12895,System_PR,Block A PR,15,%,1;0,1,0,12899,System_PR,Block B PR,15,%,2;0,1,0,12897,System_PR,Block C PR,15,%,3;0,1,0,12898,System_PR,Block D PR,15,%,5;0,1,0,12896,System_PR,Block E PR,15,%,4;0,1,0,12900,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12900,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "YamahaEnBlkA" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12895,System_PR,System PR,15,%,1;0,1,0,12209,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12895,System_PR,System PR,15,%,1;0,1,0,12900,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12900,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}else if($phase == "YamahaEnBlkB" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12899,System_PR,System PR,15,%,1;0,1,0,12209,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12899,System_PR,System PR,15,%,1;0,1,0,12900,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12900,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}else if($phase == "YamahaEnBlkC" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12897,System_PR,System PR,15,%,1;0,1,0,12209,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12897,System_PR,System PR,15,%,1;0,1,0,12900,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12900,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}else if($phase == "YamahaEnBlkD" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12898,System_PR,System PR,15,%,1;0,1,0,12209,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12898,System_PR,System PR,15,%,1;0,1,0,12900,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12900,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}else if($phase == "YamahaEnBlkE" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12896,System_PR,System PR,15,%,1;0,1,0,12209,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,12896,System_PR,System PR,15,%,1;0,1,0,12900,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12900,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
@@ -811,77 +811,77 @@ if ($speed != 0) {
 							}
 
 							else if($phase == "YamaINV2PR" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12901,Inv_PR,Inv2%20PR,15,%,4;0,1,0,12209,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12901,Inv_PR,Inv2%20PR,15,%,4;0,1,0,12901,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12901,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "YamaINV3PR" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12902,Inv_PR,Inv3%20PR,15,%,4;0,1,0,12209,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12902,Inv_PR,Inv3%20PR,15,%,4;0,1,0,12902,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12902,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "YamaINV4PR" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12900,Inv_PR,Inv4%20PR,15,%,4;0,1,0,12209,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12900,Inv_PR,Inv4%20PR,15,%,4;0,1,0,12900,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12900,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "YamaINV5PR" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12740,Inv_PR,Inv5%20PR,15,%,4;0,1,0,12209,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12740,Inv_PR,Inv5%20PR,15,%,4;0,1,0,12740,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12740,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "YamaINV6PR" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12739,Inv_PR,Inv6%20PR,15,%,4;0,1,0,12209,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12739,Inv_PR,Inv6%20PR,15,%,4;0,1,0,12739,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12739,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "YamaINV7PR" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12741,Inv_PR,Inv7%20PR,15,%,4;0,1,0,12209,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12741,Inv_PR,Inv7%20PR,15,%,4;0,1,0,12741,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12741,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "YamaINV8PR" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12737,Inv_PR,Inv8%20PR,15,%,4;0,1,0,12209,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12737,Inv_PR,Inv8%20PR,15,%,4;0,1,0,12737,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12737,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "YamaINV9PR" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12738,Inv_PR,Inv9%20PR,15,%,4;0,1,0,12209,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12738,Inv_PR,Inv9%20PR,15,%,4;0,1,0,12738,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12738,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "YamaINV10PR" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12736,Inv_PR,Inv10%20PR,15,%,4;0,1,0,12209,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,12736,Inv_PR,Inv10%20PR,15,%,4;0,1,0,12736,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12736,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "RUDINV1PR" && $park_no=="56"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11621,Inv_PR,Inv1%20PR,15,%,4;0,1,0,12690,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12690,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11621,Inv_PR,Inv1%20PR,15,%,4;0,1,0,11621,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11621,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "RUDINV2PR" && $park_no=="56"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11618,Inv_PR,Inv2%20PR,15,%,4;0,1,0,12690,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12690,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11618,Inv_PR,Inv2%20PR,15,%,4;0,1,0,11618,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11618,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "RUDINV3PR" && $park_no=="56"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11617,Inv_PR,Inv3%20PR,15,%,4;0,1,0,12690,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12690,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11617,Inv_PR,Inv3%20PR,15,%,4;0,1,0,11617,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11617,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "RUDINV4PR" && $park_no=="56"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11620,Inv_PR,Inv4%20PR,15,%,4;0,1,0,12690,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12690,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11620,Inv_PR,Inv4%20PR,15,%,4;0,1,0,11620,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11620,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "RUDINV5PR" && $park_no=="56"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11619,Inv_PR,Inv5%20PR,15,%,4;0,1,0,12690,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12690,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,2,3&args=0,1,0,11619,Inv_PR,Inv5%20PR,15,%,4;0,1,0,11619,Inv_irrad_250,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11619,AC_Module_Temp_250,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							else if($phase == "RUDenergyg2" && $park_no=="56"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,7772,System_PR,System PR,15,%,1;0,1,0,12690,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12690,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&park_no='.$park_no.'&phase=' . $phase .'&args=0,1,0,7772,System_PR,System PR,15,%,1;0,1,0,11619,En_irradiation,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,11619,Energy_Module_Temp,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}

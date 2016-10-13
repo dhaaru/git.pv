@@ -1,5 +1,5 @@
 <?php
-//argdiagram5.php
+//git.argdiagram5.php
 require __DIR__ . '/../vendor/autoload.php';
 
 use InfluxDB\Client;
@@ -106,23 +106,42 @@ if (sizeof($diffs)==1 && sizeof($diffs[0])==1){
   }
 }
 
-if (sizeof($avgs)==1 && sizeof($avgs[0])==1){
+if (sizeof($args)==1 && sizeof($args[0])==1){
+
+$currentValues = getDiagramValues($args, &$values, $showQueries, &$axis, $stamp, $endstamp, $verbindung, $databasename);
+  foreach ($currentValues as $currentValue){
+    $displayItems[$currentValue["position"]][] = $currentValue;
+  }
+
 }else {
+
+  
+}
+
+
+if (sizeof($avgs)==1 && sizeof($avgs[0])==1){
 
   $currentValues = getAvgValues($avgs, $showQueries, $stamp, $endstamp, $verbindung, $databasename);
   foreach ($currentValues as $currentValue){
     $displayItems[$currentValue["position"]][] = $currentValue;
   }
+
+}else {
+
+
 }
+
 
 if (sizeof($sums)==1 && sizeof($sums[0])==1){
 }else {
+
 
   $currentValues = getSumValues($sums, $showQueries, $stamp, $endstamp, $verbindung, $databasename);
   foreach ($currentValues as $currentValue){
     $displayItems[$currentValue["position"]][] = $currentValue;
   }
 }
+
 ksort($displayItems);
 
 
@@ -132,7 +151,6 @@ $axis = array();
 $devices = array();
 
 $digitals = 0;
-
 
 $results = getDiagramValues($args, &$values, $showQueries, &$axis, $stamp, $endstamp, $verbindung, $databasename);
 //print_r($results);
@@ -174,6 +192,7 @@ foreach ($tmpseries as $serie){
 
   }
 }
+
 
 $factors = getFactors($args, $verbindung, $showQueries);
 
@@ -217,6 +236,8 @@ $nextPosition=0;
 $index=0;
 
 $results=array();
+
+
 
 
 
@@ -346,6 +367,9 @@ if ($showAlarms != 0) {
         echo '<p style = "color:' . $myelement["color"] . ';font-family:' . $myelement["font"] . ';font-size:' . $myelement["fontSize"] . 'px">' . $myelement["text"] . '<br>' . number_format($myelement["value"], $myelement["decimals"], '.', '') . $myelement["unit"] . '</p>';
       }
     }
+
+
+    //echo '<p style="color:red;font-family:Arial;font-size:10px">'."Current Generation<br>".29.32 kW.'</p>'
     ?>
     <input title="Reset the zoom"    style="flow: left;" id="resetZoom" onClick="resetZoom()" type="image"    src="../imgs/lupe_grey.png" disabled>
 

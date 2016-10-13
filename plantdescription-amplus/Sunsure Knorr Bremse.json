@@ -1,0 +1,74 @@
+{
+	"plantname": "Knorr Bremse 75kW",
+	"mysqlplanttable": "sunshore",
+	"influxdbname": "",
+	"reporting_interval": "5m",
+	"energymeters": [
+		{
+			"mysqldeviceid": 14005,
+			"f": "Activepower_Total",
+			"iid": 5015,
+			"d": "EM_CONZERV"
+		}				
+	],
+	"irradiation_sensor": [
+		{
+			"mysqldeviceid": 14007,
+			"f": "Global_Radiation_Act",
+			"iid": 5015,
+			"d": "WS"
+		}
+	],
+	"module_temp_sensor": [
+		{
+			"mysqldeviceid": 14007,
+			"f": "Module1_Temperature_Act",
+			"iid": 5015,
+			"d": "WS"
+		}
+	],
+	"module_area": 4.66,
+	"module_eff": 0.164,
+	"module_count": 240,
+	"inverters": [
+		{
+			"type": "INV",
+			"mysqldeviceid": 14006,
+			"iid": 5015,
+			"d": "Inv_West",
+			"f_pac": "PAC",
+			"f_pdc": "PDC",
+			"f_udc": [
+				"UDC_1",
+				"UDC_2"
+			],
+			"module_count": 90
+		},
+		{
+			"type": "INV",
+			"mysqldeviceid": 14008,
+			"iid": 5015,
+			"d": "Inv_South",
+			"f_pac": "PAC",
+			"f_pdc": "PDC",
+			"f_udc": [
+				"UDC_1",
+				"UDC_2"
+			],
+			"module_count": 90
+		},
+		{
+			"type": "INV",
+			"mysqldeviceid": 14650,
+			"iid": 5015,
+			"d": "Inv_East",
+			"f_pac": "PAC",
+			"f_pdc": "PDC",
+			"f_udc": [
+				"UDC_1",
+				"UDC_2"
+			],
+			"module_count": 60
+		}
+	]
+}

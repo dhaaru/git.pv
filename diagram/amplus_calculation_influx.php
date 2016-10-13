@@ -1,19 +1,21 @@
 <?php
 
+
+//amplus_calculation_influx.php
 #######################################################
 # Amplus Calculations: Inverter Performance
 #        Influx version
 #######################################################
 # parameters
-# $time:		optional	range. 
+# $time:    optional  range. 
 #                     default: 3 [count of days]
 #                     max: 22 (memory usage ($time=22): ~ 30 MB
 #                              increases linear with $time,
 #                              regardless of how many plants)
-# $endtime:	optional	range until (including) count days before today 
-#	     			          default: 0: until now
-# $offset		optional	timezone shift in seconds from UTC. 
-#	                		default: -19800 (Indian Standard Time)
+# $endtime: optional  range until (including) count days before today 
+#                     default: 0: until now
+# $offset   optional  timezone shift in seconds from UTC. 
+#                     default: -19800 (Indian Standard Time)
 # $plantname optional of all plant definition files in /plantdescription-amplus,
 #                     select only that one whose plant name matches 
 #                     part of $plantname, case-insensitive
@@ -34,7 +36,7 @@
 #            but
 #            the predecessor script 'amplus_calculation.php' multiplies it with
 #            a constant factor (line 84):
-# 					 $DC_Vol_Coeff_Val= round((($dcVoltage[0]/(21*45.5))*100),2);
+#            $DC_Vol_Coeff_Val= round((($dcVoltage[0]/(21*45.5))*100),2);
 #            see diagram: y-axis name is _not_ what is shown:
 #            http://git.pv-india.net/diagram/argdiagram9.php?park_no=36&phase=energy5&defaults=0,1,2,3,4&args=0,1,0,7792,DC_Vol_Coeff,Inv%201(DC_Voltage),15,V,4;0,1,0,7791,DC_Vol_Coeff,Inv%202(DC_Voltage),15,V,5;0,1,0,7794,DC_Vol_Coeff,Inv%203(DC_Voltage),15,V,6;0,1,0,7794,Inv_irrad_600,Irradiation,15,W/m%C2%B2,%27Gold%27;0,1,0,7794,AC_Module_Temp_600,Module%20Temperature,15,%C2%B0C,%27darkred%27&hideClear=1&hideDelta=1&stamp=1467311400&endstamp=1469989800&title=Graph-7
 
@@ -51,7 +53,7 @@
 
 require_once('../connections/queriesMysql2.php');
 require_once('../connections/queriesInflux2.php');
-if (!isset($time)) 	      $time    = 3;
+if (!isset($time))        $time    = 3;
 else                      $time = intval($time);
 if ($time > 22)           $time = 22;
 if (!isset($endtime))     $endtime = 0;      
@@ -68,7 +70,7 @@ define("DAY_SECONDS",86400);
 
 # round down $number to the nearest number dividable by $divisor
 function alignInt($number,$divisor){
-	return $number - fmod($number,$divisor);
+  return $number - fmod($number,$divisor);
 }
 
 if ($endtime > 0)  {
@@ -558,14 +560,23 @@ if ($handle = opendir($plantdesc_path)) {
                             $endts, 
                             $tagsets, 
                             "SUM(value) * ".$plantdesc->energymeters_pac_factor,
+                            //"MEAN(value)",
                             $reporting_interval , 
                             array('iid','d','f'),
                             Null,
                             $showQueries,
                             $plantdesc->influxdbname,
                             0,
-                            'a');
-      $tsdata =  toTs_Array($series[0]['values'],"em_pac",$tsdata);
+                            '');
+      
+      //$tsdata =  toTs_Array($series[0]['values'],"em_pac",$tsdata);
+      foreach($plantdesc->energymeters as $ems => &$em){
+        $sindex = get_seriesIndex($series, get_object_vars($em));
+        $tsdata =  toTs_Array($series[$sindex]['values'],"em".$ems."_pac",$tsdata);
+      }
+
+
+
 
       # pac: of all inverters
       $series = inflQuery_tagset(  
@@ -680,14 +691,21 @@ if ($handle = opendir($plantdesc_path)) {
         //print("inv->type:".$inv->type." inv->id:".$inv->mysqldeviceid." inv->epf (Expected Power Factor):".$inv->epf."<br>\n");/////////////////////////////////
       }
       $epf = array_sum($epf);
+
       //print("sum epf (Expected Power Factor):".$epf."<br>\n");//////////////////////////////////////////////////
 
       ### calculations -> (B) System PR ####
       foreach ($tsdata as $ts => &$values){
+        foreach($plantdesc->energymeters as $ems => &$em){
         if($values['irrad']>=250){          
-          $values['Sys_PR'] = 100 * $values['em_pac']  
+          $values['Sys_PR'] = 100 * $values['em'.$ems.'_pac']  
             / ($epf * $values['irrad']);
+
+            //(($En_ActPowValue)/(($En_irradation1*420*(1.9503)*0.154)/1000))*100 
+            //$values['Sys_PR'] = (($values['em_pac'])/(($epf*$values['irrad'])/1000))*100;
+
         }
+       }
       }
           
       ### calculations -> (C) Inverter PR 
@@ -715,6 +733,7 @@ if ($handle = opendir($plantdesc_path)) {
         print("======= tsdata ==================:\n"); ////////////////////////////////////////////////////////
         print_r($tsdata); //////////////////////////////////////////////////////////
         print("<p>memory_get_usage: ".(memory_get_usage()/1024)." KB</p>\n");///////
+        echo "epffffffffff : ".$epf;
       }      
       ########################################################
       # $tsdata
@@ -795,6 +814,18 @@ if ($handle = opendir($plantdesc_path)) {
           $irrad_key = "irrad".$irrad_mysqldeviceid;
           $module_temp_key = "module_temp".$irrad_mysqldeviceid; 
           if($tsvals[$irrad_key]>=250){  
+
+              foreach($plantdesc->energymeters as $ems => &$em){
+              # System_PR         
+                if ($tsvals["Sys_PR"]){ 
+                  $insert_points[] = strval($ts) . "," .
+                    $plantdesc->energymeters[$ems]->mysqldeviceid . "," .
+                    "'System_PR'" . "," .
+                    $park_no . "," . 
+                    $tsvals["Sys_PR"];
+                }
+              }
+
             foreach($inverter_nos as $inv_no){
               # AC_Module_Temp_250 
               if ($tsvals[$module_temp_key]){ 
@@ -843,14 +874,7 @@ if ($handle = opendir($plantdesc_path)) {
                     $park_no . "," . 
                     $tsvals["em_pac"] / 1000; # value: W, write out: kW
                 }
-                  # System_PR         
-                if ($tsvals["Sys_PR"]){ 
-                  $insert_points[] = strval($ts) . "," .
-                    $plantdesc->energymeters[0]->mysqldeviceid . "," .
-                    "'System_PR'" . "," .
-                    $park_no . "," . 
-                    $tsvals["Sys_PR"];
-                }
+                
               }
               if($tsvals[$irrad_key]>=600){
                 # AC_Module_Temp_600    

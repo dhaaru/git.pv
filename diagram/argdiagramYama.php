@@ -288,7 +288,7 @@ if(($phase == 'YamaINV1ACPR' && $park_no == 59) ||($phase == 'YamaINV2ACPR' && $
 		$ts= $moduleindex8;
 		$mod_value = $modulevalue;
 		
-		$qry_inverter1 = mysql_query("SELECT  ROUND((value),3) as groupval,ts FROM amplus_all_calculations WHERE park_no=59 AND ts=$ts and (device='12903') and (field='Inv_AC_PR_600')");
+		$qry_inverter1 = mysql_query("SELECT  ROUND((value),3) as groupval,ts FROM amplus_all_calculations WHERE park_no=59 AND ts=$ts and (device='15375') and (field='Inv_AC_PR_600')");
 		$numCount1 =  mysql_num_rows($qry_inverter1); 
 		if($numCount1!=0)
 		{
@@ -401,7 +401,7 @@ if(($phase == 'YamaINV1ACPR' && $park_no == 59) ||($phase == 'YamaINV2ACPR' && $
 			
 		$ts= $moduleindex8;
 		$mod_value = $modulevalue;
-		$qry_inverterdc1= mysql_query("SELECT  ROUND((value),3) as groupval,ts FROM amplus_all_calculations WHERE park_no=59 AND ts=$ts and (device='12903') and (field='Inv_DC_Vol_Coeff')");
+		$qry_inverterdc1= mysql_query("SELECT  ROUND((value),3) as groupval,ts FROM amplus_all_calculations WHERE park_no=59 AND ts=$ts and (device='15375') and (field='Inv_DC_Vol_Coeff')");
 		$dcnumCount1 =  mysql_num_rows($qry_inverterdc1); 
 		if($dcnumCount1!=0)
 		{
@@ -501,7 +501,7 @@ if(($phase == 'YamaINV1ACPR' && $park_no == 59) ||($phase == 'YamaINV2ACPR' && $
 	if(($phase == 'YamaINV1EFF' && $park_no == 59) ||($phase == 'YamaINV2EFF' && $park_no == 59) ||($phase == 'YamaINV3EFF' && $park_no == 59) ||($phase == 'YamaINV4EFF' && $park_no == 59) ||
 	($phase == 'YamaINV5EFF' && $park_no == 59) ||($phase == 'YamaINV6EFF' && $park_no == 59) ||($phase == 'YamaINV7EFF' && $park_no == 59) ||($phase == 'YamaINV8EFF' && $park_no == 59) || ($phase == 'YamaINV9EFF' && $park_no == 59) || ($phase == 'YamaINV10EFF' && $park_no == 59))
 	{
-		 $inver1Eff =getdeviceData($startTime,$endTime,12903,'Inv_Eff',59);
+		 $inver1Eff =getdeviceData($startTime,$endTime,15375,'Inv_Eff',59);
 		 $inver2Eff =getdeviceData($startTime,$endTime,12901,'Inv_Eff',59);
 		 $inver3Eff =getdeviceData($startTime,$endTime,12902,'Inv_Eff',59);
 		 $inver4Eff =getdeviceData($startTime,$endTime,12900,'Inv_Eff',59);		
@@ -670,157 +670,157 @@ if(($phase == 'YamaINV1ACPR' && $park_no == 59) ||($phase == 'YamaINV2ACPR' && $
 							
 							
 							if($phase == "YamaINV1EFF" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12903,Inv1_Eff,Inverter1,15,%,8;0,1,0,12209,Solar_Radiation,Irradiation,5,W/m&sup2;,\'Gold\';">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,15375,Inv_Eff,Inverter1,15,%,8;0,1,0,12209,Solar_Radiation,Irradiation,5,W/m&sup2;,\'Gold\';">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							if($phase == "YamaINV2EFF" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12901,Inv2_Eff,Inverter2,15,%,8;0,1,0,12209,Solar_Radiation,Irradiation,5,W/m&sup2;,\'Gold\';">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12901,Inv_Eff,Inverter2,15,%,8;0,1,0,12209,Solar_Radiation,Irradiation,5,W/m&sup2;,\'Gold\';">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							if($phase == "YamaINV3EFF" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12902,Inv3_Eff,Inverter3,15,%,8;0,1,0,12209,Solar_Radiation,Irradiation,5,W/m&sup2;,\'Gold\';">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12902,Inv_Eff,Inverter3,15,%,8;0,1,0,12209,Solar_Radiation,Irradiation,5,W/m&sup2;,\'Gold\';">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							if($phase == "YamaINV4EFF" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12900,Inv4_Eff,Inverter4,15,%,8;0,1,0,12209,Solar_Radiation,Irradiation,5,W/m&sup2;,\'Gold\';">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12900,Inv_Eff,Inverter4,15,%,8;0,1,0,12209,Solar_Radiation,Irradiation,5,W/m&sup2;,\'Gold\';">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							if($phase == "YamaINV5EFF" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12740,Inv5_Eff,Inverter5,15,%,8;0,1,0,12209,Solar_Radiation,Irradiation,5,W/m&sup2;,\'Gold\';">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12740,Inv_Eff,Inverter5,15,%,8;0,1,0,12209,Solar_Radiation,Irradiation,5,W/m&sup2;,\'Gold\';">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							if($phase == "YamaINV6EFF" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12739,Inv6_Eff,Inverter6,15,%,8;0,1,0,12209,Solar_Radiation,Irradiation,5,W/m&sup2;,\'Gold\';">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12739,Inv_Eff,Inverter6,15,%,8;0,1,0,12209,Solar_Radiation,Irradiation,5,W/m&sup2;,\'Gold\';">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							
 							if($phase == "YamaINV7EFF" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12741,Inv7_Eff,Inverter7,15,%,8;0,1,0,12209,Solar_Radiation,Irradiation,5,W/m&sup2;,\'Gold\';">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12741,Inv_Eff,Inverter7,15,%,8;0,1,0,12209,Solar_Radiation,Irradiation,5,W/m&sup2;,\'Gold\';">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							
 							if($phase == "YamaINV8EFF" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12737,Inv8_Eff,Inverter8,15,%,8;0,1,0,12209,Solar_Radiation,Irradiation,5,W/m&sup2;,\'Gold\';">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12737,Inv_Eff,Inverter8,15,%,8;0,1,0,12209,Solar_Radiation,Irradiation,5,W/m&sup2;,\'Gold\';">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							
 							if($phase == "YamaINV9EFF" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12738,Inv9_Eff,Inverter9,15,%,8;0,1,0,12209,Solar_Radiation,Irradiation,5,W/m&sup2;,\'Gold\';">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12738,Inv_Eff,Inverter9,15,%,8;0,1,0,12209,Solar_Radiation,Irradiation,5,W/m&sup2;,\'Gold\';">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							if($phase == "YamaINV10EFF" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12736,Inv10_Eff,Inverter10,15,%,8;0,1,0,12209,Solar_Radiation,Irradiation,5,W/m&sup2;,\'Gold\';">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12736,Inv_Eff,Inverter10,15,%,8;0,1,0,12209,Solar_Radiation,Irradiation,5,W/m&sup2;,\'Gold\';">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							
 							if($phase == "YamaINV1ACPR" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12903,Inv_AC_PR,Inv1%20AC%20PR,15,%,4;0,1,0,12209,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,15375,Inv_AC_PR_600,Inv1%20AC%20PR,15,%,4;0,1,0,15375,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,15375,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							if($phase == "YamaINV2ACPR" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12901,Inv_AC_PR,Inv2%20AC%20PR,15,%,4;0,1,0,12209,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12901,Inv_AC_PR,Inv2%20AC%20PR,15,%,4;0,1,0,12901,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12901,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							if($phase == "YamaINV3ACPR" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12902,Inv_AC_PR,Inv3%20AC%20PR,15,%,4;0,1,0,12209,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12902,Inv_AC_PR_600,Inv3%20AC%20PR,15,%,4;0,1,0,12902,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12902,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							if($phase == "YamaINV4ACPR" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12900,Inv_AC_PR,Inv4%20AC%20PR,15,%,4;0,1,0,12209,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12900,Inv_AC_PR_600,Inv4%20AC%20PR,15,%,4;0,1,0,12900,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12900,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							if($phase == "YamaINV5ACPR" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12740,Inv_AC_PR,Inv5%20AC%20PR,15,%,4;0,1,0,12209,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12740,Inv_AC_PR_600,Inv5%20AC%20PR,15,%,4;0,1,0,12740,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12740,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							if($phase == "YamaINV6ACPR" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12739,Inv_AC_PR,Inv6%20AC%20PR,15,%,4;0,1,0,12209,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12739,Inv_AC_PR,Inv6%20AC%20PR,15,%,4;0,1,0,12739,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12739,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							if($phase == "YamaINV7ACPR" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12741,Inv_AC_PR,Inv7%20AC%20PR,15,%,4;0,1,0,12209,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12741,Inv_AC_PR_600,Inv7%20AC%20PR,15,%,4;0,1,0,12741,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12741,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}							
 							
 							if($phase == "YamaINV8ACPR" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12737,Inv_AC_PR,Inv8%20AC%20PR,15,%,4;0,1,0,12209,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12737,Inv_AC_PR_600,Inv8%20AC%20PR,15,%,4;0,1,0,12737,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12737,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}  
 							if($phase == "YamaINV9ACPR" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12738,Inv_AC_PR,Inv9%20AC%20PR,15,%,4;0,1,0,12209,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12738,Inv_AC_PR_600,Inv9%20AC%20PR,15,%,4;0,1,0,12738,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12738,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							} 
 							if($phase == "YamaINV10ACPR" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12736,Inv_AC_PR,Inv10%20AC%20PR,15,%,4;0,1,0,12209,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12736,Inv_AC_PR_600,Inv10%20AC%20PR,15,%,4;0,1,0,12736,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12736,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							if($phase == "YamaINV1DCPR" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12903,DC_Vol_Coeff,Inv 1(DC_Voltage),15,V,4;0,1,0,12209,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,15375,Inv_DC_Vol_Coeff,Inv 1(DC_Voltage),15,V,4;0,1,0,15375,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,15375,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							if($phase == "YamaINV2DCPR" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12901,DC_Vol_Coeff,Inv 2(DC_Voltage),15,V,4;0,1,0,12209,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12901,Inv_DC_Vol_Coeff,Inv 2(DC_Voltage),15,V,4;0,1,0,12901,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12901,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							if($phase == "YamaINV3DCPR" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12902,DC_Vol_Coeff,Inv 3(DC_Voltage),15,V,4;0,1,0,12209,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12902,Inv_DC_Vol_Coeff,Inv 3(DC_Voltage),15,V,4;0,1,0,12902,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12902,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							if($phase == "YamaINV4DCPR" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12900,DC_Vol_Coeff,Inv 4(DC_Voltage),15,V,4;0,1,0,12209,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12900,Inv_DC_Vol_Coeff,Inv 4(DC_Voltage),15,V,4;0,1,0,12900,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12900,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}							
 							if($phase == "YamaINV5DCPR" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12740,DC_Vol_Coeff,Inv 5(DC_Voltage),15,V,4;0,1,0,12209,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12740,Inv_DC_Vol_Coeff,Inv 5(DC_Voltage),15,V,4;0,1,0,12740,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12740,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							if($phase == "YamaINV6DCPR" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12739,DC_Vol_Coeff,Inv 6(DC_Voltage),15,V,4;0,1,0,12209,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12739,Inv_DC_Vol_Coeff,Inv 6(DC_Voltage),15,V,4;0,1,0,12739,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12739,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							if($phase == "YamaINV7DCPR" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12741,DC_Vol_Coeff,Inv 7(DC_Voltage),15,V,4;0,1,0,12209,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12741,Inv_DC_Vol_Coeff,Inv 7(DC_Voltage),15,V,4;0,1,0,12741,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12741,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							if($phase == "YamaINV8DCPR" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12737,DC_Vol_Coeff,Inv 8(DC_Voltage),15,V,4;0,1,0,12209,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12737,Inv_DC_Vol_Coeff,Inv 8(DC_Voltage),15,V,4;0,1,0,12737,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12737,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							if($phase == "YamaINV9DCPR" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12738,DC_Vol_Coeff,Inv 9(DC_Voltage),15,V,4;0,1,0,12209,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12738,Inv_DC_Vol_Coeff,Inv 9(DC_Voltage),15,V,4;0,1,0,12738,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12738,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							if($phase == "YamaINV10DCPR" && $park_no=="59"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12736,DC_Vol_Coeff,Inv 10(DC_Voltage),15,V,4;0,1,0,12209,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12209,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12736,Inv_DC_Vol_Coeff,Inv 10(DC_Voltage),15,V,4;0,1,0,12736,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12736,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}

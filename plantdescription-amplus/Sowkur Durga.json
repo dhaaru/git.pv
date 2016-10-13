@@ -1,0 +1,305 @@
+{
+	"plantname": "Sowkur Durga 500kW",
+	"mysqlplanttable": "",
+	"influxdbname": "solartown",
+	"reporting_interval": "5m",
+	"energymeters": [
+		{
+			"mysqldeviceid": 14037,
+			"f": "PAC",
+			"iid": 5017,
+			"d": "EM_1"
+		},		
+		{
+			"mysqldeviceid": 14039,
+			"f": "PAC",
+			"iid": 5017,
+			"d": "EM_2"
+		},
+		{
+			"mysqldeviceid": 14035,
+			"f": "PAC",
+			"iid": 5017,
+			"d": "EM_3"
+		},
+		{
+			"mysqldeviceid": 14018,
+			"f": "PAC",
+			"iid": 5017,
+			"d": "EM_4"
+		},
+		{
+			"mysqldeviceid": 14042,
+			"f": "PAC",
+			"iid": 5017,
+			"d": "EM_5"
+		},
+		{
+			"mysqldeviceid": 14036,
+			"f": "PAC",
+			"iid": 5017,
+			"d": "EM_6"
+		},
+		{
+			"mysqldeviceid": 14041,
+			"f": "PAC",
+			"iid": 5017,
+			"d": "EM_7"
+		},
+		{
+			"mysqldeviceid": 14017,
+			"f": "PAC",
+			"iid": 5017,
+			"d": "EM_8"
+		},
+		{
+			"mysqldeviceid": 14028,
+			"f": "PAC",
+			"iid": 5017,
+			"d": "EM_9"
+		}
+	],
+	"irradiation_sensor": [
+		{
+			"mysqldeviceid": 14029,
+			"f": "Solar_Radiation",
+			"iid": 5017,
+			"d": "WS"
+		}
+	],
+	"module_temp_sensor": [
+		{
+			"mysqldeviceid": 14029,
+			"f": "MODULE_TEMP",
+			"iid": 5017,
+			"d": "WS"
+		}
+	],
+	"module_area": 4.64,
+	"module_eff": 0.145,
+	"module_count": 1960,
+	"inverters": [
+		{
+			"type": "INV",
+			"mysqldeviceid": 14019,
+			"iid": 5017,
+			"d": "INV_01",
+			"f_pac": "PAC",
+			"f_pdc": "PDC",
+			"f_udc": [
+			         "UDC_FIRST_TRACKER",
+			         "UDC_SECOND_TRACKER"
+			],
+			"module_count": 560
+		},
+		{
+			"type": "INV",
+			"mysqldeviceid": 14034,
+			"iid": 5017,
+			"d": "INV_02",
+			"f_pac": "PAC",
+			"f_pdc": "PDC",                        
+			"f_udc": [
+			         "UDC_FIRST_TRACKER",
+			         "UDC_SECOND_TRACKER"
+			],
+			"module_count": 600
+		},
+		{
+			"type": "INV",
+			"mysqldeviceid": 14016,
+			"iid": 5017,
+			"d": "INV_03",
+			"f_pac": "PAC",
+			"f_pdc": "PDC",
+			"f_udc": [
+			         "UDC_FIRST_TRACKER",
+			         "UDC_SECOND_TRACKER"
+			],
+			"module_count": 240
+		},
+		{
+			"type": "INV",
+			"mysqldeviceid": 14026,
+			"iid": 5017,
+			"d": "INV_04",
+			"f_pac": "PAC",
+			"f_pdc": "PDC",                        
+			"f_udc": [
+			         "UDC_FIRST_TRACKER",
+			         "UDC_SECOND_TRACKER"
+			],
+			"module_count": 560
+		},
+		{
+			"type": "INV",
+			"mysqldeviceid": 14040,
+			"iid": 5017,
+			"d": "INV_05",
+			"f_pac": "PAC",
+			"f_pdc": "PDC",                         
+			"f_udc": [
+			         "UDC_FIRST_TRACKER",
+			         "UDC_SECOND_TRACKER"
+			],
+			"module_count": 600
+		},
+		{
+			"type": "INV",
+			"mysqldeviceid": 14020,
+			"iid": 5017,
+			"d": "INV_06",
+			"f_pac": "PAC",
+			"f_pdc": "PDC",
+			"f_udc": [
+			         "UDC_FIRST_TRACKER",
+			         "UDC_SECOND_TRACKER"
+		    ],
+			"module_count": 240
+		},
+		{
+			"type": "INV",
+			"mysqldeviceid": 14038,
+			"iid": 5017,
+			"d": "INV_07",
+			"f_pac": "PAC",
+			"f_pdc": "PDC",                          
+			"f_udc": [
+			         "UDC_FIRST_TRACKER",
+			         "UDC_SECOND_TRACKER"
+			],
+			"module_count": 600
+		},
+		{
+			"type": "INV",
+			"mysqldeviceid": 14024,
+			"iid": 5017,
+			"d": "INV_08",
+			"f_pac": "PAC",
+			"f_pdc": "PDC",                      
+			"f_udc": [
+			         "UDC_FIRST_TRACKER",
+			         "UDC_SECOND_TRACKER"
+			],
+			"module_count": 560
+		},
+		{
+			"type": "INV",
+			"mysqldeviceid": 14033,
+			"iid": 5017,
+			"d": "INV_09",
+			"f_pac": "PAC",
+			"f_pdc": "PDC",                     
+			"f_udc": [
+			         "UDC_FIRST_TRACKER",
+			         "UDC_SECOND_TRACKER"
+			],
+			"module_count": 200
+		},
+		{
+			"type": "INV",
+			"mysqldeviceid": 14030,
+			"iid": 5017,
+			"d": "INV_10",
+			"f_pac": "PAC",
+			"f_pdc": "PDC",                         
+			"f_udc": [
+			         "UDC_FIRST_TRACKER",
+			         "UDC_SECOND_TRACKER"
+			],
+			"module_count": 560
+		},
+		{
+			"type": "INV",
+			"mysqldeviceid": 14022,
+			"iid": 5017,
+			"d": "INV_11",
+			"f_pac": "PAC",
+			"f_pdc": "PDC",                      
+			"f_udc": [
+			         "UDC_FIRST_TRACKER",
+			         "UDC_SECOND_TRACKER"
+			],
+			"module_count": 600
+		},
+		{
+			"type": "INV",
+			"mysqldeviceid": 14031,
+			"iid": 5017,
+			"d": "INV_12",
+			"f_pac": "PAC",
+			"f_pdc": "PDC",                      
+			"f_udc": [
+			         "UDC_FIRST_TRACKER",
+			         "UDC_SECOND_TRACKER"
+			],
+			"module_count": 200
+		},
+		{
+			"type": "INV",
+			"mysqldeviceid": 14032,
+			"iid": 5017,
+			"d": "INV_13",
+			"f_pac": "PAC",
+			"f_pdc": "PDC",                       
+			"f_udc": [
+			         "UDC_FIRST_TRACKER",
+			         "UDC_SECOND_TRACKER"
+			],
+			"module_count": 600
+		},
+		{
+			"type": "INV",
+			"mysqldeviceid": 14025,
+			"iid": 5017,
+			"d": "INV_14",
+			"f_pac": "PAC",
+			"f_pdc": "PDC",                    
+			"f_udc": [
+			         "UDC_FIRST_TRACKER",
+			         "UDC_SECOND_TRACKER"
+			],
+			"module_count": 560
+		},
+		{
+			"type": "INV",
+			"mysqldeviceid": 14021,
+			"iid": 5017,
+			"d": "INV_15",
+			"f_pac": "PAC",
+			"f_pdc": "PDC",                    
+			"f_udc": [
+			         "UDC_FIRST_TRACKER",
+			         "UDC_SECOND_TRACKER"
+		     ],
+			"module_count": 360
+		},
+		{
+			"type": "INV",
+			"mysqldeviceid": 14027,
+			"iid": 5017,
+			"d": "INV_16",
+			"f_pac": "PAC",
+			"f_pdc": "   ",                  
+			"f_udc": [
+			         "UDC_FIRST_TRACKER",
+			         "UDC_SECOND_TRACKER"
+			],
+			"module_count": 360
+		},
+		{
+			"type": "INV",
+			"mysqldeviceid": 14015,
+			
+			"iid": 5017,
+			"d": "INV_17",
+			"f_pac": "PAC",
+			"f_pdc": "PDC",                  
+			"f_udc": [
+			         "UDC_FIRST_TRACKER",
+			         "UDC_SECOND_TRACKER"
+			 ],
+			"module_count": 360
+		}
+		]
+}

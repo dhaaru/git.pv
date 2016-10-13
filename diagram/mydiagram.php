@@ -184,8 +184,8 @@ if ($phase == "mon") {
 if ($park_no == "20" && $phase == "tag" && $type == "wetter") {
     $tsMin = mktime(0, 0, 0, $mon, $tag, $jahr);
     $tsMax = mktime(0, 0, 0, $mon, $tag + 1, $jahr);    
-
-    header("location: argdiagram5.php?args=0,13,0,5,U1,A1%20Irradiation%201,15,W/mSQUA,'gold';-22.68,1.15,0,5,U2,A1%20Module%20Temperature,15,DEGC,'crimson';0,1,0,5,T3,A1%20Sensor%20Temperature,15,DEGC,'red';-19.0476,21,0,5,U4,A1%20Pyranometer,15,W/mSQUA,'yellow';0,13,0,50,U1,A7%20Irradiation,15,W/mSQUA,'goldenrod';-22.68,1.15,0,50,U2,A7%20Sensor%20Temperature,15,DEGC,'darkred';0,1,0,50,T3,A7%20Module%20Temperature,15,DEGC,'darksalmon';-19.0476,21,0,180,U1,WS%20Radiation,15,W/mSQUA,'orange';-30,1,0,180,U2,WS%20Ambient%20Temperature,15,DEGC,'orangered';0,1,0,180,T3,WS%20Module%20Temperature,15,DEGC,'tomato'&hideDelta=1&hideClear=1&stamp=" . $tsMin . "&endstamp=" . $tsMax);
+ 
+    header("location: argdiagram5.php?args=0,1,0,5,U1,A1%20Irradiation%201,15,W/mSQUA,'gold';0,1,0,5,U2,A1%20Module%20Temperature,15,DEGC,'crimson';0,1,0,5,T3,A1%20Sensor%20Temperature,15,DEGC,'red';0,1,0,5,U4,A1%20Pyranometer,15,W/mSQUA,'yellow';0,1,0,50,U1,A7%20Irradiation,15,W/mSQUA,'goldenrod';0,1,0,50,U2,A7%20Sensor%20Temperature,15,DEGC,'darkred';0,1,0,50,T3,A7%20Module%20Temperature,15,DEGC,'darksalmon';0,1,0,180,U1,WS%20Radiation,15,W/mSQUA,'orange';0,1,0,180,U2,WS%20Ambient%20Temperature,15,DEGC,'orangered';0,1,0,180,T3,WS%20Module%20Temperature,15,DEGC,'tomato'&hideDelta=1&hideClear=1&stamp=" . $tsMin . "&endstamp=" . $tsMax);
 }
 
 if (false && $park_no == "25" && $phase == "tag" && $type == "s0") {

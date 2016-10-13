@@ -59,7 +59,7 @@ if (is_null($hideDelta)) {
 }
 function getdeviceData($startTime, $endTime, $deviceId, $field, $park_no)
 {
-  echo '---->getdeviceData<-----';
+  
    $query = "SELECT ts,value 
     FROM amplus_all_calculations 
     WHERE ts > $startTime and ts < $endTime 
@@ -98,8 +98,8 @@ function getdeviceData1($startTime, $endTime, $deviceId, $field, $park_no)
 }
 function getSensorData($startTime, $endTime, $deviceId, $field, $park_no)
 {
-  echo '---->sensor vv<-----';
-     echo $query = "SELECT ts,value 
+  
+      $query = "SELECT ts,value 
     FROM amplus_all_calculations 
     WHERE park_no=$park_no AND ts > $startTime and ts < $endTime 
     AND (device='" . $deviceId . "') and (field='" . $field . "')";
@@ -478,38 +478,38 @@ if (($phase == 'INV1G6' && $park_no == 43) ||
     ($phase == 'INV15G6' && $park_no == 43) || 
     ($phase == 'INV16G6' && $park_no == 43)) {
   if ($phase == 'INV1G6') {
-    $Module_temp_600 = getSensorData($startTime, $endTime, '8414', 'AC_Module_Temp_600', $park_no);
+    $Module_temp_600 = getSensorData($startTime, $endTime, '8379', 'AC_Module_Temp_600', $park_no);
 	
   }
   else if ($phase == 'INV7G6') {
-    $Module_temp_600 = getSensorData($startTime, $endTime, '8414.8412', 'AC_Module_Temp_600', $park_no);
+    $Module_temp_600 = getSensorData($startTime, $endTime, '8381', 'AC_Module_Temp_600', $park_no);
   }
   else if ($phase == 'INV9G6') {
-    $Module_temp_600 = getSensorData($startTime, $endTime, '8412', 'AC_Module_Temp_600', $park_no);
+    $Module_temp_600 = getSensorData($startTime, $endTime, '8378', 'AC_Module_Temp_600', $park_no);
   }
   else if ($phase == 'INV13G6') {
     $Module_temp_600 = getSensorData($startTime, $endTime, '8414', 'AC_Module_Temp_600', $park_no);
   }
   else if ($phase == 'INV2G6') {
-    $Module_temp_600 = getSensorData($startTime, $endTime, '8414.8412', 'AC_Module_Temp_600', $park_no);
+    $Module_temp_600 = getSensorData($startTime, $endTime, '8408', 'AC_Module_Temp_600', $park_no);
   }
   else if ($phase == 'INV3G6') {
-    $Module_temp_600 = getSensorData($startTime, $endTime, '8414', 'AC_Module_Temp_600', $park_no);
+    $Module_temp_600 = getSensorData($startTime, $endTime, '8410', 'AC_Module_Temp_600', $park_no);
   }
   else if ($phase == 'INV4G6') {
-    $Module_temp_600 = getSensorData($startTime, $endTime, '8412', 'AC_Module_Temp_600', $park_no);
+    $Module_temp_600 = getSensorData($startTime, $endTime, '8409', 'AC_Module_Temp_600', $park_no);
   }
   else if ($phase == 'INV8G6') {
-    $Module_temp_600 = getSensorData($startTime, $endTime, '8414', 'AC_Module_Temp_600', $park_no);
+    $Module_temp_600 = getSensorData($startTime, $endTime, '12976', 'AC_Module_Temp_600', $park_no);
   }
   else if ($phase == 'INV14G6') {
-    $Module_temp_600 = getSensorData($startTime, $endTime, '8414.8412', 'AC_Module_Temp_600', $park_no);
+    $Module_temp_600 = getSensorData($startTime, $endTime, '8386', 'AC_Module_Temp_600', $park_no);
   }
   else if ($phase == 'INV15G6') {
-    $Module_temp_600 = getSensorData($startTime, $endTime, '8412', 'AC_Module_Temp_600', $park_no);
+    $Module_temp_600 = getSensorData($startTime, $endTime, '8387', 'AC_Module_Temp_600', $park_no);
   }
   else if ($phase == 'INV16G6') {
-    $Module_temp_600 = getSensorData($startTime, $endTime, '8412', 'AC_Module_Temp_600', $park_no);
+    $Module_temp_600 = getSensorData($startTime, $endTime, '8388', 'AC_Module_Temp_600', $park_no);
   }
   // print_r($Module_temp_600);exit;
   foreach($Module_temp_600 as $moduleindex1 => $modulevalue) {
@@ -562,7 +562,7 @@ if (($phase == 'INV1G6' && $park_no == 43) ||
 }
 // Inverter 5&6 Ac Voltage PR
 if ($phase == 'INV5G6' && $park_no == 43) {
-  $Module_temp5 = getdeviceData1($startTime, $endTime, 8412, 'AC_Module_Temp_600', $park_no);
+  $Module_temp5 = getdeviceData1($startTime, $endTime, 8458, 'AC_Module_Temp_600', $park_no);
   foreach($Module_temp5 as $moduleindex5 => $modulevalue5) {
     $ts = $moduleindex5;
     $mod_value = $modulevalue5;
@@ -592,7 +592,7 @@ if ($phase == 'INV5G6' && $park_no == 43) {
 }
 // Inverter 10,11&12 Ac Voltage PR
 if ($phase == 'INV10G6' && $park_no == 43) {
-  $Module_temp10 = getdeviceData1($startTime, $endTime, 8414, 'AC_Module_Temp_600', $park_no);
+  $Module_temp10 = getdeviceData1($startTime, $endTime, 8384, 'AC_Module_Temp_600', $park_no);
   foreach($Module_temp10 as $moduleindex10 => $modulevalue10) {
     $ts = $moduleindex10;
     $mod_value = $modulevalue10;
@@ -633,37 +633,37 @@ if ($phase == 'INV10G6' && $park_no == 43) {
 }
 if (($phase == 'INV1G7' && $park_no == 43) || ($phase == 'INV7G7' && $park_no == 43) || ($phase == 'INV9G7' && $park_no == 43) || ($phase == 'INV13G7' && $park_no == 43) || ($phase == 'INV2G7' && $park_no == 43) || ($phase == 'INV3G7' && $park_no == 43) || ($phase == 'INV4G7' && $park_no == 43) || ($phase == 'INV8G7' && $park_no == 43) || ($phase == 'INV14G7' && $park_no == 43) || ($phase == 'INV15G7' && $park_no == 43) || ($phase == 'INV16G7' && $park_no == 43)) {
   if ($phase == 'INV1G7') {
-    $Module_temp_600 = getSensorData($startTime, $endTime, '8414', 'AC_Module_Temp_600', $park_no);
+    $Module_temp_600 = getSensorData($startTime, $endTime, '8379', 'AC_Module_Temp_600', $park_no);
   }
   else if ($phase == 'INV7G7') {
-    $Module_temp_600 = getSensorData($startTime, $endTime, '8414.8412', 'AC_Module_Temp_600', $park_no);
+    $Module_temp_600 = getSensorData($startTime, $endTime, '8381', 'AC_Module_Temp_600', $park_no);
   }
   else if ($phase == 'INV9G7') {
-    $Module_temp_600 = getSensorData($startTime, $endTime, '8412', 'AC_Module_Temp_600', $park_no);
+    $Module_temp_600 = getSensorData($startTime, $endTime, '8378', 'AC_Module_Temp_600', $park_no);
   }
   else if ($phase == 'INV13G7') {
     $Module_temp_600 = getSensorData($startTime, $endTime, '8414', 'AC_Module_Temp_600', $park_no);
   }
   else if ($phase == 'INV2G7') {
-    $Module_temp_600 = getSensorData($startTime, $endTime, '8414.8412', 'AC_Module_Temp_600', $park_no);
+    $Module_temp_600 = getSensorData($startTime, $endTime, '8408', 'AC_Module_Temp_600', $park_no);
   }
   else if ($phase == 'INV3G7') {
-    $Module_temp_600 = getSensorData($startTime, $endTime, '8414', 'AC_Module_Temp_600', $park_no);
+    $Module_temp_600 = getSensorData($startTime, $endTime, '8410', 'AC_Module_Temp_600', $park_no);
   }
   else if ($phase == 'INV4G7') {
-    $Module_temp_600 = getSensorData($startTime, $endTime, '8412', 'AC_Module_Temp_600', $park_no);
+    $Module_temp_600 = getSensorData($startTime, $endTime, '8409', 'AC_Module_Temp_600', $park_no);
   }
   else if ($phase == 'INV8G7') {
-    $Module_temp_600 = getSensorData($startTime, $endTime, '8414', 'AC_Module_Temp_600', $park_no);
+    $Module_temp_600 = getSensorData($startTime, $endTime, '12976', 'AC_Module_Temp_600', $park_no);
   }
   else if ($phase == 'INV14G7') {
-    $Module_temp_600 = getSensorData($startTime, $endTime, '8414.8412', 'AC_Module_Temp_600', $park_no);
+    $Module_temp_600 = getSensorData($startTime, $endTime, '8386', 'AC_Module_Temp_600', $park_no);
   }
   else if ($phase == 'INV15G7') {
-    $Module_temp_600 = getSensorData($startTime, $endTime, '8412', 'AC_Module_Temp_600', $park_no);
+    $Module_temp_600 = getSensorData($startTime, $endTime, '8387', 'AC_Module_Temp_600', $park_no);
   }
   else if ($phase == 'INV16G7') {
-    $Module_temp_600 = getSensorData($startTime, $endTime, '8412', 'AC_Module_Temp_600', $park_no);
+    $Module_temp_600 = getSensorData($startTime, $endTime, '8388', 'AC_Module_Temp_600', $park_no);
   }
   foreach($Module_temp_600 as $moduleindex1 => $modulevalue) {
     $ts = $moduleindex1;
@@ -712,7 +712,7 @@ if (($phase == 'INV1G7' && $park_no == 43) || ($phase == 'INV7G7' && $park_no ==
 }
 // Inverter 5&6 DC Voltage PR%
 if (($phase == 'INV5G7' && $park_no == 43)) {
-  $Module_temp5 = getdeviceData1($startTime, $endTime, 8412, 'AC_Module_Temp_600', $park_no);
+  $Module_temp5 = getdeviceData1($startTime, $endTime, 8458, 'AC_Module_Temp_600', $park_no);
   foreach($Module_temp5 as $moduleindex5 => $modulevalue5) {
     $ts = $moduleindex5;
     $mod_value = $modulevalue5;
@@ -744,7 +744,7 @@ if (($phase == 'INV5G7' && $park_no == 43)) {
 }
 // Inverter 10,11&12 DC Voltage PR%
 if (($phase == 'INV10G7' && $park_no == 43)) {
-  $Module_temp10 = getdeviceData1($startTime, $endTime, 8414, 'AC_Module_Temp_600', $park_no);
+  $Module_temp10 = getdeviceData1($startTime, $endTime, 8384, 'AC_Module_Temp_600', $park_no);
   foreach($Module_temp10 as $moduleindex10 => $modulevalue10) {
     $ts = $moduleindex10;
     $mod_value = $modulevalue10;
@@ -898,12 +898,12 @@ if ($exception != 25) {
       echo '</a>';
     }
     else if ($phase == "INV1G6" && $park_no == "43") {
-      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8379,Inv_AC_PR_600,Inv1%20AC%20PR,15,%,4;0,1,0,8414,Inv1_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8414,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8379,Inv_AC_PR_600,Inv1%20AC%20PR,15,%,4;0,1,0,8379,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8379,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
       echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
       echo '</a>';
     }
     else if ($phase == "INV1G7" && $park_no == "43") {
-      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8379,Inv_DC_Vol_Coeff,Inv 1(DC_Voltage),15,V,4;0,1,0,8414,Inv1_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8414,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8379,Inv_DC_Vol_Coeff,Inv 1(DC_Voltage),15,V,4;0,1,0,8379,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8379,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
       echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
       echo '</a>';
     }
@@ -913,12 +913,12 @@ if ($exception != 25) {
       echo '</a>';
     }
     else if ($phase == "INV2G6" && $park_no == "43") {
-      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8408,Inv_AC_PR_600,Inv2%20AC%20PR,15,%,4;0,1,0,8414.8412,Inv2_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8414.8412,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8408,Inv_AC_PR_600,Inv2%20AC%20PR,15,%,4;0,1,0,8408,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8408,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
       echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
       echo '</a>';
     }
     else if ($phase == "INV2G7" && $park_no == "43") {
-      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8408,Inv_DC_Vol_Coeff,Inv2(DC_Voltage),15,V,4;0,1,0,8414.8412,Inv2_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8414.8412,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8408,Inv_DC_Vol_Coeff,Inv2(DC_Voltage),15,V,4;0,1,0,8408,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8408,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
       echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
       echo '</a>';
     }
@@ -928,12 +928,12 @@ if ($exception != 25) {
       echo '</a>';
     }
     else if ($phase == "INV3G6" && $park_no == "43") {
-      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8410,Inv_AC_PR_600,Inv3%20AC%20PR,15,%,4;0,1,0,8414,Inv3_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8414,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8410,Inv_AC_PR_600,Inv3%20AC%20PR,15,%,4;0,1,0,8410,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8410,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
       echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
       echo '</a>';
     }
     else if ($phase == "INV3G7" && $park_no == "43") {
-      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,2,3,4&args=0,1,0,8410,Inv_DC_Vol_Coeff,Inv3(DC_Voltage),15,V,4;0,1,0,8414,Inv3_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8414,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,2,3,4&args=0,1,0,8410,Inv_DC_Vol_Coeff,Inv3(DC_Voltage),15,V,4;0,1,0,8410,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8410,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
       echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
       echo '</a>';
     }
@@ -943,12 +943,12 @@ if ($exception != 25) {
       echo '</a>';
     }
     else if ($phase == "INV4G6" && $park_no == "43") {
-      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8409,Inv_AC_PR_600,Inv4%20AC%20PR,15,%,4;0,1,0,8412,Inv4_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8414,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8409,Inv_AC_PR_600,Inv4%20AC%20PR,15,%,4;0,1,0,8409,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8409,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
       echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
       echo '</a>';
     }
     else if ($phase == "INV4G7" && $park_no == "43") {
-      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,2,3,4&args=0,1,0,8409,Inv4_DC_Vol_Coeff,Inv4(DC_Voltage),15,V,4;0,1,0,8412,Inv4_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8414,Inv3_AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,2,3,4&args=0,1,0,8409,Inv_DC_Vol_Coeff,Inv4(DC_Voltage),15,V,4;0,1,0,8409,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8409,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
       echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
       echo '</a>';
     }
@@ -958,12 +958,12 @@ if ($exception != 25) {
       echo '</a>';
     }
     else if ($phase == "INV5G6" && $park_no == "43") {
-      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8458,Inv_AC_PR_600,Inv5%20AC%20PR,15,%,4;0,1,0,8456,Inv6_AC_PR_600,Inv6%20AC%20PR,15,%,4;0,1,0,8412,Inv5_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8412,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8458,Inv_AC_PR_600,Inv5%20AC%20PR,15,%,4;0,1,0,8456,Inv_AC_PR_600,Inv6%20AC%20PR,15,%,4;0,1,0,8458,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8458,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
       echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
       echo '</a>';
     }
     else if ($phase == "INV5G7" && $park_no == "43") {
-      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8458,Inv_DC_Vol_Coeff,Inv 5(DC_Voltage),15,V,4;0,1,0,8456,Inv6_DC_Vol_Coeff,Inv 6(DC_Voltage),15,V,4;0,1,0,8412,Inv5_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8412,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8458,Inv_DC_Vol_Coeff,Inv 5(DC_Voltage),15,V,4;0,1,0,8456,Inv_DC_Vol_Coeff,Inv 6(DC_Voltage),15,V,4;0,1,0,8458,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8458,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
       echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
       echo '</a>';
     }
@@ -973,12 +973,12 @@ if ($exception != 25) {
       echo '</a>';
     }
     else if ($phase == "INV7G6" && $park_no == "43") {
-      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8381,Inv_AC_PR_600,Inv7(Refu2)%20AC%20PR,15,%,4;0,1,0,8414.8412,Inv7_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8414.8412,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8381,Inv_AC_PR_600,Inv7(Refu2)%20AC%20PR,15,%,4;0,1,0,8381,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8381,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
       echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
       echo '</a>';
     }
     else if ($phase == "INV7G7" && $park_no == "43") {
-      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8381,Inv_DC_Vol_Coeff,Inv7(DC_Voltage),15,V,4;0,1,0,8414.8412,Inv7_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8414.8412,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8381,Inv_DC_Vol_Coeff,Inv7(DC_Voltage),15,V,4;0,1,0,8381,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8381,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
       echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
       echo '</a>';
     }
@@ -988,12 +988,12 @@ if ($exception != 25) {
       echo '</a>';
     }
     else if ($phase == "INV8G6" && $park_no == "43") {
-      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,12976,Inv_AC_PR_600,Inv8%20AC%20PR,15,%,4;0,1,0,8414,Inv8_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8414,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,12976,Inv_AC_PR_600,Inv8%20AC%20PR,15,%,4;0,1,0,12976,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12976,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
       echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
       echo '</a>';
     }
     else if ($phase == "INV8G7" && $park_no == "43") {
-      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,12976,Inv_DC_Vol_Coeff,Inv8(DC_Voltage),15,V,4;0,1,0,8414,Inv8_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8414,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,12976,Inv_DC_Vol_Coeff,Inv8(DC_Voltage),15,V,4;0,1,0,12976,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12976,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
       echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
       echo '</a>';
     }
@@ -1003,12 +1003,12 @@ if ($exception != 25) {
       echo '</a>';
     }
     else if ($phase == "INV9G6" && $park_no == "43") {
-      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8378,Inv_AC_PR_600,Inv9(Refu3)%20AC%20PR,15,%,4;0,1,0,8412,Inv9_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8412,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8378,Inv_AC_PR_600,Inv9(Refu3)%20AC%20PR,15,%,4;0,1,0,8378,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8378,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
       echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
       echo '</a>';
     }
     else if ($phase == "INV9G7" && $park_no == "43") {
-      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8378,Inv_DC_Vol_Coeff,Inv9 (DC_Voltage),15,V,4;0,1,0,8412,Inv9_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8412,_AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8378,Inv_DC_Vol_Coeff,Inv9 (DC_Voltage),15,V,4;0,1,0,8378,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8378,_AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
       echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
       echo '</a>';
     }
@@ -1018,12 +1018,12 @@ if ($exception != 25) {
       echo '</a>';
     }
     else if ($phase == "INV10G6" && $park_no == "43") {
-      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8384,Inv_AC_PR_600,Inv10%20AC%20PR,15,%,4;0,1,0,8382,Inv_AC_PR_600,Inverter11%20PR,15,%,4;0,1,0,8383,Inv_AC_PR_600,Inverter12%20PR,15,%,4;0,1,0,8414,Inv8_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8414,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8384,Inv_AC_PR_600,Inv10%20AC%20PR,15,%,4;0,1,0,8382,Inv_AC_PR_600,Inverter11%20PR,15,%,4;0,1,0,8383,Inv_AC_PR_600,Inverter12%20PR,15,%,4;0,1,0,8384,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8384,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
       echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
       echo '</a>';
     }
     else if ($phase == "INV10G7" && $park_no == "43") {
-      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8384,Inv_DC_Vol_Coeff,Inv10(DC_Voltage),15,V,4;0,1,0,8382,Inv_DC_Vol_Coeff,Inv11(DC_Voltage),15,V,4;0,1,0,8383,Inv_DC_Vol_Coeff,Inv12(DC_Voltage),15,V,4;0,1,0,8414,Inv8_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8414,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8384,Inv_DC_Vol_Coeff,Inv10(DC_Voltage),15,V,4;0,1,0,8382,Inv_DC_Vol_Coeff,Inv11(DC_Voltage),15,V,4;0,1,0,8383,Inv_DC_Vol_Coeff,Inv12(DC_Voltage),15,V,4;0,1,0,8384,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8384,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
       echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
       echo '</a>';
     }
@@ -1033,12 +1033,12 @@ if ($exception != 25) {
       echo '</a>';
     }
     else if ($phase == "INV13G6" && $park_no == "43") {
-      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8380,Inv_AC_PR_600,Inv13%20AC%20PR,15,%,4;0,1,0,8414,Inv13_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8414,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8380,Inv_AC_PR_600,Inv13%20AC%20PR,15,%,4;0,1,0,8380,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8380,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
       echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
       echo '</a>';
     }
     else if ($phase == "INV13G7" && $park_no == "43") {
-      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8380,Inv_DC_Vol_Coeff,Inv 1(DC_Voltage),15,V,4;0,1,0,8414,Inv13_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8414,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8380,Inv_DC_Vol_Coeff,Inv 1(DC_Voltage),15,V,4;0,1,0,8380,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8380,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
       echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
       echo '</a>';
     }
@@ -1048,12 +1048,12 @@ if ($exception != 25) {
       echo '</a>';
     }
     else if ($phase == "INV14G6" && $park_no == "43") {
-      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8386,Inv_AC_PR_600,Inv14%20AC%20PR,15,%,4;0,1,0,8414.8412,Inv14_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8414.8412,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8386,Inv_AC_PR_600,Inv14%20AC%20PR,15,%,4;0,1,0,8386,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8386,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
       echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
       echo '</a>';
     }
     else if ($phase == "INV14G7" && $park_no == "43") {
-      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8386,Inv_DC_Vol_Coeff,Inv14(DC_Voltage),15,V,4;0,1,0,8414.8412,Inv14_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8414.8412,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8386,Inv_DC_Vol_Coeff,Inv14(DC_Voltage),15,V,4;0,1,0,8386,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8386,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
       echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
       echo '</a>';
     }
@@ -1063,12 +1063,12 @@ if ($exception != 25) {
       echo '</a>';
     }
     else if ($phase == "INV15G6" && $park_no == "43") {
-      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8387,Inv_AC_PR_600,Inv15%20AC%20PR,15,%,4;0,1,0,8412,Inv15_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8412,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8387,Inv_AC_PR_600,Inv15%20AC%20PR,15,%,4;0,1,0,8387,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8387,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
       echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
       echo '</a>';
     }
     else if ($phase == "INV15G7" && $park_no == "43") {
-      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8387,Inv_DC_Vol_Coeff,Inv15(DC_Voltage),15,V,4;0,1,0,8412,Inv15_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8412,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8387,Inv_DC_Vol_Coeff,Inv15(DC_Voltage),15,V,4;0,1,0,8387,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8387,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
       echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
       echo '</a>';
     }
@@ -1078,12 +1078,12 @@ if ($exception != 25) {
       echo '</a>';
     }
     else if ($phase == "INV16G6" && $park_no == "43") {
-      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8388,Inv_AC_PR_600,Inv16%20AC%20PR,15,%,4;0,1,0,8412,Inv16_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8412,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8388,Inv_AC_PR_600,Inv16%20AC%20PR,15,%,4;0,1,0,8388,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8388,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
       echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
       echo '</a>';
     }
     else if ($phase == "INV16G7" && $park_no == "43") {
-      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8388,Inv_DC_Vol_Coeff,Inv16(DC_Voltage),15,V,4;0,1,0,8412,Inv16_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8412,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+      echo '<a href="amplusExport.php?stamp=' . $stamp . '&endstamp=' . $endstamp . '&park_no=' . $park_no . '&phase=' . $phase . '&args=0,1,0,8388,Inv_DC_Vol_Coeff,Inv16(DC_Voltage),15,V,4;0,1,0,8388,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,8388,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
       echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
       echo '</a>';
     }

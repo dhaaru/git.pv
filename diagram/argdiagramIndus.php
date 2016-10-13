@@ -446,50 +446,50 @@ if(($phase == 'IndINV1ACPR' && $park_no == 54) || ($phase == 'IndINV2ACPR' && $p
                         } else {
 							
 							if($phase == "IndINV1EFF" && $park_no=="54"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12667,Inv1_Eff,Inverter1,15,%,8;0,1,0,10452,Solar_Radiation,Irradiation,5,W/m&sup2;,\'Gold\';">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12667,Inv_Eff,Inverter1,15,%,8;0,1,0,10452,Solar_Radiation,Irradiation,5,W/m&sup2;,\'Gold\';">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							
 							if($phase == "IndINV2EFF" && $park_no=="54"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12668,Inv2_Eff,Inverter2,15,%,8;0,1,0,10452,Solar_Radiation,Irradiation,5,W/m&sup2;,\'Gold\';">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12668,Inv_Eff,Inverter2,15,%,8;0,1,0,10452,Solar_Radiation,Irradiation,5,W/m&sup2;,\'Gold\';">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							if($phase == "IndINV3EFF" && $park_no=="54"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,13004,Inv3_Eff,Inverter3,15,%,8;0,1,0,10452,Solar_Radiation,Irradiation,5,W/m&sup2;,\'Gold\';">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,13004,Inv_Eff,Inverter3,15,%,8;0,1,0,10452,Solar_Radiation,Irradiation,5,W/m&sup2;,\'Gold\';">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 	
 							 if($phase == "IndINV1ACPR" && $park_no=="54"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12667,Inv_AC_PR,Inv1%20AC%20PR,15,%,4;0,1,0,10452,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10452,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12667,Inv_AC_PR_600,Inv1%20AC%20PR,15,%,4;0,1,0,12667,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12667,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}  
 							if($phase == "IndINV2ACPR" && $park_no=="54"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12668,Inv_AC_PR,Inv2%20AC%20PR,15,%,4;0,1,0,10452,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10452,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12668,Inv_AC_PR_600,Inv2%20AC%20PR,15,%,4;0,1,0,12668,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12668,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							} 
 							if($phase == "IndINV3ACPR" && $park_no=="54"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,13004,Inv_AC_PR,Inv3%20AC%20PR,15,%,4;0,1,0,10452,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10452,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,13004,Inv_AC_PR_600,Inv3%20AC%20PR,15,%,4;0,1,0,13004,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,13004,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							} 
 							
 							if($phase == "IndINV1DCPR" && $park_no=="54"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12667,DC_Vol_Coeff,Inv 1(DC_Voltage),15,V,4;0,1,0,10452,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10452,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12667,Inv_DC_Vol_Coeff,Inv 1(DC_Voltage),15,V,4;0,1,0,12667,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12667,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							if($phase == "IndINV2DCPR" && $park_no=="54"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12668,DC_Vol_Coeff,Inv 2(DC_Voltage),15,V,4;0,1,0,10452,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10452,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,12668,Inv_DC_Vol_Coeff,Inv 2(DC_Voltage),15,V,4;0,1,0,12668,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,12668,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}
 							if($phase == "IndINV3DCPR" && $park_no=="54"){
-								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,13004,DC_Vol_Coeff,Inv 3(DC_Voltage),15,V,4;0,1,0,10452,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,10452,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
+								echo '<a href="amplusExport.php?stamp='.$stamp.'&endstamp='.$endstamp.'&phase=' . $phase .'&args=0,1,0,13004,Inv_DC_Vol_Coeff,Inv 3(DC_Voltage),15,V,4;0,1,0,13004,Inv_irrad_600,Irradiation,15,W/m&sup2;,\'Gold\';0,1,0,13004,AC_Module_Temp_600,Module Temperature,15,&deg;C,\'darkred\'">';
 								echo '    <img title="Export Meter data as .csv file" src="../imgs/xls.png">';
 								echo '</a>';
 							}

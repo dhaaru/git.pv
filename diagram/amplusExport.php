@@ -1003,7 +1003,7 @@ foreach ($args as $arg) {
 	if($translatedField == "Solar_Radiation")
 	{
 		//$ids=implode(",",$arrvl);
-		$query = "select ts+$offset as ts, sum((((value+$words[0])*$words[1])+$words[2])) as value from _devicedatavalue where value is not null and device = $words[3] and field = '$translatedField' and ts > $stamp and ts < $endstamp group by ts";
+		$query = "select ts+$offset as ts, sum((((value+$words[0])*$words[1])+$words[2])) as value from amplus_all_calculations where value is not null and device = $words[3] and field = '$translatedField' and ts > $stamp and ts < $endstamp group by ts";
 	}
 	else
 	{
